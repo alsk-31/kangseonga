@@ -1,0 +1,197 @@
+@charset "utf-8";
+.slide {
+  margin: 0 auto;
+  width: 100%;
+  height: 320px;
+  background: url(../images/noroo70years.png) no-repeat;
+  background-position: center 30%;
+  background-size: cover;
+}
+/*오른쪽 본문내용 서식*/
+.page .right .rightwrap p:first-child {
+  margin-right: 30px;
+}
+/*오른쪽 본문 제목 옆 탭버튼 서식 */
+.page .right .rightwrap .btn a {
+  font-size: 15px;
+  font-weight: 900;
+  padding: 0px 15px;
+  line-height: 60px;
+}
+.page .right .rightwrap .nsds a::after {
+  border: 2px;
+  border-bottom: #2d2d2d;
+}
+.page .right .rightwrap .yearli a {
+  font-size: 15px;
+  padding: 5px 15px;
+}
+.btngroup .nsds.on {
+  color: red;
+}
+.btngroup .yearli.on {
+  color: red;
+}
+/*tabcon1- NSDS*/
+.page .right #tabcon1 p {
+  line-height: 1.6em;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+.page .right #tabcon1 img {
+  width: 1000px;
+  height: 500px;
+  margin-bottom: 50px;
+  object-fit: cover;
+}
+.page .right #tabcon1 .tit_list {
+  position: relative;
+  list-style: disc;
+  margin-left: 50px;
+  margin-top: -25px;
+  margin-bottom: 50px;
+  line-height: 1.6em;
+  font-size: 15px;
+}
+
+/*연혁*/
+.page .tabitem {
+  position: relative;
+}
+.page .tabitem > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.page .right #tabcon2 {
+  margin-top: 15px;
+  display: flex;
+}
+.page .right #tabcon2 .tabwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page .right #tabcon2 .tabwrap .tabright .ygroup {
+  font-size: 22px;
+  font-weight: 600;
+  width: 210px;
+}
+.page .right #tabcon2 .tabwrap .tabright .year {
+  margin-left: 70px;
+  margin-right: 20px;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  width: 80px;
+}
+.page .right #tabcon2 .tabwrap .tabright::before {
+  content: "";
+  height: 3120px;
+  width: 4px;
+  border-radius: 6px;
+  position: absolute;
+  top: 10px;
+  left: 167px;
+  background: linear-gradient(to bottom, #bebebe1a, rgb(128, 122, 122));
+}
+/*년도 원 옆에 녹색 가로선*/
+.page .right #tabcon2 .tabwrap .tabright li > ul::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border: 5px solid #a6ce38;
+  position: absolute;
+  top: 2px;
+  left: -220px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  z-index: 10;
+}
+.page .right #tabcon2 .tabwrap .tabright ul {
+  position: relative;
+  list-style: disc;
+  margin-bottom: 60px;
+}
+.page .right #tabcon2 .tabwrap .tabright > li {
+  list-style: none;
+  display: flex;
+}
+.page .right #tabcon2 .tabwrap .tabright ul li {
+  line-height: 1.9em;
+}
+
+/*푸터*/
+
+footer {
+  background: #2d2d2d;
+  height: 200px;
+  margin-top: 100px;
+}
+footer .footer_top {
+  width: 1280px;
+  margin: 0 auto;
+  line-height: 100px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_top ul.left li a {
+  color: #fff;
+}
+footer .footer_top ul.left {
+  display: flex;
+}
+footer .footer_top ul.left li::after {
+  content: "|";
+  padding: 0 12px;
+  color: #fff;
+}
+footer .footer_top ul.left li:last-child::after {
+  content: "";
+}
+footer .footer_top ul.right {
+  display: flex;
+  justify-content: center;
+}
+footer .footer_top ul.right img {
+  transform: translateY(30%);
+}
+footer .footer_top ul.right li {
+  margin-right: 12px;
+}
+footer .footer_top ul.right li a {
+  color: #fff;
+}
+footer .footer_top ul.right li:last-child a {
+  margin-left: 20px;
+  border: 1px solid #fff;
+  padding: 6px 50px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+}
+footer .footer_info {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_infoleft {
+  color: #f6f6f6;
+  font-size: 13px;
+  line-height: 1.4em;
+  display: flex;
+  width: 700px;
+}
+footer .footer_infoleft img {
+  margin-right: 25px;
+}
+footer .footer_infoleft ul li:last-child {
+  font-size: 13px;
+  margin-top: 7px;
+  color: #f6f6f6;
+}
+footer .footer_inforight img {
+  margin-left: 10px;
+}

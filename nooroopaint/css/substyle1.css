@@ -1,0 +1,220 @@
+@charset "utf-8";
+.slide {
+  margin: 0 auto;
+  width: 100%;
+  height: 320px;
+  background: url(../images/history_img05.jpg) no-repeat;
+  background-position: center 12%;
+  background-size: cover;
+}
+/*헤드&nav--head.css 참조*/
+/* ↓↓왼쪽 싸이드메뉴 + 오른쪽 타이틀 및 페이지 좌표 서식-- head.css 참조*/
+.page .right .maininfo h3 {
+  text-align: center;
+  margin-bottom: 18px;
+}
+.shortline {
+  position: relative;
+  top: 38px;
+  width: 90px;
+  height: 3px;
+  background: #2d2e2d;
+  margin: 0 auto;
+}
+.page .right .maininfo p {
+  margin-top: 50px;
+  margin-bottom: 140px;
+  line-height: 2em;
+  text-align: center;
+}
+.mimg {
+  margin-top: 90px;
+}
+
+.page .right .maincon {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.page .right .maincon img {
+  margin-top: 10px;
+  width: 350px;
+  height: 180px;
+}
+.page .right .coninner {
+  margin-left: 80px;
+}
+.page .right .coninner p {
+  margin-top: 25px;
+  line-height: 1.6em;
+  margin-bottom: 50px;
+}
+.factory {
+  height: 570px;
+  display: flex;
+  margin-top: 200px;
+}
+.factory.c {
+  position: relative;
+  top: 85px;
+  margin-bottom: 80px;
+}
+.factory.a img {
+  width: 420px;
+  height: 420px;
+}
+.factory img {
+  width: 420px;
+  height: 420px;
+}
+.factory.facwrap {
+  display: flex;
+  margin: 0 auto;
+}
+.factory dl {
+  margin-right: 80px;
+}
+.factory dl dt {
+  margin-bottom: 30px;
+  line-height: 1.6em;
+}
+.factory dl > dd {
+  margin-bottom: 50px;
+  line-height: 1.6em;
+}
+.factory .faclist p strong {
+  display: inline-block;
+  line-height: 1.9em;
+  width: 130px;
+}
+.factory .facwrap .fline {
+  margin-top: -25px;
+  position: absolute;
+  border-bottom: 1px dashed #ccc;
+  width: 500px;
+}
+/*공장 설명(2번째,반대방향)*/
+.factory_re {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  top: 60px;
+}
+.factory_re img {
+  width: 420px;
+  height: 420px;
+}
+.factory_re .facwrap_re {
+  margin: 0 auto;
+  margin-left: 80px;
+}
+.factory_re dl dt {
+  margin-bottom: 30px;
+  line-height: 1.8em;
+}
+.factory_re dl dd {
+  margin-bottom: 50px;
+  line-height: 1.6em;
+}
+.factory_re .faclist p strong {
+  display: inline-block;
+  line-height: 2em;
+  width: 130px;
+}
+.factory_re .facwrap_re .fline {
+  margin-top: -25px;
+  position: absolute;
+  border-bottom: 1px dashed #ccc;
+  width: 500px;
+}
+/*반대방향 끝*/
+
+.facbg1 {
+  position: absolute;
+  margin-top: -1900px;
+  background: #f6f6f6;
+  width: 100%;
+  height: 620px;
+  z-index: -999;
+}
+.facbg2 {
+  position: absolute;
+  margin-top: -620px;
+  background: #f6f6f6;
+  width: 100%;
+  height: 620px;
+  z-index: -999;
+}
+
+/*푸터*/
+footer {
+  background: #2d2d2d;
+  height: 200px;
+}
+footer .footer_top {
+  width: 1280px;
+  margin: 0 auto;
+  line-height: 100px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_top ul.left li a {
+  color: #fff;
+}
+footer .footer_top ul.left {
+  display: flex;
+}
+footer .footer_top ul.left li::after {
+  content: "|";
+  padding: 0 12px;
+  color: #fff;
+}
+footer .footer_top ul.left li:last-child::after {
+  content: "";
+}
+footer .footer_top ul.right {
+  display: flex;
+  justify-content: center;
+}
+footer .footer_top ul.right img {
+  transform: translateY(30%);
+}
+footer .footer_top ul.right li {
+  margin-right: 12px;
+}
+footer .footer_top ul.right li a {
+  color: #fff;
+}
+footer .footer_top ul.right li:last-child a {
+  margin-left: 20px;
+  border: 1px solid #fff;
+  padding: 6px 50px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+}
+footer .footer_info {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_infoleft {
+  color: #f6f6f6;
+  font-size: 13px;
+  line-height: 1.4em;
+  display: flex;
+  width: 700px;
+}
+footer .footer_infoleft img {
+  margin-right: 25px;
+}
+footer .footer_infoleft ul li:last-child {
+  font-size: 13px;
+  margin-top: 7px;
+  color: #f6f6f6;
+}
+footer .footer_inforight img {
+  margin-left: 10px;
+}
