@@ -97,7 +97,7 @@
       <p class="subt">PORTFOLIO</p>
       <div class="slide">
         <div class="owl-carousel owl-theme">
-          <div class="item"><a href="nooroopaint/index.html"><div class="imgbox" style="background-image: url(image/cago_01.png)"></div></a>
+          <div id="modal_open_btn" class="item" ><a href="#" ><div class="imgbox" style="background-image: url(image/cago_01.png)"></div></a>
          <p class="title">노루페인트 홈페이지</p></div>
           <div class="item"><a href="#"><div class="imgbox" style="background-image: url(image/cago_01.png)"></div></a>
           <a href="towel/index.html"><p class="title">towelmall 홈페이지</p></a></div>
@@ -109,10 +109,33 @@
           <a href="#"><p class="title">웹컨텐츠디자인</p></a></div>
           <div class="item"><a href="#"><div class="imgbox" style="background-image: url(image/cago_01.png)"></div></a>
           <a href="#"><p class="title">편집디자인</p></a></div>
-        
         </div>
       </div>
     </section>
+    <div id="modal">
+      <div class="modal_content">
+        <div class="modalpage">
+          <h2>모달창</h2>
+          <p>모달창이다
+            모달창이다<br>
+            모달창이다<br>
+            모달창이다<br>
+            모달창이다<br>
+            모달창이다<br>
+            모달창이다.
+            모달창이다<br>
+            모달창이다
+            모달창이다<br>
+            모달창이다<br>
+            모달창이다<br>
+            모달창이다<br>
+            모달창이다</p>
+            <button type="button" id="modal_close_btn">닫기</button>
+        </div>
+       
+      </div>
+    </div>
+    <div class="modal_layer"></div>
     <!--5. contact 영역 -->
     <section class="sec5">
       <div class="sec5wrap">
@@ -187,6 +210,16 @@
       document.getElementsByClassName('btntop')[0].onclick = function () {
         document.documentElement.scrollTop = 0;
       };
+    </script>
+    <script>
+      //포트폴리오 설명 모달창 이벤트
+      document.getElementById("modal_open_btn").onclick=function(){
+        document.getElementById("modal").style.display="block";
+      }
+      document.getElementById("modal_close_btn").onclick=function(){
+        document.getElementById("modal").style.display="none";
+      }
+
     </script>
     <script>
       AOS.init();
