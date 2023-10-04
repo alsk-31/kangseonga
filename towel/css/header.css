@@ -60,9 +60,9 @@ header ul.left li:first-child {
 header ul.right {
   height: 70px;
 }
-/* header ul li {
+header ul li {
   margin-left: 20px;
-} */
+}
 .right li:first-child {
   position: relative;
 }
