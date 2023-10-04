@@ -88,7 +88,7 @@ button.next {
 .newice .title {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom: 20px;
 }
 .newice .title a {
@@ -145,9 +145,10 @@ button.next {
   color: #757575;
 }
 .newice .notice .right img {
-  width: 570px;
+  width: 550px;
   height: 270px;
   object-fit: cover;
+  object-position: left;
   margin-bottom: 50px;
 }
 .contech {

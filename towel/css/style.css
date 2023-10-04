@@ -24,7 +24,7 @@
 article {
   width: 1280px;
   margin: 0 auto;
-  margin-top: 90px;
+  margin-top: 150px;
 }
 article > h2 {
   width: 1280px;
@@ -47,18 +47,18 @@ article .bestcon {
 .bestcon img {
   width: 260px;
   height: 300px;
-  border: 1px solid rgb(238, 238, 238);
-  border-radius: 20px;
+  border: 1px solid rgb(215, 215, 215);
   margin-bottom: 20px;
+  object-fit: cover;
 }
 p#ptitle {
   font-size: 18px;
-  font-family: notoserif;
+  font-family: notosans;
   font-weight: 800;
   margin-bottom: 10px;
 }
 p#psub {
-  font-family: spokaneo;
+  font-family: notosans;
   font-size: 13px;
   line-height: 1.6em;
   color: rgb(124, 124, 124);
@@ -74,7 +74,7 @@ h3 {
 }
 /*베스트셀러 -상품 정보, 아이콘 서식*/
 #ibtn p.m {
-  font-family: notosanssemi;
+  font-family: notosans;
   font-size: 11px;
   margin-top: 10px;
   margin-right: 5px;
@@ -97,7 +97,7 @@ h3 {
 }
 /*베스트셀러 배경서식*/
 .backba {
-  margin-top: 50px;
+  margin-top: 100px;
   width: 100%;
   height: 700px;
   position: absolute;
@@ -106,9 +106,10 @@ h3 {
 }
 /*주문제작 타올 _구역*/
 .banner {
-  margin-top: 80px;
   width: 1280px;
   margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 0px;
 }
 .banner h2 {
   text-align: center;
@@ -124,15 +125,7 @@ h3 {
   justify-content: space-between;
   overflow: hidden;
 }
-.banner {
-  margin-top: 150px;
-  margin-bottom: 150px;
-  width: 1280px;
-}
-.banner > h2 {
-  width: 1280px;
-  margin: 0;
-}
+
 .banner > p {
   margin-top: 10px;
   width: 1280px;
@@ -144,15 +137,15 @@ h3 {
   width: 1280px;
 }
 .banner .special img {
-  width: 628px;
+  width: 615px;
   height: 200px;
   object-fit: cover;
   object-position: center;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 article.ourcon {
-  margin-top: 176px;
+  margin-top: 136px;
   display: flex;
   width: 100%;
   height: 800px;
@@ -197,10 +190,10 @@ article.ourcon .our_list li span {
 }
 /*전체 콘텐츠(6개)영역: 배경 사진 첨부이미지*/
 .ourwrap.as {
-  background: url(../image/thirteen-j-g4P1CbTvTZU-unsplash.jpg);
+  background: url(../image/janko-ferlic-eBtwD6ZG78I-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right 40%;
+  background-position: right 30%;
 }
 .ourwrap.bs {
   background: url(../image/nina-mercado-CnrDuY0tFrg-unsplash.jpg);
@@ -214,12 +207,12 @@ article.ourcon .our_list li span {
   background-position: center 30%;
 }
 .ourwrap.ds {
-  background: url(../image/ourconbg_04.jpg);
+  background: url(../image/thirteen-j-g4P1CbTvTZU-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .ourwrap.es {
-  background: url(../image/janko-ferlic-eBtwD6ZG78I-unsplash.jpg);
+  background: url(../image/ourconbg_04.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -265,7 +258,7 @@ article.ourcon .our_list li:hover {
 
 footer {
   width: 100%;
-  height: 150px;
+  height: 120px;
   background: #2d2d2d;
   color: #fff;
 }
@@ -273,7 +266,7 @@ footer .foot_bottom {
   position: relative;
   width: 1000px;
   margin: 0 auto;
-  height: 150px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;

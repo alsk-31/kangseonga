@@ -9,20 +9,20 @@
 }
 /*헤드&nav--head.css 참조*/
 /* ↓↓왼쪽 싸이드메뉴 + 오른쪽 타이틀 및 페이지 좌표 서식-- head.css 참조*/
-.page .right .maininfo h3 {
+.page .right .maininfo h2 {
   text-align: center;
   margin-bottom: 18px;
 }
 .shortline {
   position: relative;
-  top: 38px;
+  top: 48px;
   width: 90px;
   height: 3px;
   background: #2d2e2d;
   margin: 0 auto;
 }
 .page .right .maininfo p {
-  margin-top: 50px;
+  margin-top: 120px;
   margin-bottom: 140px;
   line-height: 2em;
   text-align: center;
@@ -41,6 +41,7 @@
   margin-top: 10px;
   width: 350px;
   height: 180px;
+  object-fit: cover;
 }
 .page .right .coninner {
   margin-left: 80px;
@@ -57,7 +58,7 @@
 }
 .factory.c {
   position: relative;
-  top: 85px;
+  top: 125px;
   margin-bottom: 80px;
 }
 .factory.a img {
@@ -99,7 +100,7 @@
   position: relative;
   display: flex;
   flex-direction: row-reverse;
-  top: 60px;
+  top: 85px;
 }
 .factory_re img {
   width: 420px;
@@ -132,7 +133,7 @@
 
 .facbg1 {
   position: absolute;
-  margin-top: -1900px;
+  margin-top: -1930px;
   background: #f6f6f6;
   width: 100%;
   height: 620px;

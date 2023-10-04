@@ -49,9 +49,12 @@ td:first-child {
 th:first-child {
   border-left: none;
 }
-
-tr .point {
+.titlebk{
+  background-color: #f9f9f9;
+}
+.point {
   color: #e31a2c;
+  background-color: #f9f9f9;
 }
 .tablewrap02 {
   margin-top: 100px;

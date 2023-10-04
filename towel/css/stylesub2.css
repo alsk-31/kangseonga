@@ -13,6 +13,9 @@
   position: absolute;
   text-align: center;
   line-height: 200px;
+  color: #fff;
+  letter-spacing: 15px;
+  text-shadow: #2d2d2d;
   margin: 0 auto;
   width: 100%;
 }
@@ -31,31 +34,34 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 .promotion img {
   width: 600px;
   height: 400px;
   object-fit: cover;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 .promotion ul li {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .promotion .title {
   margin-top: 15px;
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
 }
 .promotion .descript {
-  font-size: 16px;
+  font-size: 15px;
 }
+span{
+  margin-left: 10px;
+  font-size: 14px;
+color: #898989;}
 
-footer {
-  margin-top: 200px;
+footer {margin-top: 100px;
   width: 100%;
-  height: 100px;
+  height: 120px;
   background: #2d2d2d;
   color: #fff;
 }
@@ -63,7 +69,7 @@ footer .foot_bottom {
   position: relative;
   width: 1000px;
   margin: 0 auto;
-  height: 100px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,6 +91,8 @@ footer .foot_bottom .foot ul li a {
 footer .foot_bottom .foot ul li::after {
   content: "|";
   padding: 0 10px;
+  font-size: 11px;
+  margin-bottom: 4px;
 }
 footer .foot_bottom .foot ul li:last-child::after {
   content: "";
