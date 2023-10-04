@@ -8,11 +8,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  object-fit: cover;
 }
 .swiper-slide > h3 {
   position: absolute;
   text-align: center;
   line-height: 200px;
+  color: #fff;
+  letter-spacing: 15px;
+  text-shadow: #2d2d2d;
   margin: 0 auto;
   width: 100%;
 }
@@ -37,7 +41,7 @@
 }
 .infotab p span {
   font-weight: 600;
-  color: #f00;
+  color: #E25E3E;
   font-size: 18px;
 }
 .infotab ul {
@@ -106,7 +110,7 @@
 }
 .brandstory .text p {
   margin-top: 20px;
-  line-height: 1.6em;
+  line-height: 1.8em;
 }
 /*탭메뉴컨텐츠*/
 
@@ -130,9 +134,8 @@
   width: 260px;
   height: 300px;
   border: 1px solid #d4d4d4;
-  border-radius: 20px;
-
   margin-bottom: 20px;
+  object-fit: cover;
 }
 p#ptitle {
   font-size: 18px;
@@ -151,23 +154,28 @@ h3 {
   margin-top: 8px;
 }
 #ibtn p.m {
-  font-size: 13px;
+  font-size: 11px;
   border: 1px solid #fff;
   margin-right: 5px;
   padding: 1px 6px;
   color: #2d2d2d;
   border: 1px solid #2d2d2d;
   margin-bottom: 75px;
+  border-radius: 4px;
 }
 #ibtn p.m:last-child::after {
   margin-right: 0px;
+  
 }
 #ibtn p.new,
 #ibtn p.hot {
   background: #2d2d2d;
   color: #fff;
 }
+#price{margin-bottom: 15px;}
 .morebtn {
+  position: relative;
+  top: 500px;
   width: 250px;
   margin: 0 auto;
   padding: 10px;
@@ -180,7 +188,7 @@ h3 {
 footer {
   margin-top: 1700px;
   width: 100%;
-  height: 100px;
+  height: 120px;
   background: #2d2d2d;
   color: #fff;
 }
@@ -188,7 +196,7 @@ footer .foot_bottom {
   position: relative;
   width: 1000px;
   margin: 0 auto;
-  height: 100px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,6 +218,8 @@ footer .foot_bottom .foot ul li a {
 footer .foot_bottom .foot ul li::after {
   content: "|";
   padding: 0 10px;
+  font-size: 11px;
+  margin-bottom: 4px;
 }
 footer .foot_bottom .foot ul li:last-child::after {
   content: "";

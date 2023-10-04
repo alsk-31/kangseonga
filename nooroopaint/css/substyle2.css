@@ -42,7 +42,6 @@ i img {
   background-color: #fff;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  border-radius: 8px;
   cursor: pointer;
   text-align: left;
   background: url("../images/arrow_down_icon.png") center right 10px no-repeat;
@@ -63,7 +62,6 @@ i img {
   border: 1px solid #ccc;
   box-sizing: border-box;
   box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
   z-index: 999;
 }
 .btn-select.on + .list-member {
@@ -76,7 +74,6 @@ i img {
   width: 100%;
   border: none;
   background-color: #fff;
-  border-radius: 8px;
   cursor: pointer;
   text-align: left;
   line-height: 25px;
@@ -87,19 +84,33 @@ i img {
 }
 .list-member li:hover,
 .list-member li:focus {
-  background-color: #daee9f;
+  background-color: #a6cc38;
 }
 
-/* input {
+.searchboxw input {
   margin-left: 15px;
   -webkit-appearance: none;
   width: 280px;
   height: 42px;
   padding: 7px 8px;
   box-sizing: border-box;
-  border: 2px solid #007d56;
-  border-radius: 8px 0px 0px 8px;
-} */
+  border: 1px solid #a6cc38;
+}
+.searchgo{
+  width: 80px;
+  height: 42px;
+  background-color:  #93cc38;}
+.searchgo a {
+  font-size: 14px;
+  width: 80px;
+  height: 42px;
+  display: inline-block;
+  line-height: 42px;
+  text-align: center;
+  position:relative; 
+  color: #fff;
+text-align: center;}
+
 
 /*카데고리 컨텐츠*/
 .cagobtn {
@@ -125,6 +136,7 @@ i img {
   background: #8ac007;
   cursor: pointer;
 }
+
 .cagobtn img {
   width: 280px;
   height: 280px;

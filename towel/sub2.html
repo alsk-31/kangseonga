@@ -9,7 +9,21 @@
     <link rel="stylesheet" href="css/stylesub2.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/swiper-bundle.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
 <style></style>
+<script>
+  $(function () {
+    $(".cuponwrap").click(function () {
+      $(".cuponwrap")
+        .animate({ marginLeft: "-40px" }, 1000)
+        .animate({ marginLeft: "2px" }, 1000);
+    });
+    setInterval(function () {
+      $(".cuponwrap").click();
+    }, 2000);
+  });
+</script>
+</script>
   </head>
   <body>
     <header>
@@ -111,23 +125,112 @@
               </div>
             </nav>
         </div>
-          <ul class="right">
-          <li><div class="search"><input type="search"  onfocus="this.placeholder=' '" ><a href="#"><img src="image/search.png" alt="검색"></a></div>
-             </li>
-              <li><a href="#">로그인</a></li>
-              <li><a href="#">회원가입</a></li>
-              <li><a href="#"><img src="image/total_menu_icon.png" alt="totalmenu"></a></li>
+        <ul class="right">
+          <li>
+            <div class="search">
+              <input type="search" onfocus="this.placeholder=' '" /><a href="#"
+                ><img src="image/search.png" alt="검색"
+              /></a>
+            </div>
+          </li>
+          <li><a href="#">로그인</a></li>
+          <li>
+            <a href="#">회원가입</a>
+            <div class="cuponwrap">
+              <span>▲</span>
+              <div class="jointext">+3,000원 쿠폰</div>
+            </div>
+          </li>
+          <li>
+            <!--사이드메뉴 :클릭시 우측에서 메뉴등장-->
+            <div class="allmenu">
+              <!--메뉴 아이콘 (|||)-->
+              <p id="menu">
+                <span id="one"></span>
+                <span id="two"></span>
+                <span id="three"></span>
+              </p>
+            </div>
+            <div id="side">
+              <ul class="sidewrap">
+                <li>
+                  <p><a href="#">COMPANY</a></p>
+                  <ul class="navmenu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">연혁/인증</a></li>
+                    <li><a href="#">공장소개</a></li>
+                    <li><a href="#">카탈로그</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <p><a href="#">PREMIUM</a></p>
+                  <ul class="navmenu">
+                    <li><a href="#">T.헤리티지</a></li>
+                    <li><a href="#">발렌티노 크리스티</a></li>
+                    <li><a href="#">G.sol</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <p><a href="#">호텔수건</a></p>
+                  <ul class="navmenu">
+                    <li><a href="#">30수</a></li>
+                    <li><a href="#">40수</a></li>
+                    <li><a href="#">향균</a></li>
+                    <li><a href="#">뱀부</a></li>
+                    <li><a href="#">발매트</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <p><a href="#">용도별 타올</a></p>
+                  <ul class="navmenu">
+                    <li><a href="#">핸드타올</a></li>
+                    <li><a href="#">세면타올</a></li>
+                    <li><a href="#">바스타올</a></li>
+                    <li><a href="#">스포츠타올</a></li>
+                    <li><a href="#">발매트</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <p><a href="#">중량별 타올</a></p>
+                  <ul class="navmenu">
+                    <li><a href="#">90g~130g(얇음)</a></li>
+                    <li><a href="#">140g~150g(보통)</a></li>
+                    <li><a href="#">160g~170g(도톰)</a></li>
+                    <li><a href="#">180g~(두꺼움)</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <p><a href="#">타올답례품</a></p>
+                  <ul class="navmenu">
+                    <li><a href="#">3종세트</a></li>
+                    <li><a href="#">5종세트</a></li>
+                    <li><a href="#">바스세트</a></li>
+                    <li><a href="#">종합세트</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <p><a href="#">COMMUNITY</a></p>
+                  <ul class="navmenu">
+                    <li><a href="#">프로모션</a></li>
+                    <li><a href="#">타올이야기</a></li>
+                    <li><a href="#">주문제작문의</a></li>
+                    <li><a href="#">개인결제</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!--사이드메뉴 끝-->
+          </li>
         </ul>
       </div>
-        
       </header>
 <!--nav-->
  <div class="slide">
       <!-- 백그라운드 이미지 넣기 -->
      <div class="swiper-slide">
           <!-- 제목 -->
-        <h3>PREMIUM</h3>
-        <img src="image/wash.jpg" alt="타이틀배경">
+        <h3>PROMOCTION</h3>
+        <img src="image/slide2.jpg" alt="타이틀배경">
      </div>
  </div>
  <div class="wrap">
@@ -135,50 +238,35 @@
     <ul>
         <li><a href="#"><img src="image/pro_01.jpg" alt="pro_01">
             <div class="infowrap">
-                <div class="title">8월 프로모션 안내</div>
+                <div class="title">8월 프로모션 안내<span>2023.08.01</span></div>
                 <div class="descript">리뷰이벤트의 주인공이 되어보세요</div>
             </div>
             <a></li>
-        <li><a href="#"><img src="image/pro_02.jpg" alt="pro_02">
-            <div class="infowrap">
-                <div class="title">8월 프로모션 안내</div>
-                <div class="descript">리뷰이벤트의 주인공이 되어보세요</div>
-            </div><a></li>
+              <li><a href="#"><img src="image/pro_08.jpg" alt="pro_08">
+                <div class="infowrap">
+                    <div class="title">7월 프로모션 안내<span>2023.07.01</span></div>
+                    <div class="descript">리뷰이벤트의 주인공이 되어보세요</div>
+                </div><a></li>
         <li><a href="#"><img src="image/pro_03.jpg" alt="pro_03">
             <div class="infowrap">
-                <div class="title">8월 프로모션 안내</div>
-                <div class="descript">리뷰이벤트의 주인공이 되어보세요</div>
+                <div class="title">헤리티지 라인바스 출시 이벤트<span>2022.10.17</span></div>
+                <div class="descript">선착순 열분에게 드리는 신제품 50% 할인 이벤트</div>
             </div><a></li>
         <li><a href="#"><img src="image/pro_04.jpg" alt="pro_04">
             <div class="infowrap">
-                <div class="title">8월 프로모션 안내</div>
-                <div class="descript">리뷰이벤트의 주인공이 되어보세요</div>
-            </div><a></li>
-        <li><a href="#"><img src="image/pro_05.jpg" alt="pro_05">
-            <div class="infowrap">
-                <div class="title">8월 프로모션 안내</div>
+                <div class="title">3월 프로모션 안내<span>2021.03.01</span></div>
                 <div class="descript">리뷰이벤트의 주인공이 되어보세요</div>
             </div><a></li>
         <li><a href="#"><img src="image/pro_06.jpg" alt="pro_06">
             <div class="infowrap">
-                <div class="title">8월 프로모션 안내</div>
-                <div class="descript">리뷰이벤트의 주인공이 되어보세요</div>
-            </div><a></li>
-        <li><a href="#"><img src="image/pro_07.jpg" alt="pro_07">
-            <div class="infowrap">
-                <div class="title">8월 프로모션 안내</div>
-                <div class="descript">리뷰이벤트의 주인공이 되어보세요</div>
-            </div><a></li>
-        <li><a href="#"><img src="image/pro_08.jpg" alt="pro_08">
-            <div class="infowrap">
-                <div class="title">8월 프로모션 안내</div>
+                <div class="title">주문제작 및 배송안내 사항<span>2020.09.01</span></div>
                 <div class="descript">리뷰이벤트의 주인공이 되어보세요</div>
             </div><a></li>
     </ul>
  </div>
  
   </div>
-</div>
+
   
 <footer>
   <div class="foot_bottom">
@@ -199,14 +287,9 @@
       </ul>
       <p>© oooTOWEL. All rights reserved.</p>
     </div>
-    <img src="images/wa.png" alt="wa" />
   </div>
 </footer>
-
-
-
 <script src="js/sub1.js"></script>
-
 </script>
   </body>
 </html>
