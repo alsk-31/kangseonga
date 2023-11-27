@@ -1,505 +1,971 @@
-<!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style></style>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/head.css" />
-   <link rel="stylesheet" href="css/swiper-bundle.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/swiper-bundle.js"></script>
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/main.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="topmenu">
-        <div
-          class="top_left"
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="800"
-          data-aos-delay="400"
-        >
-          <a href="./index.html"><img src="image/logo_designerkang.png" alt="logo_black" /></a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="./sub1_portfolio.html">PORTFOLIO</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-        </nav>
-        <div class="sidemenu">>menu</div>
-      </div>
-    </header>
-    <!--1. 인사말 영역 -->
-    <!-- <section class="sec1">
-      <p class="firstsaying">abcedfde</p>
-      <p class="verticaltxt">welcome to Designer.kang Homepage</p>
-      <p class="sec1-sub" data-aos="fade-up" data-aos-duration="3000">
-        강성아 홈페이지에 오신것을 환영합니다.강성아 홈페이지에 오신것을 환영합니다. 강성아 홈페이지에 오신것을 환영합니다.강성아 홈페이지에 오신것을 환영합니다.
-      </p>
-    </section>
-    <div class="img01"></div> -->
-    <!--2. KangSeonga 소개영역 -->
-    <section class="sec2">
-      <p class="firstsaying" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400" data-aos-once="true">Kang Seong-a.<a class="btn-view" href="#" >자세히보기</a></p>
-      <div class="sec2wrap">
-        <div class="myself">
-          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600" data-aos-once="true">
-            안녕하세요. 디자이너 강성아 입니다.<br /><br /><br /><br /><br /><br /><br /><br /><br />
-          </p>
-          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800" data-aos-once="true">
-            디자인을 통해 설득과 이해를 도와줄 수 있도록<br> 
-            열린 마음으로 보고 들으며 표현하고 있습니다.<br /><br /><br />
-          </p> 
-          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000" data-aos-once="true">
-            균형과 색감을 고려한,<br />
-            각각의 개성과 취향을 담은,<br />
-            보고 또 보고 싶은 작업물로 <br /><br /><br />
-          </p>
-          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1100" data-aos-once="true">
-            신뢰와 만족감을 주는 디자이너가 될 수 있도록<br />
-            꾸준히 공부하며 실력을 키워가겠습니다.
-          </p>
-        </div>
-        <div
-          class="img02"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="1000"
-          data-aos-once="false"
-        >
-          <img src="image/myself.jpg" alt="" />
-        </div>
-      </div>
-    </section>
-    <!--3. 로고 및 상징 이미지 영역-->
-    <section class="sec3">
-      <div class="symbolbg">
-        <div
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          class="innerlogo"
-          data-aos-delay="800"
-        >
-          <img src="image/logo_designerkang_w.png" alt="" />
-        </div>
-      </div>
-    </section>
-    <!--4. PORTFOLIO 영역 -->
-    <section class="sec4">
-      <p class="subtxt">PORTFOLIO<a class="btn-view" href="./sub1_portfolio.html" >자세히보기</a></p>
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-       
-        <!--swiper-slide start-->
-        <div class="swiper-slide" style="background-image:url('image/cago_01.png');width: 384px;
-        ">
-       <div class="slide-hover-box">
-        <div class="bg-layer"></div>
-        <figure>
-          <figcaption>
-            <a href="#"><span class="cago-en ">NOROO PAINT</span>
-            <p class="cago-title">노루페인트</p>
-            <p class="cago-sub">
-              개인프로젝트로 제작한 첫 홈페이지로, 기존 홈페이지의 레이아웃을 크게 변형하지 않으면서 콘텐츠와 약간의 디자인 요소의 변화로 새로운 변화를 주었습니다. 
-            </p>
-            </a>
-            <div class="flexible-line"></div>
-          </figcaption>
-        </figure>
-      </div>  
-      </div>
-    <!--swiper-slide end-->
-        <!--swiper-slide start-->
-        <div class="swiper-slide" style="background-image:url('image/cago_01.png');width: 384px;
-        ">
-       <div class="slide-hover-box">
-        <div class="bg-layer"></div>
-        <figure>
-          <figcaption>
-            <a href="#"><span class="cago-en ">TOWEL SHOP</span>
-            <p class="cago-title">타올 쇼핑몰</p>
-            <p class="cago-sub">
-              필요한 카테고리로만 구성하고, 프로모션과 신상품이 자주 등장하는 쇼핑몰의 특성을 고려하여 이미지 배너를 활용한 홈페이지를 제작하였습니다.
-            </p>
-            </a>
-            <div class="flexible-line"></div>
-          </figcaption>
-        </figure>
-      </div>  
-      </div>
-    <!--swiper-slide end-->
-        <!--swiper-slide start-->
-        <div class="swiper-slide" style="background-image:url('image/cago_01.png');width: 384px;
-        ">
-       <div class="slide-hover-box">
-        <div class="bg-layer"></div>
-        <figure>
-          <figcaption>
-            <a href="#"><span class="cago-en ">WEBDESIGN</span>
-            <p class="cago-title">상세페이지</p>
-            <p class="cago-sub">
-              CI. BI 부터 카탈로그, 브로슈어, 포스터등 다양한
-              인쇄매체의 목적에 적합한 이미지 정립과 정보전달이
-              용이한 디자인개발 및 구현을 위한 최상의 프로세스를
-              제공합니다.
-            </p>
-            </a>
-            <div class="flexible-line"></div>
-          </figcaption>
-        </figure>
-      </div>  
-      </div>
-    <!--swiper-slide end-->
-        <!--swiper-slide start-->
-        <div class="swiper-slide" style="background-image:url('image/cago_01.png');width: 384px;
-        ">
-       <div class="slide-hover-box">
-        <div class="bg-layer"></div>
-        <figure>
-          <figcaption>
-            <a href="#"><span class="cago-en ">BRANDING</span>
-            <p class="cago-title">시각디자인</p>
-            <p class="cago-sub">
-              CI. BI 부터 카탈로그, 브로슈어, 포스터등 다양한
-              인쇄매체의 목적에 적합한 이미지 정립과 정보전달이
-              용이한 디자인개발 및 구현을 위한 최상의 프로세스를
-              제공합니다.
-            </p>
-            </a>
-            <div class="flexible-line"></div>
-          </figcaption>
-        </figure>
-      </div>  
-      </div>
-    <!--swiper-slide end-->
-        <!--swiper-slide start-->
-        <div class="swiper-slide" style="background-image:url('image/cago_01.png');width: 384px;
-        ">
-       <div class="slide-hover-box">
-        <div class="bg-layer"></div>
-        <figure>
-          <figcaption>
-            <a href="#"><span class="cago-en ">LOGO DESIGN</span>
-            <p class="cago-title">로고 디자인</p>
-            <p class="cago-sub">
-              CI. BI 부터 카탈로그, 브로슈어, 포스터등 다양한
-              인쇄매체의 목적에 적합한 이미지 정립과 정보전달이
-              용이한 디자인개발 및 구현을 위한 최상의 프로세스를
-              제공합니다.
-            </p>
-            </a>
-            <div class="flexible-line"></div>
-          </figcaption>
-        </figure>
-      </div>  
-      </div>
-    <!--swiper-slide end-->
-        <!--swiper-slide start-->
-        <div class="swiper-slide" style="background-image:url('image/cago_01.png');width: 384px;
-        ">
-       <div class="slide-hover-box">
-        <div class="bg-layer"></div>
-        <figure>
-          <figcaption>
-            <a href="#"><span class="cago-en ">ILLUSTRATOR</span>
-            <p class="cago-title">일러스트레이터</p>
-            <p class="cago-sub">
-              CI. BI 부터 카탈로그, 브로슈어, 포스터등 다양한
-              인쇄매체의 목적에 적합한 이미지 정립과 정보전달이
-              용이한 디자인개발 및 구현을 위한 최상의 프로세스를
-              제공합니다.
-            </p>
-            </a>
-            <div class="flexible-line"></div>
-          </figcaption>
-        </figure>
-      </div>  
-      </div>
-    <!--swiper-slide end-->
-        <!--swiper-slide start-->
-        <div class="swiper-slide" style="background-image:url('image/cago_01.png');width: 384px;
-        ">
-       <div class="slide-hover-box">
-        <div class="bg-layer"></div>
-        <figure>
-          <figcaption>
-            <a href="#"><span class="cago-en ">EDITORIAL</span>
-            <p class="cago-title">공공디자인</p>
-            <p class="cago-sub">
-              CI. BI 부터 카탈로그, 브로슈어, 포스터등 다양한
-              인쇄매체의 목적에 적합한 이미지 정립과 정보전달이
-              용이한 디자인개발 및 구현을 위한 최상의 프로세스를
-              제공합니다.
-            </p>
-            </a>
-            <div class="flexible-line"></div>
-          </figcaption>
-        </figure>
-      </div>  
-      </div><!--swiper-slide end-->
-    
-      </div><!--//swiper wrapper-->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <!-- <div class="swiper-pagination"></div> -->
-    </div><!--//swiper Myswiper-->
-    
-    </section>
-    <div id="modal">
-      <div class="modal_content">
-        <div class="modalpage">
-          <!--no.1 노루페인트 홈페이지 설명-->
-          <div class="modal1">
-            <div class="moleft">
-              <img src="image/com_1.png" alt="">
-            </div>
-            <div class="moright">
-              <h2>노루페인트 홈페이지</h2>
-              <p>처음으로, 개인 프로젝트로 제작한 홈페이지입니다.<br>
-                웹사이트 구축을 체계적으로 익히기 위해 메뉴와 콘텐츠가 다양한 노루페인트 사이트를
-                선택하여 제작했습니다. 기존 홈페이지의 레이아웃을 크게 변형하지 않으면서
-                아이콘 및 콘텐츠 이미지, 폰트 사이즈의 변화로 새로운 느낌을 주고자 하였습니다.
-                맑고 깨끗한 환경경영을 추구하는 노루페인트의 기업이념에 걸맞는 정돈되고 깔끔한 무드가 컨셉입니다.</p>
-                <div class="info2">
-                  <h3>제작 페이지 목록</h3>
-                  <ul>
-                    <li><a href="nooroopaint/index.html">INDEX</a></li>
-                    <li><a href="nooroopaint/noroo_sub1.html">SUB_1</a></li>
-                    <li><a href="nooroopaint/noroo_sub2.html">SUB_2</a></li>
-                    <li><a href="nooroopaint/noroo_sub4.html">SUB_3</a></li>
-                    <li><a href="nooroopaint/noroo_sub5.html">SUB_4</a></li>
-                    <li><a href="nooroopaint/noroo_sub6.html">SUB_5</a></li>
-                  </ul>
-                  <h3>사용프로그램</h3>
-                  <p>비주얼스튜디오, 피그마, 포토샵, 일러스트레이터</p>
-                  <ul>
-                </div>
-              </div>
-          </div>
-          <!--모달: section2 . 스타일시트 이미지 첨부 소개 -->
-          <div class="modal2"><img src="image/style_01.png" alt=""></div>
-          <!--모달: section3 . 페이지별 상세 설명 -->
-          <div class="modal3"><!--인덱스페이지 설명-->
-              <div>
-                <p class="sub1title">INDEX_ 메인페이지</p>
-                <img src="image/index_01.png" alt="">
-              </div>
-              <div class="m3sub">
-                <p class="header">① Header : 기존 회원가입, 로그인 아이콘 삭제 및 기존의 검색창을 단순화</p>
-                <p class="slide">② slide : 제이쿼리를 활용하여 세개의 기업 홍보영상을 보여주는 슬라이드를 구현 </p>
-                <p class="section2">③ Section2 : 각 이미지에 마우스를 대면 컨텐츠의 내용을 자세히 보게 함 </p>
-                <div class="sub4">
-                 <div class="b1"><img src="image/b1.jpg" alt=""></div>
-                  <div class="b2"><img src="image/b2.jpg" alt=""></div>
-                  <div class="b3"><img src="image/b3.jpg" alt=""></div>
-                  <div class="b4"><img src="image/b4.jpg" alt=""></div>
-                </div>
-                <p class="section5">④ Section5 : 배너 이미지를 심플하게 바꿔 각 카데고리명의 가독성을 높임<br>
-                  배너 클릭시 더보기 버튼에 컬러가 변경되는 동작을 추가하여 클릭을 유도
-                   </p>
-                   <p>⑤ 자바스크립트의 롤링이벤트로 기업홍보 홈페이지의 아이콘 클릭 시 각 페이지로 연결 </p>
-              </div>
-            </div>
-            <!--sub1_ 기업정보, sub2_제품자료-->
-            <div class="modal4">
-              <div class="sub_group1">
-                <div><p class="sub1title">sub1_기업정보 페이지</p><img src="image/sub_01_1.png" alt=""></div>
-                <div class="subinfo_01_1">
-                  <p class="slide01">① slide : 고화질의 밝은 톤의 사진으로 환한 기업이미지 형성</p>
-                  <p class="company_p">② 회사소개 설명글:<br>레이아웃을 1단 가로형 정렬로 변경하여 가독성을 높임 </p>
-                </div>
-              </div>
-              <div class="sub_group2">
-                <div class="subinfo_01_2">
-                  <p class="slide02">① slide : 기업내 제품을 액자 속에 합성하여 전시장과 같은 이미지 연출 </p>
-                  <p class="cago_p">② 기존 사진으로 표현되었던 제품 카테고리별 이미지를 기업의 캐릭터를 활용한 그래픽 이미지로 흥미를 이끔</p>
-                </div>
-                <div>
-                  <p class="sub1title">sub2_ 제품자료 페이지</p>
-                  <img src="image/sub_01_2.png" alt="">
-                  <img class="cagoimg" src="image/sub_01_201.png" alt="">
-                </div>     
-              </div>
-            </div>
-          <!--sub3_R&D -->
-          <div class="modal5">
-            <div class="sub_group3_1">
-              <div><p class="sub1title">sub3_ R&D 소개 (노루페인트 컬러연구소)</p><img src="image/sub_02_1.png" alt=""></div>
-              <div class="subinfo_01_1">
-                <p class="info3_1">① 타이틀 옆 소제목을 탭버튼을 적용시켜 소개글과 연혁을 간편히 볼 수 있도록 함</p>
-              </div>
-            </div>
-            <div class="sub_group3_2">
-              <p class="info3_2">① 약 10년을 주기로 그룹지어 기업의 연혁을 나타내는 막대 그래프 표시</p>
-              <div>
-                <p class="sub3title">sub3_ R&D 연혁 (노루페인트 컬러연구소)</p>
-                <img src="image/sub_02_2.png" alt="">
-              </div>     
-            </div>
-          </div>
-               <!--sub4_ESG경영 , sub5_투자정보 -->
-               <div class="modal6">
-                <div class="sub_group4_1">
-                  <div><p class="sub4title">sub4_ESG 경영</p>
-                    <img src="image/sub_4.png" alt="">
-                  </div>
-                  <div class="subinfo_04_1">
-                    <p class="info4_1">①  slide : 다채로운 컬러의 숲이미지로 변경</p>
-                    <p class="info4_1">① 기존 이미지로 표현되었던 내용을 html과 css로 화면 구현. </p>
-                  </div>
-                </div>
-                <div class="sub_group4_2">
-                  <p class="info4_2">① slide : 기업과 표의 격자무늬가 느껴지는 이미지로 변경 </p>
-                  <div>
-                    <p class="sub4title">sub5_투자정보</p>
-                    <img src="image/sub_5.png" alt="">
-                  </div>     
-                </div>
-              </div>
-        </div>
-        <div id="modal_close_btn"><p>닫기</p></div>
-      </div>
-     </div>
-    <div class="modal_layer"></div>
-    <div id="modal2">
-      <div class="modal_content">
-        <div class="modalpage">
-          <!--no.1 타올 홈페이지 설명-->
-          <div class="modal1">
-            <div class="moleft">
-              <img src="image/com_2.png" alt="">
-            </div>
-            <div class="moright">
-              <h2>타올 쇼핑몰 홈페이지</h2>
-              <p>과거 근무했던 타올 쇼핑몰의 사이트를 새롭게 제작하여 보았습니다.
-                너무 세분화된 카테고리는 복잡한 느낌을 주기에, 메뉴를 대폭 줄이고 단순한 레이아웃으로
-                접근성을 높였습니다. 프로모션과 신상품이 자주 등장하는 쇼핑몰의 특성을 고려하여 이미지 배너를 활용 하여 구성하였습니다.</p>
-                <div class="info2">
-                  <h3>제작 페이지 목록</h3>
-                  <ul>
-                    <li><a href="./towel/index.html">INDEX</a></li>
-                    <li><a href="./towel/sub1.html">SUB_1</a></li>
-                    <li><a href="./towel/sub2.html">SUB_2</a></li>
-                  </ul>
-                  <h3>사용프로그램</h3>
-                  <p>비주얼스튜디오, 피그마, 포토샵, 일러스트레이터</p>
-                  <ul>
-                </div>
-              </div>
-          </div>
-          <!--모달: section2 . 스타일시트 이미지 첨부 소개 -->
-          <div class="modal2"><img src="image/style_02.png" alt=""></div>
-          <!--모달: section3 . 페이지별 상세 설명 -->
-          <div class="modal3"><!--인덱스페이지 설명-->
-              <div>
-                <p class="sub1title">INDEX_ 메인페이지</p>
-                <img src="image/index_02.png" alt="">
-              </div>
-              <div class="m3sub">
-                <p class="header">① Header : 자바스크립트를 활용한 가로형 메뉴 이벤트와 사이드 메뉴, 이벤트알림 구현</p>
-                <p class="slide"><br>② slide : swiper를 활용하여 네개의 프로모션 이미지를 보여주는 슬라이드를 구현 </p>
-                <p class="section2"><br><br><br><br><br><br><br><br><br>③ 배너제작: 답례품 ,패키지 페이지 연결계획<br>
-                <p class="section2">④ 아이콘위에 마우스를 올릴시 각 항목의  어울리는 배경을 보여주는 특별한 이벤트를 구성<br>
-                  클릭 시 해당 페이지로 이동 계획
-                </p>
-              </div>
-            </div>
-            <!--sub1_ premium 타올 판매 페이지 , sub2_프로모션-->
-            <div class="modal4">
-              <div class="sub_group1">
-                <div><p class="sub1title">sub1_ premium 타올 페이지</p><img src="image/sub2_01.png" alt=""></div>
-                <div class="subinfo_01_1">
-                  <p class="slide01">① 브랜드 상품을 보여주는 슬라이드 이미지 제작 </p>
-                  <p class="slide01">② 슬라이드 밑 브랜드 네임(탭버튼) 을 누르면 각 브랜드별 상품이 보이도록 구현 </p>
-                </div>
-              </div>
-              <div class="sub_group2">
-                <div class="subinfo_01_2">
-                  <p class="slide02">① 프로모션 페이지 슬라이드 제작 </p>
-                  <p class="slide02">② 회사 내 프로모션 게시물을 <br>올리는 공간 </p>
-                </div>
-                <div>
-                  <p class="sub1title">sub2_ 프로모션 페이지</p>
-                  <img src="image/sub2_02.png" alt="">
-                </div>     
-              </div>
-            </div>
-        </div>
-        <div id="modal_close_btn2"><p>닫기</p></div>
-      </div>
-     </div>
+@charset "UTF-8";
+/*자세히보기 버튼 스타일*/
+.btn-view {
+  position: relative;
+  bottom: 5px;
+  margin-left: 50px;
+  font-family: spoka_L;
+  font-size: 12px;
+  background-color: transparent;
+  color: #2d2d2d;
+  border-bottom: 1px solid #2d2d2d;
+  box-sizing: border-box;
+  padding: 3px 5px;
+  line-height: 12px;
+  transition: transform 0.3s ease;
+  transform: scaleY(0);
+}
+.btn-view:hover {
+  color: #fff;
+  font-family: spoka_L;
+  font-weight: 500;
+}
+.btn-view:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2d2d2d;
+  box-sizing: border-box;
+  transform: scaleY(0);
+  transition: 0.5s;
+  transform-origin: left bottom;
+  z-index: -1;
+}
+.btn-view:hover:after {
+  transform: scaleY(1);
+}
 
-    <!--5. contact 영역 -->
-    <section class="sec5">
-      <div class="sec5wrap">
-        <div
-          class="img03"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-          data-aos-delay="1000"
-          data-aos-once="true"
-        >
-        </div>
-        <div class="contactme">
-          <div class="over">
-            <p class="firstsaying" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-              CONTACT<a class="btn-view" href="#" >문의하기</a>
-            </p>
-            <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400" data-aos-once="true">
-              프로젝트 의뢰 / 함께 일하고 싶다면 연락주세요!
-            </p>
-            <div class="coninfo">
-              <p
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-delay="600"
-                data-aos-once="true"
-              >
-                정성과 최선을 다해 마음속으로 꿈꾸던 것들과<br />
-                표현하기 어려웠던 디자인을 구현시켜<br />
-                최상의 만족감을 드리겠습니다.
-              </p>
-            </div>
-            </div>
-            <table
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-delay="600"
-              data-aos-once="true"
-            >
-              <tr>
-                <td><b>E-mail</b></td>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alsk-31</td>
-              </tr>
-              <tr>
-                <td><b>Phone</b></td>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;010-44*4-3*44</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div id="up-too" class="fff">Top</div>
-    <footer>
-      <div class="footerwrap">
-        <p>디자이너 강성아 &nbsp;| &nbsp; E-mail : alsk-31@naver.com</p>
-        <p>Copyright (C) 2023 Designer Kang seong a All Rights Reserved.</p>
-      </div>
-    </footer>
-    <script>
-      // 글씨 동작 플러그인 
-      AOS.init();
-    </script>
-  </body>
-</html>
+section {
+  height: 100vh;
+}
+
+/* 1. 인사말 영역*/
+/* 2. KangSeonga 소개 영역*/
+section.sec2 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section.sec2 p.firstsaying {
+  font-family: Sometimes;
+  font-weight: 900;
+  margin-top: 200px;
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+section.sec2 .sec2wrap {
+  width: 100wh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+section.sec2 .sec2wrap .myself {
+  width: 30%;
+  line-height: 1.7em;
+}
+section.sec2 .sec2wrap .img02 {
+  width: 435px;
+  height: 550px;
+}
+
+/* 3. 로고 및 상징 이미지 영역 */
+section.sec3 {
+  background: url(../image/logoimg.png) center/cover fixed;
+  /*배경 사진*/
+}
+section.sec3 .symbolbg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* 로고 이미지 */
+}
+section.sec3 .symbolbg img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.sec3 .symbolbg .innerlogo {
+  position: absolute;
+  width: 140px;
+  height: 159px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 4. PORTFOLIO 영역 */
+section.sec4 {
+  padding: 0 !important;
+  overflow: hidden;
+  display: block;
+}
+section.sec4 .subtxt {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  font-family: Sometimes;
+  font-weight: 900;
+  font-size: 36px;
+}
+section.sec4 .swiper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section.sec4 .swiper .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  z-index: 1;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide {
+  width: 384px;
+  height: 470px;
+  position: relative !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /*카테고리 hover 동작*/
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box .bg-layer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure {
+  bottom: 50px;
+  z-index: 5;
+  width: 100%;
+  overflow: visible;
+  position: absolute !important;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure figcaption {
+  display: block;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  padding: 0 35px;
+  text-align: left;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure figcaption .cago-en {
+  position: relative;
+  bottom: -140px;
+  transition: all 0.3s ease 0s;
+  font-family: spoka_R;
+  margin-bottom: 8px;
+  transition: all 0.3s ease 0s;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure figcaption .cago-title {
+  position: relative;
+  bottom: -150px;
+  transition: all 0.3s ease 0s;
+  font-size: 24px;
+  font-family: spoka_R;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure figcaption .cago-sub {
+  position: relative;
+  font-size: 14px;
+  font-family: spoka_L;
+  color: #fff;
+  margin-top: 25px;
+  bottom: -40px;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+  width: 90%;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure figcaption .flexible-line {
+  width: 40%;
+  transition: all 0.3s ease 0s;
+  margin-top: 35px;
+  opacity: 0.5;
+  height: 1px;
+  background-color: #fff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover {
+  bottom: 50px;
+  z-index: 5;
+  width: 100%;
+  overflow: visible;
+  position: absolute !important;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover figcaption {
+  display: block;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  padding: 0 35px;
+  text-align: left;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover figcaption .cago-en {
+  position: relative;
+  font-family: spoka_R;
+  margin-bottom: 8px;
+  transition: all 0.3s ease 0s;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #fff;
+  bottom: 0;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover figcaption .cago-title {
+  font-size: 24px;
+  font-family: spoka_R;
+  bottom: -10px;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover figcaption .cago-sub {
+  font-size: 14px;
+  font-family: spoka_L;
+  color: #fff;
+  margin-top: 35px;
+  width: 90%;
+  bottom: 0;
+  opacity: 1;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover figcaption .flexible-line {
+  width: 60%;
+  margin-top: 35px;
+  opacity: 0.5;
+  height: 1px;
+  background-color: #fff;
+}
+
+/*6. CONTACT ME*/
+section.sec5 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 530px;
+  margin-top: 200px;
+}
+section.sec5 div.sec5wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+section.sec5 div.sec5wrap div.img03 {
+  width: 650px;
+  height: 530px;
+  background-image: url(../image/contact.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.sec5 div.sec5wrap div.contactme {
+  width: 30%;
+  display: flex;
+  height: 530px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.sec5 div.sec5wrap div.contactme .over {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.sec5 div.sec5wrap div.contactme p.firstsaying {
+  width: 100%;
+  font-family: Sometimes;
+  font-weight: 900;
+  font-size: 36px;
+}
+section.sec5 div.sec5wrap div.contactme .coninfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.sec5 div.sec5wrap table {
+  align-items: flex-end;
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-collapse: collapse;
+  border-top: 1px solid #2d2d2d;
+  border-bottom: 1px solid #2d2d2d;
+}
+section.sec5 div.sec5wrap table tr {
+  font-size: 13px;
+}
+section.sec5 div.sec5wrap table tr td {
+  line-height: 2em;
+}
+
+/*subpage1_portfolio 영역 */
+section.sec6 {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  /* 포트폴리오 타이틀 및 설명*/
+  /*포트폴리오 그리드*/
+}
+section.sec6 .modal {
+  position: fixed;
+  display: none;
+  z-index: 999;
+  padding-top: 70px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+section.sec6 .modal .modal-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section.sec6 .modal .modal-content .close {
+  padding-bottom: 15px;
+  color: #fff;
+  font-size: 40px;
+  float: right;
+  cursor: pointer;
+}
+section.sec6 .modal .modal-content .close:hover, section.sec6 .modal .modal-content .close:focus {
+  color: black;
+  cursor: pointer;
+}
+section.sec6 .modal .modal-content .p-img {
+  width: 100%;
+  max-width: 1200px;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  scrollbar-width: none;
+  overflow-y: auto;
+}
+section.sec6 p.firstsaying {
+  font-family: Sometimes;
+  font-weight: 900;
+  font-size: 36px;
+  margin-top: 150px;
+  margin-bottom: 160px;
+  display: flex;
+}
+section.sec6 .portfolio-list {
+  margin-top: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+section.sec6 .portfolio-list .p-wrap {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10px, auto));
+  grid-template-rows: 304px;
+  gap: 24px 24px;
+  text-align: center;
+}
+section.sec6 .portfolio-list .p-item {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+section.sec6 .portfolio-list .p-item a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  top: 0;
+}
+section.sec6 .portfolio-list .p-item a:hover {
+  top: -100px;
+}
+section.sec6 .portfolio-list .p-item a .bg-white {
+  overflow: hidden;
+  position: relative;
+}
+section.sec6 .portfolio-list .p-item a .bg-white .p-img {
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+section.sec6 .portfolio-list .p-item a .bg-white .p-img img {
+  width: 384px;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+  top: 0px;
+}
+section.sec6 .portfolio-list .p-item a .bg-white .p-txtbox {
+  position: relative;
+  opacity: 1;
+  padding: 20px;
+  height: auto;
+  top: 0px;
+  transition: all 0.3s ease 0s;
+}
+section.sec6 .portfolio-list .p-item a .bg-white .p-txtbox .p-title {
+  font-size: 16px;
+  font-family: spoka_R;
+  text-align: center;
+}
+section.sec6 .portfolio-list .p-item a .bg-white .p-txtbox .p-sub {
+  font-size: 13px;
+  color: rgb(99, 99, 99);
+  text-align: center;
+}
+
+#modal {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /*모달창 들어가는 내용*/
+}
+#modal .modal_content {
+  width: 100%;
+  height: 6100px;
+  background-color: #2d2d2d;
+  margin-bottom: 50px;
+  z-index: 70;
+}
+#modal .modal_content .modalpage {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  top: 250px;
+  z-index: 80;
+  margin-top: 400px;
+  margin-bottom: 200px;
+  /*노루페인트 홈페이지 설명*/
+  /*스타일시트 소개*/
+  /*인덱스페이지 설명*/
+  /*subpage no1~2 설명*/
+  /*R&D 설명*/
+  /*sub esg경영 및 투자정보*/
+}
+#modal .modal_content .modalpage .modal1 {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 300px;
+  display: flex;
+}
+#modal .modal_content .modalpage .modal1 .moright {
+  margin-left: 100px;
+  margin-bottom: 200px;
+}
+#modal .modal_content .modalpage .modal1 .moright h2 {
+  position: relative;
+  margin: 0 auto;
+  color: #fff;
+  margin-bottom: 50px;
+}
+#modal .modal_content .modalpage .modal1 .moright p {
+  line-height: 1.9em;
+  font-family: spoka_R;
+  margin: 0 auto;
+  color: #fff;
+  margin-bottom: 50px;
+}
+#modal .modal_content .modalpage .modal1 .moright h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+#modal .modal_content .modalpage .modal1 .moright ul {
+  display: flex;
+}
+#modal .modal_content .modalpage .modal1 .moright ul li {
+  border: 1px solid #fff;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+#modal .modal_content .modalpage .modal1 .moright ul li a {
+  color: #fff;
+  padding: 8px 15px;
+}
+#modal .modal_content .modalpage .modal1 h3 {
+  margin-bottom: 20px;
+}
+#modal .modal_content .modalpage .modal2 {
+  display: inline-block;
+  position: relative;
+  margin-top: 500px;
+  width: 1200px;
+  margin: 0 auto;
+}
+#modal .modal_content .modalpage .modal3 {
+  margin-top: 250px;
+  display: flex;
+}
+#modal .modal_content .modalpage .modal3 .sub1title {
+  color: #fff;
+  font-size: 17px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#modal .modal_content .modalpage .modal3 .m3sub {
+  margin-left: 100px;
+  color: #fff;
+  margin-top: 40px;
+}
+#modal .modal_content .modalpage .modal3 .m3sub .header {
+  margin-bottom: 50px;
+}
+#modal .modal_content .modalpage .modal3 .m3sub .slide {
+  margin-bottom: 140px;
+}
+#modal .modal_content .modalpage .modal3 .m3sub .section2 {
+  margin-bottom: 90px;
+}
+#modal .modal_content .modalpage .modal3 .m3sub .sub4 {
+  display: flex;
+  margin-bottom: 15px;
+}
+#modal .modal_content .modalpage .modal3 .m3sub .sub4 div {
+  width: 130px;
+  height: 160px;
+  background-image: url(../image/b1.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+#modal .modal_content .modalpage .modal3 .m3sub .section5 {
+  margin-bottom: 55px;
+}
+#modal .modal_content .modalpage .modal4 {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 250px;
+}
+#modal .modal_content .modalpage .modal4 .sub_group1 {
+  display: flex;
+}
+#modal .modal_content .modalpage .modal4 .sub_group1 .sub1title {
+  color: #fff;
+  font-size: 17px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#modal .modal_content .modalpage .modal4 .sub_group1 .subinfo_01_1 {
+  justify-content: space-between;
+}
+#modal .modal_content .modalpage .modal4 .sub_group1 .subinfo_01_1 .slide01 {
+  margin-top: 70px;
+  width: 150px;
+  color: #fff;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+#modal .modal_content .modalpage .modal4 .sub_group1 .subinfo_01_1 .company_p {
+  margin-top: 100px;
+  width: 150px;
+  color: #fff;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+#modal .modal_content .modalpage .modal4 .sub_group2 {
+  display: flex;
+}
+#modal .modal_content .modalpage .modal4 .sub_group2 .subinfo_01_2 {
+  justify-content: space-between;
+}
+#modal .modal_content .modalpage .modal4 .sub_group2 .subinfo_01_2 .slide02 {
+  margin-top: 70px;
+  color: #fff;
+  width: 150px;
+  margin-right: 30px;
+  margin-left: 40px;
+}
+#modal .modal_content .modalpage .modal4 .sub_group2 .subinfo_01_2 .cago_p {
+  margin-top: 480px;
+  color: #fff;
+  width: 150px;
+  margin-right: 30px;
+  margin-left: 40px;
+}
+#modal .modal_content .modalpage .modal4 .sub_group2 .sub1title {
+  color: #fff;
+  font-size: 17px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#modal .modal_content .modalpage .modal4 .sub_group2 .cagoimg {
+  margin-top: 100px;
+  width: 300px;
+}
+#modal .modal_content .modalpage .modal5 {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 250px;
+  margin-bottom: 300px;
+}
+#modal .modal_content .modalpage .modal5 .sub_group3_1 {
+  display: flex;
+}
+#modal .modal_content .modalpage .modal5 .sub_group3_1 .sub1title {
+  color: #fff;
+  font-size: 17px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#modal .modal_content .modalpage .modal5 .sub_group3_1 .subinfo_01_1 {
+  justify-content: space-between;
+}
+#modal .modal_content .modalpage .modal5 .sub_group3_1 .subinfo_01_1 .info3_1 {
+  margin-top: 70px;
+  width: 150px;
+  color: #fff;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+#modal .modal_content .modalpage .modal5 .sub_group3_1 .subinfo_01_1 .company_p {
+  margin-top: 100px;
+  width: 150px;
+  color: #fff;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+#modal .modal_content .modalpage .modal5 .sub_group3_2 {
+  display: flex;
+}
+#modal .modal_content .modalpage .modal5 .sub_group3_2 .info_03_2 {
+  justify-content: space-between;
+}
+#modal .modal_content .modalpage .modal5 .sub_group3_2 .info3_2 {
+  margin-top: 70px;
+  color: #fff;
+  width: 150px;
+  margin-right: 30px;
+  margin-left: 40px;
+}
+#modal .modal_content .modalpage .modal5 .sub_group3_2 .sub3title {
+  color: #fff;
+  font-size: 17px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#modal .modal_content .modalpage .modal6 {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 250px;
+  margin-bottom: 300px;
+}
+#modal .modal_content .modalpage .modal6 .sub_group4_1 {
+  display: flex;
+}
+#modal .modal_content .modalpage .modal6 .sub_group4_1 .sub4title {
+  color: #fff;
+  font-size: 17px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#modal .modal_content .modalpage .modal6 .sub_group4_1 .subinfo_04_1 {
+  justify-content: space-between;
+}
+#modal .modal_content .modalpage .modal6 .sub_group4_1 .subinfo_04_1 .info4_1 {
+  margin-top: 70px;
+  width: 150px;
+  color: #fff;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+#modal .modal_content .modalpage .modal6 .sub_group4_2 {
+  display: flex;
+}
+#modal .modal_content .modalpage .modal6 .sub_group4_2 .info_04_2 {
+  justify-content: space-between;
+}
+#modal .modal_content .modalpage .modal6 .sub_group4_2 .info4_2 {
+  margin-top: 70px;
+  color: #fff;
+  width: 150px;
+  margin-right: 30px;
+  margin-left: 40px;
+}
+#modal .modal_content .modalpage .modal6 .sub_group4_2 .sub4title {
+  color: #fff;
+  font-size: 17px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#modal .modal_content .modalpage .modal_close_btn {
+  margin-left: 300px;
+}
+#modal .modal_content .modalpage .modal_close_btn p {
+  color: #fff;
+}
+
+#modal2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /*모달창 들어가는 내용*/
+}
+#modal2 .modal_content {
+  width: 100%;
+  height: 4500px;
+  background-color: #2d2d2d;
+  margin-bottom: 50px;
+  z-index: 70;
+}
+#modal2 .modal_content .modalpage {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  top: 250px;
+  z-index: 80;
+  margin-top: 400px;
+  margin-bottom: 200px;
+  /*노루페인트 홈페이지 설명*/
+  /*스타일시트 소개*/
+  /*인덱스페이지 설명*/
+  /*subpage no1~2 설명*/
+}
+#modal2 .modal_content .modalpage .modal1 {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 300px;
+  display: flex;
+}
+#modal2 .modal_content .modalpage .modal1 .moright {
+  margin-left: 100px;
+  margin-bottom: 200px;
+}
+#modal2 .modal_content .modalpage .modal1 .moright h2 {
+  position: relative;
+  margin: 0 auto;
+  color: #fff;
+  margin-bottom: 50px;
+}
+#modal2 .modal_content .modalpage .modal1 .moright p {
+  line-height: 1.9em;
+  font-family: spoka_R;
+  margin: 0 auto;
+  color: #fff;
+  margin-bottom: 50px;
+}
+#modal2 .modal_content .modalpage .modal1 .moright h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+#modal2 .modal_content .modalpage .modal1 .moright ul {
+  display: flex;
+}
+#modal2 .modal_content .modalpage .modal1 .moright ul li {
+  border: 1px solid #fff;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+#modal2 .modal_content .modalpage .modal1 .moright ul li a {
+  color: #fff;
+  padding: 8px 15px;
+}
+#modal2 .modal_content .modalpage .modal1 h3 {
+  margin-bottom: 20px;
+}
+#modal2 .modal_content .modalpage .modal2 {
+  display: inline-block;
+  position: relative;
+  margin-top: 500px;
+  width: 1200px;
+  margin: 0 auto;
+}
+#modal2 .modal_content .modalpage .modal3 {
+  margin-top: 250px;
+  display: flex;
+}
+#modal2 .modal_content .modalpage .modal3 .sub1title {
+  color: #fff;
+  font-size: 17px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#modal2 .modal_content .modalpage .modal3 .m3sub {
+  margin-left: 100px;
+  color: #fff;
+  margin-top: 40px;
+}
+#modal2 .modal_content .modalpage .modal3 .m3sub .header {
+  margin-bottom: 50px;
+}
+#modal2 .modal_content .modalpage .modal3 .m3sub .slide {
+  margin-bottom: 140px;
+}
+#modal2 .modal_content .modalpage .modal3 .m3sub .section2 {
+  margin-bottom: 90px;
+}
+#modal2 .modal_content .modalpage .modal3 .m3sub .sub4 {
+  display: flex;
+  margin-bottom: 15px;
+}
+#modal2 .modal_content .modalpage .modal3 .m3sub .sub4 div {
+  width: 130px;
+  height: 160px;
+  background-image: url(../image/b1.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+#modal2 .modal_content .modalpage .modal3 .m3sub .section5 {
+  margin-bottom: 55px;
+}
+#modal2 .modal_content .modalpage .modal4 {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 250px;
+}
+#modal2 .modal_content .modalpage .modal4 .sub_group1 {
+  display: flex;
+}
+#modal2 .modal_content .modalpage .modal4 .sub_group1 .sub1title {
+  color: #fff;
+  font-size: 17px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#modal2 .modal_content .modalpage .modal4 .sub_group1 .subinfo_01_1 {
+  justify-content: space-between;
+}
+#modal2 .modal_content .modalpage .modal4 .sub_group1 .subinfo_01_1 .slide01 {
+  margin-top: 70px;
+  width: 150px;
+  color: #fff;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+#modal2 .modal_content .modalpage .modal4 .sub_group1 .subinfo_01_1 .company_p {
+  margin-top: 100px;
+  width: 150px;
+  color: #fff;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+#modal2 .modal_content .modalpage .modal4 .sub_group2 {
+  display: flex;
+}
+#modal2 .modal_content .modalpage .modal4 .sub_group2 .subinfo_01_2 {
+  justify-content: space-between;
+}
+#modal2 .modal_content .modalpage .modal4 .sub_group2 .subinfo_01_2 .slide02 {
+  margin-top: 70px;
+  color: #fff;
+  width: 150px;
+  margin-right: 30px;
+  margin-left: 40px;
+}
+#modal2 .modal_content .modalpage .modal4 .sub_group2 .subinfo_01_2 .cago_p {
+  margin-top: 480px;
+  color: #fff;
+  width: 150px;
+  margin-right: 30px;
+  margin-left: 40px;
+}
+#modal2 .modal_content .modalpage .modal4 .sub_group2 .sub1title {
+  color: #fff;
+  font-size: 17px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#modal2 .modal_content .modalpage .modal4 .sub_group2 .cagoimg {
+  margin-top: 100px;
+  width: 300px;
+}
+#modal2 .modal_content .modalpage .modal_close_btn2 {
+  margin-left: 300px;
+}
+#modal2 .modal_content .modalpage .modal_close_btn2 p {
+  color: #fff;
+}
+
+/*위로가기 버튼*/
+#up-too {
+  opacity: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  font-family: Sometimes;
+  font-weight: 900;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  box-shadow: 3px 3px 3px rgb(109, 109, 109), -3px -3px 3px rgb(237, 237, 237);
+  transition: 0.3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
+
+#up-too.on {
+  opacity: 1;
+}
+
+footer {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: spoka_R;
+  background-color: #2d2d2d;
+  color: #fff;
+  margin-top: 150px;
+}
+footer .footerwrap {
+  bottom: 0;
+  position: relative;
+  vertical-align: middle;
+}
+footer .footerwrap p {
+  line-height: 1.7em;
+  text-align: center;
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */
