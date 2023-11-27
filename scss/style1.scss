@@ -1,0 +1,531 @@
+/*자세히보기 버튼 스타일*/
+.btn-view {
+  position: relative;
+  bottom: 5px;
+  margin-left: 50px;
+  font-family: spoka_R;
+  font-size: 13px;
+  background-color: transparent;
+  color: #2d2d2d;
+  border-color: #2d2d2d;
+  border-bottom: 1px solid #2d2d2d;
+  box-sizing: border-box;
+  padding: 3px 5px;
+  line-height: 15px;
+  transition: transform 0.3s ease;
+  transform: scaleY(0);
+  &:hover {
+    color: #fff;
+    font-family: spoka_L;
+    font-weight: 500;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d2d2d;
+    border-color: #2d2d2d;
+    box-sizing: border-box;
+    transform: scaleY(0);
+    transition: 0.5s;
+    transform-origin: left bottom;
+    z-index: -1;
+  }
+  &:hover:after {
+    transform: scaleY(1);
+  }
+}
+/* 1. 인사말 영역*/
+section.sec1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  p.firstsaying {
+    font-family: Sometimes;
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 90px;
+    display: flex;
+  }
+  .sec1-sub {
+    position: sticky;
+    margin-top: 150px;
+    right: 0;
+    width: 65%;
+    font-family: spoka_R;
+    flex-grow: 1;
+  }
+}
+.verticaltxt {
+  font-size: 12px;
+}
+.img01 {
+  width: 100%;
+  margin: 0 auto;
+  height: 450px;
+  background: url(../image/topslide_01.png) center/cover;
+  margin-top: 100px;
+}
+/* 2. KangSeonga 소개 영역*/
+section.sec2 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 250px;
+  p.firstsaying {
+    font-family: Sometimes;
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 90px;
+  }
+  .sec2wrap {
+    width: 100wh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    .myself {
+      width: 30%;
+      line-height: 1.8em;
+    }
+    .img02 {
+      width: 475px;
+      height: 600px;
+    }
+  }
+}
+/* 3. 로고 및 상징 이미지 영역 */
+section.sec3 {
+  margin-top: 250px;
+  background: url(../image/logoimg.png) center/cover fixed;
+
+  /*배경 사진*/
+  .symbolbg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* 로고 이미지 */
+    .innerlogo {
+      position: absolute;
+      width: 140px;
+      height: 159px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+/* 4. PORTFOLIO 영역 */
+.subtxt {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 300px;
+  margin-bottom: 100px;
+  font-family: Sometimes;
+  font-weight: 900;
+  font-size: 36px;
+}
+/*포트폴리오 스와이퍼*/
+section.sec4 {
+  padding: 0 !important;
+  overflow: hidden;
+  display: block;
+  .swiper {
+    max-width: 1200px;
+    margin: 0 auto;
+    .swiper-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 100%;
+      z-index: 1;
+      transition-property: transform;
+      box-sizing: content-box;
+      .swiper-slide {
+        width: 384px;
+        height: 470px;
+        position: relative !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        .slide-hover-box {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+          .bg-layer {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+          }
+          figure {
+            bottom: 50px;
+            z-index: 5;
+            width: 100%;
+            overflow: visible;
+            position: absolute !important;
+            figcaption {
+              display: block;
+              left: 0;
+              right: 0;
+              opacity: 1;
+              padding: 0 35px;
+              text-align: left;
+              .cago-en {
+                position: relative;
+                bottom: -140px;
+                transition: all 0.3s ease 0s;
+                font-family: spoka_R;
+                margin-bottom: 8px;
+                transition: all 0.3s ease 0s;
+                font-size: 13px;
+                letter-spacing: 1px;
+                color: #fff;
+                text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+              }
+              .cago-title {
+                position: relative;
+                bottom: -150px;
+                transition: all 0.3s ease 0s;
+                font-size: 24px;
+                font-family: spoka_R;
+                transition: all 0.3s ease 0s;
+                color: #fff;
+                text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+              }
+              .cago-sub {
+                position: relative;
+                font-size: 14px;
+                font-family: spoka_L;
+                color: #fff;
+                margin-top: 25px;
+                bottom: -40px;
+                transition: all 0.3s ease 0s;
+                opacity: 0;
+                width: 90%;
+                text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+              }
+              .flexible-line {
+                width: 40%;
+                transition: all 0.3s ease 0s;
+                margin-top: 35px;
+                opacity: 0.5;
+                height: 1px;
+                background-color: #fff;
+                text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+              }
+            }
+          }
+          /*카테고리 hover 동작*/
+          figure:hover {
+            bottom: 50px;
+            z-index: 5;
+            width: 100%;
+            overflow: visible;
+            position: absolute !important;
+            figcaption {
+              display: block;
+              left: 0;
+              right: 0;
+              opacity: 1;
+              padding: 0 35px;
+              text-align: left;
+              .cago-en {
+                position: relative;
+                font-family: spoka_R;
+                margin-bottom: 8px;
+                transition: all 0.3s ease 0s;
+                font-size: 13px;
+                letter-spacing: 1px;
+                color: #fff;
+                bottom: 0;
+              }
+              .cago-title {
+                font-size: 24px;
+                font-family: spoka_R;
+                bottom: -10px;
+                transition: all 0.3s ease 0s;
+                color: #fff;
+              }
+              .cago-sub {
+                font-size: 14px;
+                font-family: spoka_L;
+                color: #fff;
+                margin-top: 35px;
+                width: 90%;
+                bottom: 0;
+                opacity: 1;
+              }
+              .flexible-line {
+                width: 60%;
+                margin-top: 35px;
+                opacity: 0.5;
+                height: 1px;
+                background-color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*스와이퍼 프로그래스바 위치 설정*/
+    .swiper-pagination {
+      position: relative;
+      margin-top: 60px !important;
+    }
+  }
+}
+/*6. CONTACT ME*/
+section.sec5 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 530px;
+  margin-top: 200px;
+  div.sec5wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    div.img03 {
+      width: 650px;
+      height: 530px;
+      background-image: url(../image/contact.png);
+      object-fit: cover;
+    }
+    div.contactme {
+      width: 30%;
+      display: flex;
+      height: 530px;
+      flex-direction: column;
+      justify-content: space-between;
+      .over {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      p.firstsaying {
+        width: 100%;
+        font-family: Sometimes;
+        font-weight: 900;
+        font-size: 36px;
+      }
+      .coninfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+    table {
+      align-items: flex-end;
+      display: block;
+      position: relative;
+      width: 100%;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      border-collapse: collapse;
+      border-top: 1px solid #2d2d2d;
+      border-bottom: 1px solid #2d2d2d;
+      tr {
+        font-size: 13px;
+        td {
+          line-height: 2em;
+        }
+      }
+    }
+  }
+}
+
+/*subpage1_portfolio 영역 */
+section.sec6 {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  //모달창을 감싸고 있는 최상위 부모
+  #modalwrap {
+    position: fixed;
+    display: none;
+    z-index: 122;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    #modalBody {
+      max-width: 1200px;
+      margin: 0 auto;
+
+      #close-btn {
+        top: 70px;
+        float: right;
+        font-weight: 900;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      .item-img {
+        width: 100%;
+        max-width: 1200px;
+        height: 80vh;
+        object-fit: cover;
+        scrollbar-width: none;
+        overflow-y: auto;
+      }
+    }
+  }
+
+  /* 포트폴리오 타이틀 및 설명*/
+  p.firstsaying {
+    font-family: Sometimes;
+    font-weight: 900;
+    font-size: 36px;
+    margin-top: 150px;
+    margin-bottom: 160px;
+    display: flex;
+  }
+
+  /*포트폴리오 그리드*/
+  .portfolio-list {
+    margin-top: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+    .p-wrap {
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(50px, auto));
+      grid-template-rows: 384px;
+      gap: 24px 24px;
+      text-align: center;
+    }
+    .p-item {
+      position: relative;
+      height: 300px;
+      overflow: hidden;
+      a {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        top: 0;
+        &:hover {
+          top: -100px;
+        }
+        .bg-white {
+          overflow: hidden;
+          position: relative;
+          .p-img {
+            position: relative;
+            transition: all 0.3s ease 0s;
+            img {
+              width: 384px;
+              height: 300px;
+              object-fit: cover;
+              vertical-align: middle;
+              top: 0px;
+            }
+          }
+          .p-txtbox {
+            position: relative;
+            opacity: 1;
+            padding: 20px;
+            height: auto;
+            top: 0px;
+            // border: 1px solid #ce0e2d;
+            transition: all 0.3s ease 0s;
+            .p-title {
+              font-size: 16px;
+              font-family: spoka_R;
+              text-align: center;
+            }
+            .p-sub {
+              font-size: 13px;
+              color: rgb(99, 99, 99);
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.toptab {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  .sub2nav {
+    display: flex;
+    li {
+      margin-right: 4%;
+    }
+    a:hover {
+      font-weight: 900;
+      color: #ce0e2d;
+    }
+  }
+}
+
+#up-too {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  font-family: Sometimes;
+  font-weight: 900;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  box-shadow: 3px 3px 3px rgb(109, 109, 109), -3px -3px 3px rgb(237, 237, 237);
+  transition: 0.3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: spoka_R;
+  background-color: #2d2d2d;
+  color: #fff;
+  margin-top: 150px;
+  .footerwrap {
+    position: relative;
+    vertical-align: middle;
+    p {
+      line-height: 1.7em;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+}
