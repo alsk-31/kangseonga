@@ -60,6 +60,9 @@ header ul.left li:first-child {
 header ul.right {
   height: 70px;
 }
+header ul li {
+  margin-left: 20px;
+}
 .right li:first-child {
   position: relative;
 }
@@ -147,8 +150,10 @@ header .right div#side {
   background: rgb(255, 241, 214);
   transition: right 0.5s ease-in-out;
   z-index: 100;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
   -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -250,7 +255,7 @@ ul.navmenu li ul.namenav {
   color: #333;
 }
 .submenu .lnb > ul > li a:hover {
-  color: #E25E3E;
+  color: #e25e3e;
   font-weight: 800;
 }
 header .hright {
