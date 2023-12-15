@@ -14,6 +14,7 @@ html, body{height:100%; font-size:14px; line-height:1.2; color: #595757;}
 :root{
 	--text-color1:#f0f4f5; /* color: var(--textcolor); */
 	--text-color2:#595757;
+	--text-color3:#3e3a39;
 	--background-color: #fff;
 	--accent-color: #000;
 }
