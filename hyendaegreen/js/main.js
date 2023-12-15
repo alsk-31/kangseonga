@@ -3,27 +3,23 @@ document.addEventListener('DOMContentLoaded',function(){
     let navList = document.querySelector(".gnb > ul ")
 
     navList.addEventListener("mouseover",() => {
-        navList.querySelectorAll(".gnb_sub").forEach(sub => {
-            sub.style.height = "100%"
-        });
         document.getElementById("header").classList.add("on");
     });
 
     navList.addEventListener("mouseout",() => {
-        navList.querySelectorAll(".gnb_sub").forEach(sub => {
-            sub.style.height = "0px"
-        });
         document.getElementById("header").classList.remove("on");
     });
 
+
+    
     // 메뉴아이콘 클릭시 이벤트 
-    document.getElementById("all").onclick = function () {
-        this.classList.toggle("menu01");
-        document.getElementById("one").classList.toggle("bar1");
-        document.getElementById("two").classList.toggle("bar2");
-        document.getElementById("three").classList.toggle("bar3");
-        document.getElementById("gnb").classList.toggle("box");
-      };
+    let barBtn = document.querySelector(".all")
+    let gnb = document.querySelector(".gnb")
+    
+    barBtn.addEventListener("click",() => {
+        barBtn.classList.toggle('on')
+        gnb.classList.toggle('on')
+    })
 
 
   

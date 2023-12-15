@@ -1,5 +1,10 @@
 @charset "utf-8";
-
+:root{
+	--text-color1:#f0f4f5;
+	--text-color2:#595757;
+	--background-color: #fff;
+	--accent-color: 
+}
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, img, strong, dl, dt, dd, ol, ul, li, 
 fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, address, a, select, input, textarea,
@@ -68,11 +73,11 @@ input, textarea, button {
 .header .link_area > li > a{display: block;position: relative;width: 56px;line-height: 56px;font-size: 16px;color: #fff;border-radius: 50%;}
 .header .link_area > li:hover{background: rgba(255,255,255,0.8);}
 .header .link_area > li:hover > a{background-color: #fff;}
-.header .link_area > li:hover a{color: #595757;}
+.header .link_area > li:hover a{color: var(--text-color2);}
 .header .link_area .language{position: relative;margin-left: 10px;}
 .header .link_area .language > ul{transition: all 0.3s;max-height: 0;border-radius: 30px;overflow: hidden;z-index: -1;}
 .header .link_area .language > ul li{margin: 15px 0;}
-.header .link_area .language > ul li a{position: relative;color: #595757;}
+.header .link_area .language > ul li a{position: relative;color: var(--text-color2);}
 .header .link_area .language > ul li a:after{position: absolute; left: 0; bottom: 0; width: 0; height: 2px; content: ''; z-index: 1; background: #91af96;transition: all 0.5s;}
 .header .link_area .language > ul li:hover a{font-weight: 500;}
 .header .link_area .language > ul li:hover a:after{width: 100%;}
@@ -80,7 +85,7 @@ input, textarea, button {
 
 .header.on:after{height: 100%;background: #fff;}
 .header.on .logo{background-image: url('/Contents/images/header/logo.png');}
-.header.on a{font-weight: 500;color: #595757 !important;}
+.header.on a{font-weight: 500;color: var(--text-color2) !important;}
 .header.on .gnb_area .gnb .gnb_sub_area{max-height: 100vh;opacity: 1;}
 .header.on .header .gnb_area .gnb .gnb_sub li a{font-weight: normal;}
 .header.on .link_area > li{border-color: #636161;}

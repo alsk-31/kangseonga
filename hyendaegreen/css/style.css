@@ -11,6 +11,12 @@
 
 * {padding: 0; margin: 0; box-sizing: border-box; font-family: NotoSansKR-Medium;} 
 html, body{height:100%; font-size:14px; line-height:1.2; color: #595757;}
+:root{
+	--text-color1:#f0f4f5; /* color: var(--textcolor); */
+	--text-color2:#595757;
+	--background-color: #fff;
+	--accent-color: #000;
+}
 a {text-decoration: none;color: inherit;}
 li, ul, ol {list-style: none;}
 img{border:0;}
@@ -68,9 +74,6 @@ header,footer,section,article,aside,nav,hgroup,details,menu,figure,figcaption{di
 .header.on .gnb_area .gnb .gnb_sub_area{max-height: 100vh; opacity: 1;}
 .header.on header .gnb_area .gnb li a {font-weight: normal;}
 .header.on .link_area > li{border-color: #636161;}
-/*자바스크립트용 css*/
-nav > ul > li > ul { display: block;  height: 0; overflow: hidden; transition: all 200ms;} 
-
 
 /* 슬라이드 */
 .main-visual{background: url(../images/visual_img.jpg) center/cover no-repeat; width: 100%; height: 100vh; position: relative;}
@@ -211,7 +214,7 @@ and (max-width: 1023px)
   .header .gnb_area .all.on span:nth-child(1){transform: translateY(13px) rotate(45deg);}
   .header .gnb_area .all.on span:nth-child(2){opacity: 0;}
   .header .gnb_area .all.on span:nth-child(3){transform: translateY(-13px) rotate(-45deg);}
-  /* .header .gnb_area .gnb{opacity: 0;} */
+  .header .gnb_area .gnb{opacity: 0;}
   .header .gnb_area .gnb > ul{ position: fixed; right: 0; top: 0; padding-top: 100px; width: 370px; height: 100vh; background: #fff; transition: 0.3s; box-sizing: border-box; }
   .header .gnb_area .gnb > ul::after{position: absolute; content: ''; left: 160px; top: 0; width: 1px; height: 100vh; background: #ccc;}
   .header .gnb_area .gnb > ul > li{display: flex;margin: 0 0 30px 0;padding-left: 40px;width: auto;text-align: left;}
