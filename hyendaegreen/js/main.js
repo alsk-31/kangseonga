@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded',function(){
 
     
     // 메뉴아이콘 클릭시 이벤트 
-    let barBtn = document.querySelector(".all")
-    let gnb = document.querySelector(".gnb")
+    // let barBtn = document.querySelector(".all")
+    // let gnb = document.querySelector(".gnb")
     
-    barBtn.addEventListener("click",() => {
-        barBtn.classList.toggle('on')
-        gnb.classList.toggle('on')
-    })
+    // barBtn.addEventListener("click",() => {
+    //     barBtn.classList.toggle('on')
+    //     gnb.classList.toggle('on')
+    // })
 
 
   
