@@ -186,12 +186,9 @@ main .comm_area.company{margin-top: 25px; height: 1001px; background: url(../ima
 
 /* 사이트맵 오른쪽 */
 .footer .footer_family{display: flex;  position: relative;}
-.footer .footer_family .family_site{margin-left: 5px; }
-input[type="button"]{vertical-align: middle;}
-.footer .footer_family input[type="button"].btn_family_site{width: 209px; height: 42px; text-align: left; padding-left: 20px; color: #888;
-  border: 1px solid #e4e4e4; cursor: pointer; text-indent: 0; background: url(../images/family_arrow.png) no-repeat right 20px center;}
-.footer .footer_family input[type="button"].btn_family_site_open{font-weight: 500; color: #53867e; border-color: #78928e;}
-.footer .footer_family .family_site_list{position: absolute; left: 0; bottom: 41px; width: 100%; border: 1px solid #53867e; box-sizing: border-box; background-color: #fff;}
+.footer .footer_family .family_site{margin-left: 5px; position: relative; }
+.footer .footer_family input[type="button"] .btn_family_site{padding-left: 20px; width: 209px; height: 42px; font-size: 18px;}
+
 
 
 /* ~ 1024px ----------- */
