@@ -26,7 +26,7 @@ article {
   margin: 0 auto;
   margin-top: 150px;
 }
-article > h2 {
+article  h2 {
   width: 1280px;
   text-align: center;
   margin: 0 auto;
@@ -38,7 +38,7 @@ article > p {
 }
 /*베스트셀러 _구역*/
 article .bestcon {
-  margin-top: 40px;
+  margin-top: 80px;
   width: 1280px;
   display: flex;
   justify-content: space-between;
@@ -48,19 +48,19 @@ article .bestcon {
   width: 260px;
   height: 300px;
   border: 1px solid rgb(215, 215, 215);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   object-fit: cover;
 }
 p#ptitle {
-  font-size: 18px;
+  font-size: 20px;
   font-family: notosans;
   font-weight: 800;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 p#psub {
   font-family: notosans;
-  font-size: 13px;
-  line-height: 1.6em;
+  font-size: 14px;
+  line-height: 1.4em;
   color: rgb(124, 124, 124);
 }
 h3 {
@@ -75,7 +75,7 @@ h3 {
 /*베스트셀러 -상품 정보, 아이콘 서식*/
 #ibtn p.m {
   font-family: notosans;
-  font-size: 11px;
+  font-size: 13px;
   margin-top: 10px;
   margin-right: 5px;
   text-align: center;
@@ -130,7 +130,7 @@ h3 {
   margin-top: 10px;
   width: 1280px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 .banner .special {
   margin: 0 auto;

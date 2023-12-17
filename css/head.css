@@ -14,6 +14,10 @@
   font-family: Sometimes;
   src: url(../webfont/SongMyung-Regular.woff) format("woff");
 }
+@font-face {
+  font-family: Sometimes1;
+  src: url(../webfont/Sometimes\ Times.woff) format("woff");
+}
 * {
   margin: 0;
   padding: 0;
@@ -25,13 +29,14 @@ ul {
 
 a {
   text-decoration: none;
-  color: #2d2d2d;
+  color: inherit;
 }
 
 body {
   font-family: spoka_R;
   font-size: 16px;
   line-height: 1.7em;
+  color: #595757;
 }
 
 header {
@@ -78,9 +83,9 @@ header .topmenu nav ul li a {
   color: #5b5b5b;
 }
 header .topmenu nav ul a:hover {
-  font-weight: 900;
   color: #bc8f8f;
 }
+header .topmenu .hcolor{ color: #bc8f8f !important;}
 header .topmenu .menu #side {
   display: none;
   top: 80px;

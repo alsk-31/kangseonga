@@ -30,14 +30,14 @@ a {
 body {
   position: relative;
   font-family: notosans;
-  font-size: 14px;
+  font-size: 16px;
 }
 header {
   position: relative;
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 70px;
+  height: 80px;
   align-items: center;
 }
 header .hright {
@@ -147,7 +147,7 @@ header .right div#side {
   height: 100%;
   right: -860px;
   top: 0;
-  background: rgb(255, 241, 214);
+  background: rgb(255, 251, 243);
   transition: right 0.5s ease-in-out;
   z-index: 100;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
@@ -232,7 +232,7 @@ ul.navmenu li ul.namenav {
   width: 100%;
   height: 0;
   left: 0;
-  top: 70px;
+  top: 80px;
   background: rgba(255, 255, 255, 0.8);
   overflow: hidden;
   transition: height 0.5s;
@@ -244,10 +244,10 @@ ul.navmenu li ul.namenav {
 }
 .submenu .lnb ul {
   position: relative;
-  left: 195px;
+  left: 175px;
 }
 .submenu .lnb > ul > li {
-  line-height: 70px;
+  line-height: 80px;
   text-align: center;
   margin-right: 30px;
 }
@@ -264,3 +264,4 @@ header .hright {
 header .top_left .logo {
   align-self: center;
 }
+.subfont{font-size: 18px;}
