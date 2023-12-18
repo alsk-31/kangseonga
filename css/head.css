@@ -21,6 +21,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
@@ -65,20 +66,15 @@ header .topmenu .top_left img {
   vertical-align: middle;
 }
 header .topmenu nav {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
-  margin: 0 auto;
   font-size: 16px;
 }
 header .topmenu nav ul {
   width: 100%;
-  margin-left: 5%;
   display: flex;
+  justify-content: right;
 }
-header .topmenu nav ul li {
-  margin-right: 4%;
-}
+header .topmenu nav ul li{padding-left: 4%;}
 header .topmenu nav ul li a {
   color: #5b5b5b;
 }
@@ -86,21 +82,3 @@ header .topmenu nav ul a:hover {
   color: #bc8f8f;
 }
 header .topmenu .hcolor{ color: #bc8f8f !important;}
-header .topmenu .menu #side {
-  display: none;
-  top: 80px;
-  width: 200px;
-  height: 200px;
-  background: #ccc;
-  position: absolute;
-}
-header .topmenu .menu #side ul.navmenu {
-  margin-left: 30px;
-  line-height: 1.8em;
-}
-header .topmenu .menu #side ul.navmenu .navtitle {
-  margin-top: 30px;
-}
-header .topmenu .menu #side ul.navmenu .navtitle ul.nlist {
-  font-size: 13px;
-}/*# sourceMappingURL=head.css.map */
