@@ -37,6 +37,7 @@
 .btn-view:hover:after {
   transform: scaleY(1);
 }
+.pageon{color:#B8ABA5;}
 
 section {
   height: 100vh;
