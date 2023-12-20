@@ -47,7 +47,8 @@ header {
   height: 80px;
   line-height: 80px;
   margin: 0 auto;
-  font-family: spoka_R;
+  font-family: Sometimes;
+  font-weight: 700;
   background-color: #fff;
   position: fixed;
   z-index: 50;
@@ -79,6 +80,6 @@ header .topmenu nav ul li a {
   color: #5b5b5b;
 }
 header .topmenu nav ul a:hover {
-  color: #bc8f8f;
+  color: #B8ABA5;
 }
-header .topmenu .hcolor{ color: #bc8f8f !important;}
+header .topmenu .hcolor{ color: #B8ABA5 !important;}
