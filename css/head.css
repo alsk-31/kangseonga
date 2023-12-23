@@ -29,9 +29,8 @@
 	--text-color1:rgba(0,0,0,0.8);
 	--text-color2:rgba(0,0,0,0.4);
 	--text-color3:rgba(0,0,0,0.6);
-	--text-color4:#CC4B4B;
 	--background-color: #f4f4f4;
-	--accent-color: #000;
+	--accent-color: #CC4B4B;
 }
 
 ul {list-style: none;}
@@ -80,10 +79,6 @@ header .topmenu nav ul {
   justify-content: right;
 }
 header .topmenu nav ul li{padding-left: 4%;}
-header .topmenu nav ul li a {
-  color: #5b5b5b;
-}
-header .topmenu nav ul a:hover {
-  color: #B8ABA5;
-}
-header .topmenu .hcolor{ color: #B8ABA5 !important;}
+
+header .topmenu nav ul a:hover {color: var(	--accent-color);}
+header .topmenu .hcolor{color: var(	--accent-color) !important;}
