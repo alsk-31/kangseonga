@@ -1,0 +1,583 @@
+@charset "UTF-8";
+/*자세히보기 버튼 스타일*/
+.btn-view {
+  position: relative;
+  bottom: 5px;
+  margin-left: 50px;
+  font-family: pre_L;
+  font-size: 12px;
+  background-color: transparent;
+  color: #2d2d2d;
+  border-bottom: 1px solid #2d2d2d;
+  box-sizing: border-box;
+  padding: 3px 5px;
+  line-height: 12px;
+  transition: transform 0.3s ease;
+  transform: scaleY(0);
+}
+.btn-view:hover {
+  color: #fff;
+  font-family: pre_L;
+}
+.btn-view:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2d2d2d;
+  box-sizing: border-box;
+  transform: scaleY(0);
+  transition: 0.5s;
+  transform-origin: left bottom;
+  z-index: -1;
+}
+.btn-view:hover:after {
+  transform: scaleY(1);
+}
+.pageon{color:#B8ABA5;}
+
+section {
+  height: 100vh;
+}
+
+/* 1. 로고 및 상징 이미지 영역 */
+
+/*배경 사진*/
+section.sec1 {background: url(../image/logoimg.png) center/cover fixed;}
+.sec1 .symbolbg {position: relative; width: 100%; height: 100vh;}
+/* 로고 이미지 */
+.sec1 .symbolbg img {position: absolute;left: 0;top: 0; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;}
+.sec1 .symbolbg .innerlogo { position: absolute; width: 140px; height: 159px; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+/* 2. KangSeonga 소개 영역*/
+section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
+.sec2 .section_title{
+  font-family: pre_Bk;
+  font-size: 60px;
+  padding-top: 130px;
+}
+.sec2 .sec2wrap {
+  margin-top: 110px;
+  width: 100wh;
+  display: flex;
+}
+.left_con{width: 588px;}
+.sec2 .sec2wrap .left_con .imgbox {
+  width: 588px;
+  height: 290px;
+  border-radius: 20px;
+  background: url(../image/myself.png) no-repeat ;
+}
+.sec2 .sec2wrap .right_con {
+  line-height: 1.6em;
+  margin-left: 130px;
+}
+/* 사용가능한 툴 */
+.tool_wrap{display: flex; justify-content: space-between; width: 340px;}
+.tool{width: 100px;}
+.tool .g_graph{position: relative; padding: 8px 0;}
+.tool .g_graph img{display: block;}
+.tool .g_graph .graph{position: absolute; top: 38%; left: 52%;}
+
+/* 막대( % 표시)*/
+.graph{width: 140px; height: 12px; background-color: #f4f4f4; border-radius: 14px}
+.graph span{display: block; height: 12px; line-height: 14px; text-align: right;  border-radius: 12px; box-sizing: border-box; color: #fff; font-size: 12px;}
+.graph.stack1 span{animation: stack1 3s 1; background: #258FD5; opacity: 0.7; box-shadow: initial;}
+.graph.stack2 span{animation: stack2 3s 1; background: #D67B00; opacity: 0.7;}
+.graph.stack3 span{animation: stack3 3s 1; background: #E44D26; opacity: 0.7;}
+.graph.stack4 span{animation: stack4 3s 1; background: #369AD6; opacity: 0.7;}
+.graph.stack5 span{animation: stack5 3s 1; background: #FDCD00; opacity: 0.7;}
+.graph.stack6 span{animation: stack6 3s 1; background: #79CEF4; opacity: 0.7;}
+.graph.stack7 span{animation: stack7 3s 1; background: #A259FF; opacity: 0.7;}
+.graph.stack8 span{animation: stack8 3s 1; background: #E51050; opacity: 0.7;}
+
+@keyframes stack1{
+  0%{width: 0; color: rgba(255, 255, 255, 0);}
+  40%{color: rgba(255, 255, 255, 1);}
+  100%{width: 85%;}
+}
+@keyframes stack2{
+  0%{width: 0; color: rgba(255, 255, 255, 0);}
+  40%{color: rgba(255, 255, 255, 1);}
+  100%{width: 85%;}
+}
+@keyframes stack3{
+  0%{width: 0; color: rgba(255, 255, 255, 0);}
+  40%{color: rgba(255, 255, 255, 1);}
+  100%{width: 75%;}
+}
+@keyframes stack4{
+  0%{width: 0; color: rgba(255, 255, 255, 0);}
+  40%{color: rgba(255, 255, 255, 1);}
+  100%{width: 80%;}
+}
+@keyframes stack5{
+  0%{width: 0; color: rgba(255, 255, 255, 0);}
+  40%{color: rgba(255, 255, 255, 1);}
+  100%{width: 55%;}
+}
+@keyframes stack6{
+  0%{width: 0; color: rgba(255, 255, 255, 0);}
+  40%{color: rgba(255, 255, 255, 1);}
+  100%{width: 60%;}
+}
+@keyframes stack7{
+  0%{width: 0; color: rgba(255, 255, 255, 0);}
+  40%{color: rgba(255, 255, 255, 1);}
+  100%{width: 75%;}
+}
+@keyframes stack8{
+  0%{width: 0; color: rgba(255, 255, 255, 0);}
+  40%{color: rgba(255, 255, 255, 1);}
+  100%{width: 40%;}
+}
+
+
+/* 교육/경력 , 자격사항 */
+.sec2 span.date{font-size: 13px; color: var(--text-color2); letter-spacing: -1px; margin-left: 6px;} 
+.title_l{font-size: 28px; font-family: pre_B; margin-bottom: 28px;}
+
+/* 이러한 노력을 하고 있어요 */
+.myeffort{position: relative; margin-top: 130px; width: 100%; height: 622px; background-color: var(--background-color);}
+.mye_wrap{margin: 0 auto; width: 1200px;}
+
+/* 4. PORTFOLIO 영역 */
+section.sec4 {
+  padding: 0 !important;
+  overflow: hidden;
+  display: block;
+}
+section.sec4 .subtxt {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  font-family: Sometimes;
+  font-weight: 900;
+  font-size: 36px;
+  color: #2d2d2d;
+}
+section.sec4 .swiper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section.sec4 .swiper .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  z-index: 1;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide {
+  width: 384px;
+  height: 470px;
+  position: relative !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /*카테고리 hover 동작*/
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box .bg-layer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure {
+  bottom: 50px;
+  z-index: 5;
+  width: 100%;
+  overflow: visible;
+  position: absolute !important;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure figcaption {
+  display: block;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  padding: 0 35px;
+  text-align: left;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure figcaption .cago-en {
+  position: relative;
+  bottom: -140px;
+  transition: all 0.3s ease 0s;
+  font-family: spoka_R;
+  margin-bottom: 8px;
+  transition: all 0.3s ease 0s;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure figcaption .cago-title {
+  position: relative;
+  bottom: -150px;
+  transition: all 0.3s ease 0s;
+  font-size: 24px;
+  font-family: spoka_R;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure figcaption .cago-sub {
+  position: relative;
+  font-size: 14px;
+  font-family: spoka_L;
+  color: #fff;
+  margin-top: 25px;
+  bottom: -40px;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+  width: 90%;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure figcaption .flexible-line {
+  width: 40%;
+  transition: all 0.3s ease 0s;
+  margin-top: 35px;
+  opacity: 0.5;
+  height: 1px;
+  background-color: #fff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover {
+  bottom: 50px;
+  z-index: 5;
+  width: 100%;
+  overflow: visible;
+  position: absolute !important;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover figcaption {
+  display: block;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  padding: 0 35px;
+  text-align: left;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover figcaption .cago-en {
+  position: relative;
+  font-family: spoka_R;
+  margin-bottom: 8px;
+  transition: all 0.3s ease 0s;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #fff;
+  bottom: 0;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover figcaption .cago-title {
+  font-size: 24px;
+  font-family: spoka_R;
+  bottom: -10px;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover figcaption .cago-sub {
+  font-size: 14px;
+  font-family: spoka_L;
+  color: #fff;
+  margin-top: 35px;
+  width: 90%;
+  bottom: 0;
+  opacity: 1;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover figcaption .flexible-line {
+  width: 60%;
+  margin-top: 35px;
+  opacity: 0.5;
+  height: 1px;
+  background-color: #fff;
+}
+
+/*6. CONTACT ME*/
+section.sec5 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 530px;
+  margin-top: 200px;
+}
+section.sec5 div.sec5wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+section.sec5 div.sec5wrap div.img03 {
+  width: 650px;
+  height: 530px;
+  background-image: url(../image/contact.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.sec5 div.sec5wrap div.contactme {
+  width: 30%;
+  display: flex;
+  height: 530px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.sec5 div.sec5wrap div.contactme .over {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.sec5 div.sec5wrap div.contactme p.firstsaying {
+  width: 100%;
+  font-family: Sometimes;
+  font-weight: 900;
+  font-size: 36px;
+}
+section.sec5 div.sec5wrap div.contactme .coninfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.sec5 div.sec5wrap table {
+  align-items: flex-end;
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-collapse: collapse;
+  border-top: 1px solid #2d2d2d;
+  border-bottom: 1px solid #2d2d2d;
+}
+section.sec5 div.sec5wrap table tr {
+  font-size: 13px;
+}
+section.sec5 div.sec5wrap table tr td {
+  line-height: 2em;
+}
+
+/*subpage1_portfolio 앨범형 포트폴리오 영역 */
+section.sec6 {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+
+/*포트폴리오 그리드*/
+}
+section.sec6 .modal {
+  position: fixed;
+  display: none;
+  z-index: 999;
+  margin-top: 70px;
+  left: 0;
+  top: -70px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+section.sec6 .modal .modal-content {
+  padding-top: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section.sec6 .modal .modal-content .close {
+  padding-bottom: 15px;
+  color: #fff;
+  font-size: 40px;
+  float: right;
+  cursor: pointer;
+}
+section.sec6 .modal .modal-content .close:hover, section.sec6 .modal .modal-content .close:focus {
+  color: black;
+  cursor: pointer;
+}
+section.sec6 .modal .modal-content .p-img {
+  width: 100%;
+  max-width: 1200px;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  scrollbar-width: none;
+  overflow-y: auto;
+}
+section.sec6 p.firstsaying {
+  font-family: Sometimes;
+  font-weight: 900;
+  font-size: 36px;
+  margin-top: 150px;
+  margin-bottom: 160px;
+  display: flex;
+}
+section.sec6 .portfolio-list {
+  margin-top: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-bottom: 200px;
+}
+section.sec6 .portfolio-list .p-wrap {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10px, auto));
+  grid-template-rows: 280px;
+  gap: 24px 24px;
+  text-align: center;
+}
+section.sec6 .portfolio-list .p-item {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+section.sec6 .portfolio-list .p-item a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  top: 0;
+}
+section.sec6 .portfolio-list .p-item a:hover {
+  top: -100px;
+}
+section.sec6 .portfolio-list .p-item a .bg-white {
+  overflow: hidden;
+  position: relative;
+}
+section.sec6 .portfolio-list .p-item a .bg-white .p-img {
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+section.sec6 .portfolio-list .p-item a .bg-white .p-img img {
+  width: 384px;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+  top: 0px;
+}
+section.sec6 .portfolio-list .p-item a .bg-white .p-txtbox {
+  position: relative;
+  opacity: 1;
+  padding: 20px;
+  height: auto;
+  top: 0px;
+  transition: all 0.3s ease 0s;
+}
+section.sec6 .portfolio-list .p-item a .bg-white .p-txtbox .p-title {
+  font-size: 16px;
+  font-family: spoka_R;
+  text-align: center;
+}
+section.sec6 .portfolio-list .p-item a .bg-white .p-txtbox .p-sub {
+  font-size: 13px;
+  color: rgb(99, 99, 99);
+  text-align: center;
+}
+
+
+
+/* comtactme */
+@keyframes jump{
+  0%,
+  100%{
+    bottom: 0;
+  }
+  50%{
+    bottom: 20px;
+    animation-timing-function: ease-in;
+  }
+}
+@keyframes jump2{
+  0%,
+  100%{
+    bottom: 0;
+  }
+  50%{
+    bottom: 15px;
+    animation-timing-function: ease;
+  }
+}
+.sub_contactme .box1{display: flex; justify-content: space-between;}
+.sub_contactme .box1 .box1-1{width: 590px;}
+.sub_contactme .box1 .box1-1 h3{color:#2d2d2d; font-size: 20px; margin-bottom: 15px;}
+.sub_contactme .box1 .box1-1 p{line-height: 1.9;}
+.sub_contactme .box1 .box1-1 span{font-size: 12px; color: #868686; margin-left: 10px;}
+.sub_contactme .program{margin-top: 100px;}
+.sub_contactme .box2{margin-top: 30px; width: 800px; display: flex; justify-content: space-between; }
+.sub_contactme .box2 h2:nth-child(1){position: relative; animation: jump 2s infinite alternate;}
+.sub_contactme .box2 h2:nth-child(2){position: relative; animation: jump2 1.5s infinite alternate;}
+.sub_contactme .box2 h2:nth-child(3){position: relative; animation: jump 2s infinite alternate;}
+.sub_contactme .box2 h2:nth-child(4){position: relative; animation: jump2 1.5s infinite alternate;}
+.sub_contactme .box2 h2:nth-child(5){position: relative; animation: jump 2.5s infinite alternate;}
+.sub_contactme .box2 h2:nth-child(6){position: relative; animation: jump2 1.5s infinite alternate;}
+.sub_contactme .box2 h2:nth-child(7){position: relative; animation: jump 2.5s infinite alternate;}
+.sub_contactme .box2 h2:nth-child(8){position: relative; animation: jump2 1.5s infinite alternate;}
+
+/* contact*/
+.sec7{position: relative; width: 100%; max-width: 1200px; height: 100vh; margin: 0 auto; margin-top: 80px;}
+.sec7 .construction h5{display: block; text-align: center;}
+.sec7 .construction img{margin-top: 240px; width: 220px; height: 220px;}
+.sec7 .construction p{text-align: center; padding-top: 20px;}
+.sec7 .alert_1{font-size: 28px;color: #2d2d2d;font-family: spoka_B;; }
+
+/*위로가기 버튼*/
+#up-too {
+  opacity: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  font-family: Sometimes1;
+  font-weight: 900;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  transition: 0.3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+}
+
+#up-too.on {
+  opacity: 1;
+}
+
+footer {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: spoka_R;
+  background-color: #2d2d2d;
+  color: #fff;
+}
+footer .footerwrap {
+  bottom: 0;
+  position: relative;
+  vertical-align: middle;
+}
+footer .footerwrap p {
+  line-height: 1.7em;
+  text-align: center;
+  font-size: 12px;
+}

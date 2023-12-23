@@ -1,17 +1,17 @@
 @charset "utf-8";
 @font-face {
   font-family: notoserif;
-  src: url(../webfont/NotoSerifKR-Regular.woff) format("woff");
+  src: url(../webfont/Pretendard-Bold.woff) format("woff");
 }
 @font-face {
   font-family: notosans;
-  src: url(../webfont/NotoSansKR-Regular.woff) format("woff");
+  src: url(../webfont/Pretendard-Regular.woff) format("woff");
 }
 @font-face {
   font-family: notosanssemi;
   src: url(../webfont/NotoSansKR-SemiBold.woff) format("woff");
 }
-
+.nomal{fontf}
 .subfont {
   font-size: 14px;
   color: rgb(124, 124, 124);
@@ -27,6 +27,7 @@ a {
   text-decoration: none;
   color: #333;
 }
+
 body {
   position: relative;
   font-family: notosans;

@@ -1,53 +1,58 @@
+
 @font-face {
-  font-family: spoka_L;
-  src: url(../webfont/SpoqaHanSansNeo-Light.woff) format("woff");
+  font-family: pre_L;
+  src: url(../webfont/Pretendard-Light.woff) format("woff");
 }
 @font-face {
-  font-family: spoka_R;
-  src: url(../webfont/SpoqaHanSansNeo-Regular.woff) format("woff");
+  font-family: pre_R;
+  src: url(../webfont/Pretendard-Regular.woff) format("woff");
 }
 @font-face {
-  font-family: spoka_B;
-  src: url(../webfont/SpoqaHanSansNeo-Bold.woff) format("woff");
+  font-family: pre_B;
+  src: url(../webfont/Pretendard-Bold.woff) format("woff");
 }
 @font-face {
-  font-family: Sometimes;
-  src: url(../webfont/SongMyung-Regular.woff) format("woff");
+  font-family: pre_Bk;
+  src: url(../webfont/Pretendard-Black.woff) format("woff");
 }
 @font-face {
-  font-family: Sometimes1;
-  src: url(../webfont/Sometimes\ Times.woff) format("woff");
+  font-family: pre_Bk;
+  src: url(../webfont/Pretendard-Black.woff) format("woff");
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-ul {
-  list-style: none;
+:root{
+	--text-color1:rgba(0,0,0,0.8);
+	--text-color2:rgba(0,0,0,0.4);
+	--text-color3:rgba(0,0,0,0.6);
+	--text-color4:#CC4B4B;
+	--background-color: #f4f4f4;
+	--accent-color: #000;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+ul {list-style: none;}
+
+a {text-decoration: none; color: inherit;}
 
 body {
-  font-family: spoka_R;
-  font-size: 16px;
+  font-family: pre_R;
+  font-size: 15px;
   line-height: 1.7em;
-  color: #595757;
+  color: var(--text-color1);
 }
+.section_title{color: var(--text-color1);}
 
 header {
   width: 100%;
   top: 0;
   left: 0;
-  height: 80px;
-  line-height: 80px;
+  height: 70px;
+  line-height: 70px;
   margin: 0 auto;
-  font-family: Sometimes;
   font-weight: 700;
   background-color: #fff;
   position: fixed;
@@ -59,12 +64,11 @@ header .topmenu {
   display: flex;
 }
 header .topmenu .top_left {
-  width: 53px;
-  height: 60px;
-  vertical-align: center;
+  width: 28px;
+  height: 32px;
 }
 header .topmenu .top_left img {
-  vertical-align: middle;
+display: block;
 }
 header .topmenu nav {
   width: 100%;
