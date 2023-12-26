@@ -42,7 +42,7 @@
 /* 1. 로고 및 상징 이미지 영역 */
 
 /*배경 사진*/
-section.sec1 {background: url(../image/logoimg.png) center/cover fixed;}
+section.sec1 {background: url() center/cover fixed;}
 .sec1 .symbolbg {position: relative; width: 100%; height: 100vh;}
 /* 로고 이미지 */
 .sec1 .symbolbg img {position: absolute; left: 0;top: 0; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;}
@@ -81,7 +81,7 @@ section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
 /* 막대( % 표시)*/
 .graph{width: 140px; height: 12px; background-color: #f4f4f4; border-radius: 14px;box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;}
 .graph span{display: block; height: 12px; line-height: 14px; text-align: right;  border-radius: 12px; box-sizing: border-box; color: #fff; font-size: 12px;}
-.graph.stack1 span{animation: stack1 3s 1; background: #258FD5; opacity: 0.7; box-shadow: initial;}
+.graph.stack1 span{animation: stack1 3s 1; background: #256BD5; opacity: 0.7; box-shadow: initial;}
 .graph.stack2 span{animation: stack2 3s 1; background: #D67B00; opacity: 0.7;}
 .graph.stack3 span{animation: stack3 3s 1; background: #E44D26; opacity: 0.7;}
 .graph.stack4 span{animation: stack4 3s 1; background: #369AD6; opacity: 0.7;}
@@ -162,6 +162,7 @@ section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
 .sec3 .sec3_title{font-family: pre_Bk;font-size: 60px; padding-top: 130px; margin-bottom: 130px; }
 .p_group1{font-family: pre_B; font-size: 28px; margin-bottom: 45px;}
 .p_group2{margin-top: 200px; font-family: pre_B; font-size: 28px; margin-bottom: 45px;}
+
 /*subpage1_portfolio 앨범형 포트폴리오 영역 */
 section.sec6 {
   position: relative;
@@ -190,7 +191,7 @@ section.sec3 .modal .modal-content {
   margin: 0 auto;
 }
 section.sec3 .modal .modal-content .close {
-  padding-bottom: 15px;
+  margin-bottom: 15px;
   color: #fff;
   font-size: 40px;
   float: right;

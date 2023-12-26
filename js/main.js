@@ -17,7 +17,7 @@ gnbItems.forEach((gnbItem, index) => {
     
     // 6. 섹션들 중 네비게이션 메뉴의 index 에 해당하는 섹션의 높이값을 구하고,
     // 네비게이션 높이만큼 값을 빼준다.
-    const sectionTop = sections[index].offsetTop - 70;
+    const sectionTop = sections[index].offsetTop - 90;
     
     // 7. 해당 위치로 스크롤을 이동시킨다.
     window.scroll({ top: sectionTop });
