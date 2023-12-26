@@ -50,7 +50,7 @@ section.sec1 {background: url(../image/logoimg.png) center/cover fixed;}
 
 /* 2. KangSeonga 소개 영역*/
 section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
-.sec2 .section_title{
+.section_title{
   font-family: pre_Bk;
   font-size: 60px;
   padding-top: 130px;
@@ -154,12 +154,14 @@ section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
 .effort_txt_w .sub_e_w{font-size: 16px; line-height: 1.4em; color: #fff; font-family: pre_L;}
 
 .mye_wrap .ebox1{width: 614px; height: 355px; background: url(../image/effort1.png);}
-.mye_wrap .ebox2{width: 340px; height: 355px; background: url(../image/effort2.png);}
+.mye_wrap .ebox2{width: 340px; height: 355px; background: url(../image/effort2.png); }
 .mye_wrap .ebox3{width: 515px; height: 355px;}
 .mye_wrap .ebox4{width: 460px; height: 355px;}
 .mye_wrap .ebox5{width: 460px; height: 355px;}
 .sec3 {width: 1200px; margin: 0 auto;}
-.sec3 .sec3_title{font-family: pre_Bk;font-size: 60px; padding-top: 130px; text-align: center;}
+.sec3 .sec3_title{font-family: pre_Bk;font-size: 60px; padding-top: 130px; margin-bottom: 130px; }
+.p_group1{font-family: pre_B; font-size: 28px; margin-bottom: 45px;}
+.p_group2{margin-top: 200px; font-family: pre_B; font-size: 28px; margin-bottom: 45px;}
 /*subpage1_portfolio 앨범형 포트폴리오 영역 */
 section.sec6 {
   position: relative;
@@ -259,14 +261,19 @@ section.sec3 .portfolio-list .p-item a .bg-white .p-txtbox {
 }
 section.sec3 .portfolio-list .p-item a .bg-white .p-txtbox .p-title {
   font-size: 16px;
-  font-family: spoka_R;
+  font-family: pre_B;
   text-align: center;
 }
 section.sec3 .portfolio-list .p-item a .bg-white .p-txtbox .p-sub {
   font-size: 13px;
+  font-family: pre_R;
   color: rgb(99, 99, 99);
   text-align: center;
 }
+/* contact */
+.pone{padding-top: 50px; font-size: 20px; font-family: pre_B;}
+.ptwo{}
+.pthree{font-family: pre_L; font-size: 40px; margin-top: 30px; margin-bottom: 150px;}
 
 
 /*위로가기 버튼*/
