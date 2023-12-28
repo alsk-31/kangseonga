@@ -42,11 +42,11 @@
 /* 1. 로고 및 상징 이미지 영역 */
 
 /*배경 사진*/
-section.sec1 {background: url() center/cover fixed;}
+section.sec1 {background: url(../image/lo) center/cover fixed;}
 .sec1 .symbolbg {position: relative; width: 100%; height: 100vh;}
 /* 로고 이미지 */
 .sec1 .symbolbg img {position: absolute; left: 0;top: 0; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;}
-.sec1 .symbolbg .innerlogo { position: absolute; width: 140px; height: 159px; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.sec1 .symbolbg .innerlogo {position: absolute; width: 140px; height: 159px; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 
 /* 2. KangSeonga 소개 영역*/
 section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
@@ -138,7 +138,7 @@ section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
 
 /* 이러한 노력을 하고 있어요 */
 .myeffort{margin-top: 130px; z-index: -10; width: 100%; height: 622px; background: var(--background-color); background-attachment: fixed;}
-.myeffort .mye_wrap{margin: 0 auto; padding:24px; overflow: hidden;}
+.myeffort .mye_wrap{margin: 0 auto; padding:0 130px; overflow: hidden;}
 .myeffort .mye_wrap .pt_120{padding-top: 120px; margin: 0 auto; text-align: center; margin-bottom: 50px;}
 .myeffort .mye_wrap .effortbox{display: flex;  width: 3000px;}
 .myeffort .mye_wrap .effortbox .boxstyle{margin-right: 24px; border-radius: 20px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
@@ -281,7 +281,7 @@ section.sec3 .portfolio-list .p-item a .bg-white .p-txtbox .p-sub {
 #up-too {
   opacity: 0;
   position: fixed;
-  bottom: 20px;
+  bottom: 90px;
   right: 20px;
   z-index: 100;
   font-family: Sometimes1;
@@ -289,18 +289,18 @@ section.sec3 .portfolio-list .p-item a .bg-white .p-txtbox .p-sub {
   border: none;
   padding: 10px;
   outline: none;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 100px;
-  font-size: 30px;
-  text-shadow: 3px 3px 3px rgb(0, 0, 0);
   transition: 0.3s;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #fff;
+  border: 1px solid #c1c1c1 ;
 }
+#up-too img{position:absolute;left: 50%;top: 50%; transform:translate(-50%,-50%);  width:22px; height: 25px;}
 #up-too.on {opacity: 1;}
-footer {width: 100%; left: 0; bottom: 0; margin: 0 auto; padding: 30px 0;background-color: var(--background-color);}
+footer {width: 100%; left: 0; bottom: 0; margin: 0 auto; padding: 20px 0;background-color: var(--background-color);}
 footer .footerwrap {bottom: 0; position: relative; vertical-align: middle;}
 footer .footerwrap p {text-align: center; font-size: 12px;}
