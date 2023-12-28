@@ -43,14 +43,14 @@
 /* 1. 로고 및 상징 이미지 영역 */
 
 /*배경 사진*/
-section.sec1 {background: url(../image/lo) center/cover fixed;}
+section.sec1 {background: url(../image/gg.png) center/cover fixed;}
 .sec1 .symbolbg {position: relative; width: 100%; height: 100vh;}
 /* 로고 이미지 */
 .sec1 .symbolbg img {display: block; position: absolute; left: 0;top: 0; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;}
 .sec1 .symbolbg .innerlogo {position: absolute; width: 140px; height: 159px; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .wrapfont{padding-top: 200px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; margin-top: 80px;} 
-.wrapfont .portfolio_t{font-size: 105px; font-family: pre_Bk;}
-.wrapfont ul{font-family: pre_B;margin-top: 40px; font-size: 20px; display: flex; width:580px; justify-content: space-between;}
+.wrapfont .portfolio_t{font-size: 105px; font-family: pre_Bk;color:#000;}
+.wrapfont ul{font-family: pre_Bk; margin-top: 50px; color:#000; font-size: 20px; display: flex; width:580px; justify-content: space-between;}
 /* 2. KangSeonga 소개 영역*/
 section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
 .section_title{
