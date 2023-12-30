@@ -49,7 +49,7 @@ section.sec1 {background: url(../image/gg.png) center/cover fixed;}
 .sec1 .symbolbg img {display: block; position: absolute; left: 0;top: 0; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;}
 .sec1 .symbolbg .innerlogo {position: absolute; width: 140px; height: 159px; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .wrapfont{padding-top: 200px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; margin-top: 80px;} 
-.wrapfont .portfolio_t{font-size: 105px; font-family: pre_Bk;color:#000;}
+.wrapfont .portfolio_t{font-size: 105px; font-family: pre_Bk;}
 .wrapfont ul{font-family: pre_Bk; margin-top: 50px; color:#000; font-size: 20px; display: flex; width:580px; justify-content: space-between;}
 /* 2. KangSeonga 소개 영역*/
 section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
@@ -84,7 +84,7 @@ section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
 /* 막대( % 표시)*/
 .graph{width: 140px; height: 12px; background-color: #f4f4f4; border-radius: 14px;box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;}
 .graph span{display: block; height: 12px; line-height: 14px; text-align: right;  border-radius: 12px; box-sizing: border-box; color: #fff; font-size: 12px;}
-.graph.stack1 span{animation: stack1 3s 1; background: #256BD5; opacity: 0.7; box-shadow: initial;}
+.graph.stack1 span{animation: stack1 3s 1; background: #256BD5; opacity: 0.7; box-shadow: initial; }
 .graph.stack2 span{animation: stack2 3s 1; background: #D67B00; opacity: 0.7;}
 .graph.stack3 span{animation: stack3 3s 1; background: #E44D26; opacity: 0.7;}
 .graph.stack4 span{animation: stack4 3s 1; background: #369AD6; opacity: 0.7;}
@@ -144,7 +144,7 @@ section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
 .myeffort .mye_wrap{margin: 0 auto; padding:0 130px; overflow: hidden;}
 .myeffort .mye_wrap .pt_120{padding-top: 120px; margin: 0 auto; text-align: center; margin-bottom: 50px;}
 .myeffort .mye_wrap .effortbox{display: flex;  width: 3000px;}
-.myeffort .mye_wrap .effortbox .boxstyle{margin-right: 24px; border-radius: 20px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
+.myeffort .mye_wrap .effortbox .boxstyle{margin-right: 24px; border-radius: 20px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;} 
 /* 기본색 폰트_ */
 .effort_txt{position: relative; padding: 24px; margin-top: 190px;}
 .effort_txt .title_e{font-family: pre_B; font-size: 18px; }

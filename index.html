@@ -9,11 +9,18 @@
     <link rel="shortcut icon" href="./image/pabi.png" type="./image/x-icon">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/head.css" />
+    <!-- swiper bundle -->
     <link rel="stylesheet" href="css/swiper-bundle.css">
+    <script src="js/swiper-bundle.js"></script>
+    <!-- data aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/swiper-bundle.js"></script>
-    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- slick 불러오기 -->
+    <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="js/main.js"></script>
   </head>
   <body>
@@ -152,7 +159,7 @@
       <div class="mye_wrap">
         <p class="title_l pt_120">이러한 노력들을 하고 있어요.</p>
         <ul class="effortbox">
-          <li class="ebox1 boxstyle">
+          <li class="ebox ebox1 boxstyle">
             <div class="effort_txt">
               <p class="title_e">꾸준히 코딩하기. 깃허브에 업로드</p>
               <p class="date_e">23년 07월 부터~</p>
@@ -160,7 +167,7 @@
                 모으고 다양한 시도를 하는것을 목표로 하고 있습니다.</p>
             </div>
           </li>
-          <li class="ebox2 boxstyle">
+          <li class="ebox ebox2 boxstyle">
             <div class="effort_txt_w">
               <p class="title_e_w">웹디자인기능사 취득! <span style="color: var(--accent-color);">목표달성!</span></p>
               <p class="date_e_w">23년 09월 부터~</p>
@@ -168,7 +175,7 @@
                 좀 더 빠르게 코딩을 할 수 있게 되었습니다. </p>
             </div>
           </li>
-          <li class="ebox3 boxstyle">
+          <li class="ebox ebox3 boxstyle">
             <div class="effort_txt">
               <p class="title_e">디자이너 자격사항 향상을 위한,  컬러리스트 기사 준비</p>
               <p class="date_e">23년 07월 부터~</p>
@@ -176,10 +183,32 @@
                 24년 실기시험 예정입니다.</p>
             </div>
           </li>
-          <li class="ebox4 boxstyle"></li>
-          <li class="ebox5 boxstyle"></li>
+          <li class="ebox ebox3 boxstyle">
+            <div class="effort_txt">
+              <p class="title_e">디자이너 자격사항 향상을 위한,  컬러리스트 기사 준비</p>
+              <p class="date_e">23년 07월 부터~</p>
+              <p class="sub_e">23년 08월 필기시험 합격! 다방면의 디자인과 컬러에 대한 이론지식을 쌓았으며
+                24년 실기시험 예정입니다.</p>
+            </div>
+          </li>
         </ul>
-      </div>
+      </div> 
+
+      <script>
+        $('.effortbox').slick({
+          slide:'li',
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          centerMode: true,
+          variableWidth: true,
+          draggable: true,    
+          prevArrow:false,
+          pauseOnFocus: true,
+        });
+      </script>
+
     </div> 
     <!-- //2.profile -->
     <!-- 3.porfolio -->
