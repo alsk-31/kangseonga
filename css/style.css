@@ -83,7 +83,7 @@ section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
 /* 막대( % 표시)*/
 .graph{width: 140px; height: 12px; background-color: #f4f4f4; border-radius: 14px;box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;}
 .graph span{display: block; height: 12px; line-height: 14px; text-align: right;  border-radius: 12px; box-sizing: border-box; color: #fff; font-size: 12px;}
-.graph.stack1 span{animation: stack1 3.5s 1s; background: #256BD5; opacity: 0.8;}
+.graph.stack1 span{animation: stack1 3.5s 1s 3; background: #256BD5; opacity: 0.8;}
 .graph.stack2 span{animation: stack2 3.5s 1s; background: #D67B00; opacity: 0.8;}
 .graph.stack3 span{animation: stack3 3.5s 1s; background: #E44D26; opacity: 0.8;}
 .graph.stack4 span{animation: stack4 3.5s 1s; background: #369AD6; opacity: 0.8;}
