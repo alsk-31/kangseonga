@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded',function(){
+  function scrollDisable(){
+    $('html, body').addClass('hidden');
+}
+function scrollAble(){
+    $('html, body').removeClass('hidden');
+}
 
 // 1. 네비게이션 메뉴들을 querySelectorAll을 통해 변수에 담는다.
 const gnbItems = document.querySelectorAll(".gnb__item");
@@ -110,8 +116,6 @@ gnbItems.forEach((gnbItem, index) => {
       btn.className=(scrollHeight>off) ? 'on' : '';
       /*if(scrollHeight>off){
        btn.className ='on';  }*/
-
-
      // if(scrollHeight>off){
     //    btn.classList.add('on');
     // }
