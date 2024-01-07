@@ -130,7 +130,7 @@ gnbItems.forEach((gnbItem, index) => {
   function timer1(){
      let scroll = setInterval(function(){
       if(scrollHeight!=0){
-        window.scrollBy(0,-110);
+        window.scrollBy(0,-180);
 
       }else{
         clearInterval(scroll);

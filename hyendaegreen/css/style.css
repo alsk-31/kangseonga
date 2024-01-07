@@ -210,7 +210,7 @@ and (max-width: 1023px)
   .cont_center{width: auto;}
 
   /* header */
-  .header{padding-top: 40px 20px 0;}
+  .header{padding-top: 40px 20px 0;  padding-left: 40px; padding-right: 40px;}
   .header .cont_center{width: auto;}
   .header .logo{width: 320px; height: 43px; background-image: url(../images/m_logo_w.png); background-size: 100% auto;}
   .header .gnb_area .all{display: block; position: absolute; right: 0; top: 0; width: 40px;height: 40px; z-index: 1;}
@@ -247,7 +247,7 @@ and (max-width:766px)
   .wrap{min-width: 320px; border-top: 0; overflow: hidden;}
 
   /* header */
-  .header{padding-top: 30px;}
+  .header{padding-top: 30px; padding-left: 20px; padding-right: 20px;}
   .header .logo{width: 160px; height: 22px;}
   .header .gnb_area .all{width: 25px;height: 25px;}
   .header .gnb_area .all span{margin: 3px 0 6px;height: 2px;}
