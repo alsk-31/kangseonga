@@ -269,8 +269,10 @@
   width: 1px;
   height: var(--swiper-virtual-size);
 }
+/*모달스와이퍼창 수정*/
 :root {
-  --swiper-navigation-size: 20px;
+  --swiper-navigation-size: 50px;
+  
   /*
   --swiper-navigation-top-offset: 50%;
   --swiper-navigation-sides-offset: 10px;
@@ -281,10 +283,10 @@
 .swiper-button-next {
   position: absolute;
   top: var(--swiper-navigation-top-offset, 50%);
-  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  width: calc(var(--swiper-navigation-size) / 50 * 40);
   height: var(--swiper-navigation-size);
-  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
-  z-index: 10;
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 1));
+  z-index: 1000;
   cursor: pointer;
   display: flex;
   align-items: center;

@@ -91,11 +91,11 @@ header .topmenu .hcolor{color: var(	--accent-color) !important;}
 /* 1. 로고 및 상징 이미지 영역 */
 
 /*배경 사진*/
-section.sec1 {background: url(../image/gg.png) center/cover fixed;}
+section.sec1 {background: url(../image/gg1.png) center/cover fixed; }
 .sec1 .symbolbg {position: relative; width: 100%; height: 100vh;}
 /* 로고 이미지 */
-.sec1 .symbolbg img {display: block; position: absolute; left: 0;top: 0; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;}
-.sec1 .symbolbg .innerlogo {position: absolute; width: 140px; height: 159px; top: 48%; left: 50%; transform: translate(-50%, -50%);}
+.sec1 .symbolbg object {fill: #007cf0; display: block; position: absolute; left: 0;top: 0; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;}
+.sec1 .symbolbg .innerlogo {position: absolute; width: 140px; height: 159px; top: 48%; left: 50%; transform: translate(-50%, -50%); fill:linear-gradient(to right, #007cf0, #00dfd8);}
 .wrapfont{padding-top: 130%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; margin-top: 80px;} 
 .wrapfont .portfolio_t{font-size: 50px; font-family: pre_B;}
 .wrapfont ul{font-family: pre_B; margin-top: 6%; font-size: 20px; display: flex; width:580px; justify-content: space-between;}
@@ -229,7 +229,7 @@ section.sec3 .modal {
   position: fixed;
   display: none;
   z-index: 999;
-  margin-top: 50px;
+  margin-top: 70px;
   left: 0;
   top: -70px;
   width: 100%;
@@ -252,7 +252,6 @@ section.sec3 .modal .modal-content .p-img {
   scrollbar-width: none;
   overflow-y: auto;
 }
-
 /*포트폴리오 그리드*/
 section.sec3 .portfolio-list .p-wrap {
   max-width: 1200px;
