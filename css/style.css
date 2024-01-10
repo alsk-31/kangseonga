@@ -220,6 +220,7 @@ section.sec3 {
   margin-top: 100px;
 }
 
+
 /* 모달창 닫기버튼 */
 .sec3 .close{width: 45px; height: 45px;}
 .close::before, .close::after{z-index: 1000; content: ''; position: absolute; top: 115px; right: 450px; width: 2px; height: 40px; background-color: #fff;  cursor: pointer;}
