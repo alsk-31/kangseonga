@@ -31,7 +31,8 @@
 	--text-color2:rgba(0,0,0,0.4);
 	--text-color3:rgba(0,0,0,0.6);
 	--background-color: #f4f4f4;
-	--accent-color: #CC4B4B;
+	--accent-color: #A4508B;
+	--accent-color1: #711C88;
 }
 
 ul {list-style: none;}
@@ -91,14 +92,15 @@ header .topmenu .hcolor{color: var(	--accent-color) !important;}
 /* 1. 로고 및 상징 이미지 영역 */
 
 /*배경 사진*/
-section.sec1 {background: url(../image/gg1.png) center/cover fixed; }
+section.sec1 {background: url(../image/gg.png) center/cover fixed; }
 .sec1 .symbolbg {position: relative; width: 100%; height: 100vh;}
 /* 로고 이미지 */
-.sec1 .symbolbg object {fill: #007cf0; display: block; position: absolute; left: 0;top: 0; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;}
-.sec1 .symbolbg .innerlogo {position: absolute; width: 140px; height: 159px; top: 48%; left: 50%; transform: translate(-50%, -50%); fill:linear-gradient(to right, #007cf0, #00dfd8);}
-.wrapfont{padding-top: 130%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; margin-top: 80px;} 
-.wrapfont .portfolio_t{font-size: 50px; font-family: pre_B;}
-.wrapfont ul{font-family: pre_B; margin-top: 6%; font-size: 20px; display: flex; width:580px; justify-content: space-between;}
+.sec1 .symbolbg object {display: block; position: absolute; left: 0;top: 0; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;}
+.sec1 .symbolbg .innerlogo {position: absolute; width: 978px; height: 380px; top: 48%; left: 50%; transform: translate(-48%, -50%);}
+.wrapfont{ padding-top: 30%; display: flex; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; margin-top: 80px;} 
+.wrapfont .portfolio_t{font-size: 30px; font-family: pre_B;}
+.wrapfont ul{font-family: pre_B; color: var(	--accent-color1); margin-top: 6%; font-size: 20px; display: flex; justify-content: center; width:719px; justify-content: space-between;}
+.wrapfont ul{font-family: pre_B; color: var(	--accent-color1); margin-top: 6%; font-size: 20px; display: flex; justify-content: center; width:719px; justify-content: space-between;}
 /* 2. KangSeonga 소개 영역*/
 section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
 .section_title{
@@ -206,12 +208,11 @@ section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
 .mye_wrap .ebox1{width: 614px; height: 355px; background: url(../image/effort1.png);}
 .mye_wrap .ebox2{width: 340px; height: 355px; background: url(../image/effort2.png);}
 .mye_wrap .ebox3{width: 515px; height: 355px;background: url(../image/effort3.png);}
-.sec3 {width: 1200px; margin: 0 auto;}
+
+/*subpage1_portfolio 앨범형 포트폴리오 영역 */
 .sec3 .sec3_title{font-family: pre_Bk;font-size: 60px; padding-top: 130px; margin-bottom: 130px; }
 .p_group1{font-family: pre_B; font-size: 28px; margin-bottom: 45px;}
 .p_group2{margin-top: 200px; font-family: pre_B; font-size: 28px; margin-bottom: 45px;}
-
-/*subpage1_portfolio 앨범형 포트폴리오 영역 */
 section.sec3 {
   position: relative;
   width: 100%;
@@ -253,6 +254,7 @@ section.sec3 .modal .modal-content .p-img {
   scrollbar-width: none;
   overflow-y: auto;
 }
+
 /*포트폴리오 그리드*/
 section.sec3 .portfolio-list .p-wrap {
   max-width: 1200px;
@@ -262,12 +264,12 @@ section.sec3 .portfolio-list .p-wrap {
   gap: 24px 24px;
   text-align: center;
 }
-section.sec3 .portfolio-list .p-item {
+.sec3 .portfolio-list .p-item {
   position: relative;
   height: 280px;
   overflow: hidden;border-radius: 20px;
 }
-section.sec3 .portfolio-list .p-item a {
+.sec3 .portfolio-list .p-item a {
   position: absolute;
   display: block;
   width: 100%;
@@ -275,18 +277,18 @@ section.sec3 .portfolio-list .p-item a {
   transition: 0.5s;
   top: 0;
 }
-section.sec3 .portfolio-list .p-item a:hover {
+.sec3 .portfolio-list .p-item a:hover {
   top: -100px;
 }
-section.sec3 .portfolio-list .p-item a .bg-white {
+.sec3 .portfolio-list .p-item a .bg-white {
   overflow: hidden;
   position: relative;
 }
-section.sec3 .portfolio-list .p-item a .bg-white .p-img {
+.sec3 .portfolio-list .p-item a .bg-white .p-img {
   position: relative;
   transition: all 0.3s ease 0s;
 }
-section.sec3 .portfolio-list .p-item a .bg-white .p-img img {
+.sec3 .portfolio-list .p-item a .bg-white .p-img img {
   width: 384px;
   height: 280px;
   -o-object-fit: cover;
@@ -294,7 +296,7 @@ section.sec3 .portfolio-list .p-item a .bg-white .p-img img {
   vertical-align: middle;
   top: 0px;
 }
-section.sec3 .portfolio-list .p-item a .bg-white .p-txtbox {
+.sec3 .portfolio-list .p-item a .bg-white .p-txtbox {
   position: relative;
   opacity: 1;
   padding: 20px;
@@ -302,12 +304,12 @@ section.sec3 .portfolio-list .p-item a .bg-white .p-txtbox {
   top: 0px;
   transition: all 0.3s ease 0s;
 }
-section.sec3 .portfolio-list .p-item a .bg-white .p-txtbox .p-title {
+.sec3 .portfolio-list .p-item a .bg-white .p-txtbox .p-title {
   font-size: 16px;
   font-family: pre_B;
   text-align: center;
 }
-section.sec3 .portfolio-list .p-item a .bg-white .p-txtbox .p-sub {
+.sec3 .portfolio-list .p-item a .bg-white .p-txtbox .p-sub {
   font-size: 13px;
   font-family: pre_R;
   color: rgb(99, 99, 99);

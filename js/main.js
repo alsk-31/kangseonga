@@ -85,7 +85,6 @@ gnbItems.forEach((gnbItem, index) => {
    });
    
 
-
  
 //스크롤이벤트
   let btn = document.getElementById('up-too');
