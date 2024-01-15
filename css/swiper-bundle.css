@@ -19,7 +19,7 @@
 }
 /* FONT_END */
 :root {
-  --swiper-theme-color: #007aff;
+  --swiper-theme-color: #6ab0fc;
   /*
   --swiper-preloader-color: var(--swiper-theme-color);
   --swiper-wrapper-transition-timing-function: initial;
@@ -291,7 +291,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #b1b1b1;
 }
 /* .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {

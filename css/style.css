@@ -222,6 +222,7 @@ section.sec3 {
 
 
 /* 모달창 닫기버튼 */
+
 .sec3 .close{width: 45px; height: 45px;}
 .close::before, .close::after{z-index: 1000; content: ''; position: absolute; top: 115px; right: 450px; width: 2px; height: 40px; background-color: #fff;  cursor: pointer;}
 .close::before{transform: rotate(45deg);}
@@ -314,6 +315,8 @@ section.sec3 .portfolio-list .p-wrap {
   color: rgb(99, 99, 99);
   text-align: center;
 }
+:root {
+  --swiper-theme-color: #fff;}
 /* contact */
 .pone{padding-top: 50px; font-size: 20px; font-family: pre_B;}
 .ptwo{padding-top: 10px;}
