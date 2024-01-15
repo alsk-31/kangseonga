@@ -96,11 +96,10 @@ section.sec1 {background: url(../image/gg.png) center/cover fixed; }
 .sec1 .symbolbg {position: relative; width: 100%; height: 100vh;}
 /* 로고 이미지 */
 .sec1 .symbolbg object {display: block; position: absolute; left: 0;top: 0; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;}
-.sec1 .symbolbg .innerlogo {position: absolute; width: 978px; height: 380px; top: 48%; left: 50%; transform: translate(-48%, -50%);}
+.sec1 .symbolbg .innerlogo {position: absolute; width: 873px; height: 340px; top: 48%; left: 50%; transform: translate(-48%, -50%);}
 .wrapfont{ padding-top: 30%; display: flex; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; margin-top: 80px;} 
-.wrapfont .portfolio_t{font-size: 30px; font-family: pre_B;}
-.wrapfont ul{font-family: pre_B; color: var(	--accent-color1); margin-top: 6%; font-size: 20px; display: flex; justify-content: center; width:719px; justify-content: space-between;}
-.wrapfont ul{font-family: pre_B; color: var(	--accent-color1); margin-top: 6%; font-size: 20px; display: flex; justify-content: center; width:719px; justify-content: space-between;}
+.wrapfont .portfolio_t{font-size: 18px; font-family: pre_B; color: var(	--accent-color);}
+.wrapfont ul{font-family: pre_B; color: var(	--accent-color);  margin-top: 32%; font-size: 18px; display: flex; justify-content: center; width:800px; justify-content: space-between;}
 /* 2. KangSeonga 소개 영역*/
 section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
 .section_title{
