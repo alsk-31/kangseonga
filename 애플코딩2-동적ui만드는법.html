@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동적 ui 만들기</title>
+    <link rel="stylesheet" href="./애플코딩2.css">
+</head>
+<body>
+
+    <!-- ui 만드는 법
+    1. html/css로 미리디자인
+    2. 필요할때 보여달라고 코드짜기-->
+
+    <div class="alert-box" id="alert">알림창임
+        <button onclick="openForm()">닫기</button>
+    </div>
+    <button onclick="document.getElementById('alert').style.display='block'">버튼</button>
+
+    <script>
+        //function 함수 >>:작명은 자유롭게  function 작명(){}
+        function openForm(){
+            document.getElementById('alert').style.display='none';
+        }
+    </script>
+</body>
+</html>

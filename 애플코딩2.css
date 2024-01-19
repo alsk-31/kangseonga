@@ -1,0 +1,6 @@
+.alert-box{
+    background: skyblue;
+    padding: 30px;
+    border-radius: 10px;
+    display: none;
+}
