@@ -198,6 +198,7 @@ main .comm_area.company{margin-top: 25px; height: 1001px; background: url(../ima
 .footer .footer_address .address_list{line-height: 1.8; color: #888; display: flex;}
 .footer .footer_address .address_list li:last-child::before{content: ''; display: inline-block;margin: 0 15px; width: 1px; height: 15px; background: #bcbcbc;}
 .copyright{margin-top: 5px; color: #888;  text-transform: uppercase; margin-bottom: 35px;}
+
 /* ~ 1024px ----------- */
 @media only screen 
 and (max-width: 1023px)
@@ -226,10 +227,14 @@ and (max-width: 1023px)
   .header .gnb_area .gnb > ul > li > a{padding-bottom: 0;color: #3e3a39;}
 	.header .gnb_area .gnb .gnb_sub_area{position: absolute;left: 200px;top: 100px}
 	.header .gnb_area .gnb .gnb_sub_area li{margin: 0 0 28px;}
-
-  
   .header .link_area{display: none;}
   
+
+/* esg_ ESG경영 */
+	.main .comm_area.esg{margin-top: 100px; height: auto;}
+	.main .comm_area .comm_tit > div{font-size: 17px;}
+
+
 /*footer*/
   .footer .footer_tool{height: 10px;}
   footer .tool_menu_area,
@@ -260,6 +265,7 @@ and (max-width:766px)
   .main-slider .slider-visual .visual-txt{position: absolute; left: 0; top: 40%; width: 100%; line-height: 1.4; text-align: center; 
     vertical-align: middle; font-size: 35px; font-family: NotoSansKR-Bold; color: #fff; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
     .main-visual .txt{display: none;}
+    
   /* footer */
   .footer{font-size: 13px;}
   .footer .footer_site{flex-basis: 100% !important;}
