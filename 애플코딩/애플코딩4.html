@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 업그레이드해주는 파라미터 문법 </title>
+</head>
+<style>
+    .alert-box{ 
+     display: none;
+     background:#ccc;
+     padding: 30px;
+     }
+</style>
+
+<body>
+<div class="alert-box" id="alert">
+    <p id="title">알림창임</p>
+    <button id="close">닫기</button>
+</div>
+<button onclick="아이디알림창1()">버튼1</button>
+<button onclick="비번알림창2()">버튼2</button>
+ 
+<script>
+    document.getElementById('close').addEventListener('click',function(){
+        document.getElementById('alert').style.display ='none';
+    });
+
+// 원하는요소인'close'를 클릭했을때 실행하시오
+//1. event 스크롤 클릭 입력 웹페이지 조작의 모든것. mouseover,scroll, 등등keydown -> 키입력 감지 
+//이벤트리스너는 감시자 역할,, 유저가 하는 기능을 감지하는 역할을 한다. 
+
+//function(){};  >> 파라미터자리에 들어가는 함수는 콜백함수 이다.
+//코드를 순차적 실행을 할 때 가끔 보임
+</script>
+</body>
+</html>
