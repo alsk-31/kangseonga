@@ -269,7 +269,7 @@
   width: 1px;
   height: var(--swiper-virtual-size);
 }
-/*모달스와이퍼창 수정*/
+/* 모달 스와이퍼창 수정 */
 :root {
   --swiper-navigation-size: 50px;
   
@@ -291,7 +291,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #b1b1b1;
+  color: #fff;
 }
 /* .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
@@ -320,14 +320,15 @@
 .swiper-rtl .swiper-button-next svg {
   transform: rotate(180deg);
 }
+/*모달 슬라이드 화살표 위치*/
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: var(--swiper-navigation-sides-offset, 10px);
+  left: var(--swiper-navigation-sides-offset, 10%);
   right: auto;
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: var(--swiper-navigation-sides-offset, 10px);
+  right: var(--swiper-navigation-sides-offset, 10%);
   left: auto;
 }
 .swiper-button-lock {
@@ -347,9 +348,11 @@
 .swiper-rtl .swiper-button-next:after {
   content: "prev";
 }
+/*모달 슬라이드 화살표 위치*/
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: var(--swiper-navigation-sides-offset, 10px);
+  position: fixed;
+  right: var(--swiper-navigation-sides-offset, 10%);
   left: auto;
 }
 .swiper-button-next:after,
