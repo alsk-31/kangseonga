@@ -343,10 +343,11 @@
   letter-spacing: 0;
   font-variant: initial;
   line-height: 1;
+  
 }
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-  content: "prev";
+  display: none;
 }
 /*모달 슬라이드 화살표 위치*/
 .swiper-button-next,
@@ -357,7 +358,7 @@
 }
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  content: "next";
+ display: none;
 }
 /* Navigation font end */
 :root {
