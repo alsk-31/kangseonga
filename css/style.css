@@ -16,10 +16,7 @@
   font-family: pre_Bk;
   src: url(../webfont/Pretendard-Black.woff) format("woff");
 }
-@font-face {
-  font-family: pre_Bk;
-  src: url(../webfont/Pretendard-Black.woff) format("woff");
-}
+
 
 * {
   margin: 0;
@@ -54,7 +51,7 @@ header {
   line-height: 60px;
   margin: 0 auto;
   font-weight: 700;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(3px); 
   position: fixed;
   z-index: 50;
@@ -63,6 +60,7 @@ header .topmenu {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  
 }
 header .topmenu .top_left {
   display: block;
@@ -111,15 +109,16 @@ section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
   width: 100wh;
   display: flex;
 }
-.left_con{width: 588px;}
+.left_con{  line-height: 1.8em;}
+.left_con p{width: 588px;}
 .sec2 .sec2wrap .left_con .imgbox {
   width: 588px;
-  height: 290px;
+  height: 300px;
   border-radius: 20px;
   background: url(../image/myself.png) no-repeat ;
 }
 .sec2 .sec2wrap .right_con {
-  line-height: 1.6em;
+  line-height: 1.8em;
   margin-left: 130px;
 }
 /* 사용가능한 툴 */
@@ -188,6 +187,7 @@ section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
 .title_l{font-size: 28px; font-family: pre_B; margin-bottom: 28px; }
 
 /* 이러한 노력을 하고 있어요 */
+.emoji{display: inline-block;}
 .myeffort{margin-top: 130px; z-index: -10; width: 100%; height: 622px; background: var(--background-color); background-attachment: fixed;}
 .myeffort .mye_wrap{padding-left: 24px; overflow: hidden;}
 .myeffort .mye_wrap .pt_120{padding-top: 120px; margin: 0 auto; text-align: center; margin-bottom: 50px;}
@@ -266,7 +266,7 @@ section.sec3 .portfolio-list .p-wrap {
   display: grid;
   grid-template-columns: repeat(3, minmax(10px, auto));
   grid-template-rows: 280px;
-  gap: 24px 24px;
+  gap: 30px 30px;
   text-align: center;
 }
 .sec3 .portfolio-list .p-item {
@@ -323,10 +323,21 @@ section.sec3 .portfolio-list .p-wrap {
 :root {
   --swiper-theme-color: #fff;}
 /* contact */
-.pone{padding-top: 50px; font-size: 20px; font-family: pre_B;}
-.ptwo{padding-top: 10px;}
-.pthree{font-family: pre_L; font-size: 40px; margin-top: 30px; margin-bottom: 150px;}
 
+.sec4{margin-top: 150px; background: #111; color: #e1e1e1; text-align: center; padding-bottom: 100px;}
+.pone{padding-top: 0px; font-size: 20px; font-family: pre_B;  }
+.ptwo{padding-top: 10px;}
+.pthree{display: inline-block; font-family: pre_B; font-size: 18px; margin-top: 30px; padding: 10px 100px; border-radius: 50px; background-color: #e1e1e1; color: var(--text-color1);}
+.pthree:hover{background-color: var(	--accent-color); box-shadow: rgba(3, 3, 3, 0.9) 0px 8px 24px;}
+
+/* #email-form {display: none;} */
+.form-wrap {
+  /* 폼태그 내용을 감쌈*/
+  background-color: white;
+  color: #333;
+  padding: 15px 25px;
+} 
+#email-form{display: none;}
 
 /*위로가기 버튼*/
 #up-too {
@@ -347,6 +358,7 @@ section.sec3 .portfolio-list .p-wrap {
   background-color: #fff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+
 #up-too img{position:absolute;left: 50%;top: 50%; transform:translate(-50%,-50%); width:14px; height: 18px;}
 #up-too.on {opacity: 1;}
 footer {width: 100%; left: 0; bottom: 0; margin: 0 auto; padding: 20px 0;background-color: var(--background-color);}
