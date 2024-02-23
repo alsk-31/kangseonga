@@ -137,6 +137,5 @@ gnbItems.forEach((gnbItem, index) => {
      },20)
   }
 
-
-})
+});
 

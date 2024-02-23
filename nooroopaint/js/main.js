@@ -36,4 +36,6 @@ $(function () {
     $(".page .tabitem").css("height", ht);
     $(".page .tabitem>div").eq(i).css("display", "block");
   });
+
+ 
 });
