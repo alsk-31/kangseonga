@@ -327,7 +327,7 @@ section.sec3 .portfolio-list .p-wrap {
 .sec4{margin-top: 150px; background: #111; color: #e1e1e1; text-align: center; padding-bottom: 100px;}
 .pone{padding-top: 0px; font-size: 20px; font-family: pre_B;  }
 .ptwo{padding-top: 10px;}
-.pthree{display: inline-block; cursor: pointer; font-family: pre_B; font-size: 18px; margin-top: 30px; padding: 10px 100px; border-radius: 50px; background-color: #e1e1e1; color: var(--text-color1);}
+.pthree{cursor: pointer; display: inline-block; font-family: pre_B; font-size: 18px; margin-top: 30px; padding: 10px 100px; border-radius: 50px; background-color: #e1e1e1; color: var(--text-color1);}
 .pthree:hover{background-color: var(	--accent-color); box-shadow: rgba(3, 3, 3, 0.9) 0px 8px 24px;}
 
 

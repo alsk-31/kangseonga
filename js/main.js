@@ -136,6 +136,19 @@ gnbItems.forEach((gnbItem, index) => {
       }
      },20)
   }
-
+  document.getElementById("sendEmail").addEventListener("click", function() {
+    // 이메일 주소 및 제목, 내용 설정
+    var to = "alsk-31@naver.com";
+    var subject = "제목을 입력해주세요";
+    var body = "내용을 입력해주세요";
+  
+    // Gmail 클라이언트 열기
+    var gmailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(to) + "&su=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    window.open(gmailLink);
+  
+    // Outlook 클라이언트 열기
+    var outlookLink = "mailto:" + to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    window.open(outlookLink);
+  });
 });
 
