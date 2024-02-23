@@ -221,6 +221,7 @@
 
     </div> 
     <!-- //2.profile -->
+    
     <!-- 3.porfolio -->
     <section class="sec3" id="sectionThree">
     <p class="sec3_title">Experience.</p>
@@ -1177,8 +1178,45 @@
       <p class="pthree contactBtn" data-aos="fade-up" data-aos-duration="400" data-aos-delay="350">문의하기</p>
     </section>
     
-    <form class="gform" method="POST" data-email="alsk-31@naver.com" action="https://script.google.com/macros/s/AKfycbzXudbzmarxZKkv8C5aN9KGEqf4xsdmDDoyywDMzEWa4nFIIXPlKB8AXSaD8uZHWrq_NQ/exec"></form>
-  
+    <form id="email-form">
+      <label for="to">받는 사람:</label>
+      <input type="email" id="to" name="to" required><br><br>
+    
+      <label for="subject">제목:</label>
+      <input type="text" id="subject" name="subject" required><br><br>
+    
+      <label for="message">내용:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    
+      <button type="submit" class="showFormBtn" id="contactBtn" >메일 보내기</button>
+    </form>
+    <script>
+      document.getElementById('contactBtn').addEventListener('click', function() {
+        var form = document.getElementById('email-form');
+        form.style.display = 'block'; // 폼 보이기
+      });
+      
+      document.getElementById('email-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // 기본 동작인 폼 제출 방지
+        var formData = new FormData(event.target);
+        fetch('/send-email', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('이메일 전송에 실패했습니다.');
+          }
+          alert('이메일이 성공적으로 전송되었습니다.');
+          document.getElementById('email-form').reset(); // 폼 초기화
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('이메일 전송 중 오류가 발생했습니다.');
+        });
+      });
+      </script>
+
       
     <!-- 위로가기 버튼 -->
     <div id="up-too" class="fff"><img src="./image/uptoo.svg" alt=""></div>

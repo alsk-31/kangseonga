@@ -72,6 +72,9 @@ button.next {
   border: none;
   font-size: 0;
 }
+
+.date{display: inline-block; margin-top: 10px;}
+.fontb{ font-family: spokaneo-R;}
 .newice {
   width: 1280px;
   margin: 0 auto;
@@ -117,7 +120,7 @@ button.next {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   word-wrap: break-word;
-  line-height: 1.4em;
+  line-height: 1.2em;
 }
 .newice .news .box .boxright p.top2 {
   overflow: hidden;
@@ -126,7 +129,7 @@ button.next {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   word-wrap: break-word;
-  line-height: 1.6em;
+  line-height: 1.4em;
   margin-top: 15px;
 }
 .newice .news .box .boxright p span {
@@ -197,6 +200,7 @@ button.next {
 
 .contech ul > li .before p {
   position: absolute;
+  font-family: spokaneo-r;
   left: 0;
   bottom: 0;
   line-height: 12px;

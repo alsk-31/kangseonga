@@ -11,7 +11,9 @@
 /* ↓↓왼쪽 싸이드메뉴 + 오른쪽 타이틀 및 페이지 좌표 서식-- head.css 참조*/
 .page .right .maininfo h2 {
   text-align: center;
+  padding-top: 30px;
   margin-bottom: 18px;
+  font-family: spokaneo-r;
 }
 .shortline {
   position: relative;
@@ -46,9 +48,13 @@
 .page .right .coninner {
   margin-left: 80px;
 }
+.page .right .coninner h2{
+  font-family: spokaneo-r;
+
+}
 .page .right .coninner p {
-  margin-top: 25px;
-  line-height: 1.6em;
+  margin-top: 24px;
+  line-height: 1.7em;
   margin-bottom: 50px;
 }
 .factory {
@@ -76,7 +82,8 @@
 .factory dl {
   margin-right: 80px;
 }
-.factory dl dt {
+.factory dl dt {  
+  font-family: spokaneo-r;
   margin-bottom: 30px;
   line-height: 1.6em;
 }
@@ -111,6 +118,7 @@
   margin-left: 80px;
 }
 .factory_re dl dt {
+  font-family: spokaneo-r;
   margin-bottom: 30px;
   line-height: 1.8em;
 }

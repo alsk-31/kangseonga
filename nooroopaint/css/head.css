@@ -4,8 +4,20 @@
   src: url(../webfont/Subway-Black.woff) format("woff");
 }
 @font-face {
-  font-family: spokaneo;
+  font-family: spokaneo-l;
   src: url(../webfont/SpoqaHanSansNeo-Light.woff) format("woff");
+}
+@font-face {
+  font-family: spokaneo-r;
+  src: url(../webfont/SpoqaHanSansNeo-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: spokaneo-m;
+  src: url(../webfont/SpoqaHanSansNeo-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: spokaneo-b;
+  src: url(../webfont/SpoqaHanSansNeo-Bold.woff) format("woff");
 }
 /*head, 좌측네비 & 우측상단 타이틀 = head.css 참조 */
 * {
@@ -17,10 +29,12 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #2d2d2d;
+  color:inherit;
 }
 body {
-  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-family: spokaneo-L;
+  color: #383838;
+
 }
 .top {
   width: 100%;
@@ -47,6 +61,7 @@ body {
   margin-top: 20px;
   height: 50px;
 }
+
 .top .topmenu ul li {
   margin-left: 20px;
 }
@@ -119,7 +134,7 @@ nav .bg.on {
   height: 410px;
   top: 20px;
   border-bottom: 1px solid #ccc;
-  background: #a6cc38;
+  background: #70a729;
 }
 nav ul.sub a.on {
   color: #fff;
@@ -135,7 +150,7 @@ nav > ul {
   margin: 0 auto;
   z-index: 999;
 }
-nav > ul > li {
+nav > ul > li {  font-family: spokaneo-r;
   position: relative;
   width: calc(100% / 7);
   margin-left: 50px;
@@ -201,7 +216,6 @@ nav > ul > li > a {
   width: 100%;
 }
 nav > ul > li > ul > li a:hover {
-  font-weight: 800;
   color: #007d56;
 }
 
@@ -255,7 +269,7 @@ nav:hover .bg {
 .page .rightwrap p {
   line-height: 60px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 18px;  font-family: spokaneo-r;
 }
 .page .leftnav .pline {
   width: 170px;
@@ -271,7 +285,7 @@ nav:hover .bg {
 }
 .page .leftnav ul {
   line-height: 35px;
-  font-size: 15px;
+  font-size: 15px;  font-family: spokaneo-r;
 }
 .page .leftnav ul.sub a:hover {
   color: #e31a2c;
@@ -280,6 +294,7 @@ nav:hover .bg {
 .page .leftnav ul li a:focus::before {
   content: "-   ";
   font-weight: 500;
+  
 }
 
 .page .right {

@@ -40,6 +40,17 @@
   margin-bottom: 40px;
   margin-top: 10px;
 }
+.page .right #tabcon1 h2 {
+  line-height: 1.6em;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  font-family: spokaneo-m;
+}
+.page .right #tabcon1 h3 {
+  font-family: spokaneo-r;
+}
+
+
 .page .right #tabcon1 img {
   width: 1000px;
   height: 500px;
