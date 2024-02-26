@@ -136,6 +136,10 @@ gnbItems.forEach((gnbItem, index) => {
       }
      },20)
   }
+
+
+
+  /* 메일보내기 서비스  */
   document.getElementById("sendEmail").addEventListener("click", function() {
     // 이메일 주소 및 제목, 내용 설정
     var to = "alsk-31@naver.com";
@@ -150,5 +154,8 @@ gnbItems.forEach((gnbItem, index) => {
     var outlookLink = "mailto:" + to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
     window.open(outlookLink);
   });
+
+
+
 });
 

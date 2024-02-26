@@ -57,7 +57,7 @@ header {
   z-index: 50;
 }
 header .topmenu {
-  max-width: 1200px;
+  max-width: 1680px;
   margin: 0 auto;
   display: flex;
   
@@ -97,6 +97,7 @@ section.sec1 {background: url(../image/gg.png) center/cover fixed; }
 .wrapfont{ padding-top: 30%; position: absolute; top: 60%; left: 50%; transform: translate(-50%,-60%); text-align: center; margin-top: 80px;} 
 .wrapfont .portfolio_t{padding-top: 400px; font-size: 50px; font-family: pre_B; color: var(--text-color1);}
 .wrapfont ul{font-family: pre_B;  color: var(	--text-color1); padding-top: 40px; font-size: 18px; width:580px; display: flex; justify-content: space-between;}
+
 /* 2. KangSeonga 소개 영역*/
 section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
 .section_title{
