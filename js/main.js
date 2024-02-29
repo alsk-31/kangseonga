@@ -137,7 +137,17 @@ gnbItems.forEach((gnbItem, index) => {
      },20)
   }
 
-
+  /* 스크롤시 메뉴 이벤트*/
+  window.onscroll = function () {
+    let ht = document.documentElement.scrollTop;
+    if (ht > 600) {
+      document.getElementById("nav").classList.add("on");
+      document.getElementById("nav").style.opacity = "1";
+    } else {
+      document.getElementById("nav").classList.remove("on");
+      document.getElementById("nav").style.opacity = "0";
+    }
+  };
 
   /* 메일보내기 서비스  */
   document.getElementById("sendEmail").addEventListener("click", function() {
