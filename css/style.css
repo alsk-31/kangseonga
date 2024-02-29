@@ -191,7 +191,8 @@ object-fit: cover;}
     animation: sdb 2s infinite;
     box-sizing: border-box;
   }
-  .scroll_txt{margin-top: 110px;
+  .scroll_txt{
+    margin-top: 120px;
     display: block;
     text-align: center; 
     color: #fff; 
@@ -367,8 +368,6 @@ section.sec3 {
 .close::after{transform: rotate(-45deg);}
 .morap{position: relative;}
 
-
-
 section.sec3 .modal {
   position: fixed;
   display: none;
@@ -460,8 +459,8 @@ section.sec3 .portfolio-list .p-wrap {
 }
 :root {
   --swiper-theme-color: #fff;}
-/* contact */
 
+  /* contact */
 .sec4{
   margin-top: 150px; 
   background: #121820; 
