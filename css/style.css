@@ -51,7 +51,7 @@ header {
   line-height: 60px;
   margin: 0 auto;
   font-weight: 700;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(3px); 
   position: fixed;
   z-index: 50;
@@ -89,15 +89,122 @@ header .topmenu .hcolor{color: var(	--accent-color) !important;}
 /* 1. 로고 및 상징 이미지 영역 */
 
 /*배경 사진*/
-section.sec1 {background: url(../image/gg.png) center/cover fixed; }
-.sec1 .symbolbg {position: relative; width: 100%; height: 100vh;}
-/* 로고 이미지 */
-.sec1 .symbolbg object {display: block; position: absolute; left: 0;top: 0; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;}
-.sec1 .symbolbg .innerlogo {position: absolute; width: 170px; height: 193px; top: 45%; left: 50%; transform: translate(-45%, -50%);}
-.wrapfont{ padding-top: 30%; position: absolute; top: 60%; left: 50%; transform: translate(-50%,-60%); text-align: center; margin-top: 80px;} 
-.wrapfont .portfolio_t{padding-top: 400px; font-size: 50px; font-family: pre_B; color: var(--text-color1);}
-.wrapfont ul{font-family: pre_B;  color: var(	--text-color1); padding-top: 40px; font-size: 18px; width:580px; display: flex; justify-content: space-between;}
+section.sec1 {
+  background-color: #326ABD; 
+  width: 100wh; 
+  height: 100vh; 
+  overflow: hidden;
+}
+.symbolbg{  background-image: url(/image/web_bk.png);
+  background-repeat: no-repeat;}
+.sec1wrap{
+  width: 1580px; 
+  margin: 0 auto; 
+  padding-top: 140px;
+  display: flex; 
+  justify-content: space-between;
+  color: #fff;
+  position: relative;
+}
+.s1_left .main_t{ 
+  font-family: pre_Bk; 
+  padding-top: 153px; 
+  font-size: 76px; 
+  line-height: 91px;
+}
 
+  .s1_left .sub_t{
+    margin-top: 86px;
+  }
+  .s1_left .view_btn{
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    margin-top: 118px;
+    font-size: 18px;
+    padding: 15px 60px;
+    color: #000;
+    cursor: pointer;
+    border-radius: 50;
+  }
+  .s1_right{
+    position: absolute;
+    right: -80px;
+    background: url(/image/web_bk.png);
+    width: 851px;
+    height: 741px;
+  }
+  .scroll{  
+    margin-top: 20px;
+    text-align: center; 
+    display: block; 
+    color: #fff;
+  }
+  .scroll span {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    width: 26px;
+    height: 45px;
+    margin-left: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+  .scroll span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sdb 2s infinite;
+    animation: sdb 2s infinite;
+    box-sizing: border-box;
+  }
+  .scroll_txt{margin-top: 60px;
+    display: block;
+    text-align: center; 
+    color: #fff; 
+    font-size: 18px;
+  }
+
+  @-webkit-keyframes sdb {
+    0% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 /* 2. KangSeonga 소개 영역*/
 section.sec2 {width: 100%; max-width: 1200px; margin: 0 auto; }
 .section_title{
