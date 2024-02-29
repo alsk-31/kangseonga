@@ -140,15 +140,25 @@ object-fit: cover;}
     border-radius: 50;
     font-family: pre_B;
   }
-  .s1_right{
+  .s1_right {
     position: absolute;
     right: -150px;
-    background: url(/image/web_bk.png);
     width: 851px;
     height: 741px;
-    
-  }
 
+    background-size: cover;
+  }
+  
+  .s1_right .effect_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/image/web_bk.png); /* 배경 이미지 설정 */
+    animation: fadeEffect 3s infinite alternate; /* 애니메이션 효과 추가 */
+  }
+  
   @keyframes fadeEffect {
     0% {
       opacity: 1;
