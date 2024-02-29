@@ -166,7 +166,7 @@ section.sec1 {
     animation: sdb 2s infinite;
     box-sizing: border-box;
   }
-  .scroll_txt{margin-top: 60px;
+  .scroll_txt{margin-top: 100px;
     display: block;
     text-align: center; 
     color: #fff; 
