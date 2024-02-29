@@ -201,11 +201,16 @@ object-fit: cover;}
     box-sizing: border-box;
   }
   .scroll_txt{
-    margin-top: 120px;
+    position: absolute;
+    width: 100vh;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 40px;
     display: block;
     text-align: center; 
     color: #fff; 
     font-size: 18px;
+    
   }
 
   @-webkit-keyframes sdb {
@@ -250,7 +255,7 @@ section.sec2 {
 .section_title{
   font-family: pre_Bk;
   font-size: 80px;
-  padding-top: 120px;
+  padding-top: 170px;
   color:var(--background-color0);
 }
 .title_l{  color: var(--text-color1);}
