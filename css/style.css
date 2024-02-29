@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: pre_L;
-  src: url(../webfont/Pretendard-Light.woff) format("woff");
+  font-family: pre_M;
+  src: url(../webfont/Pretendard-Medium.woff) format("woff");
 }
 @font-face {
   font-family: pre_R;
-  src: url(../webfont/Pretendard-Regular.woff) format("woff");
+  src: url(../webfont/Pretendard-Medium.woff) format("woff");
 }
 @font-face {
   font-family: pre_B;
@@ -29,7 +29,8 @@
 	--text-color3:rgba(0,0,0,0.6);
 	--background-color: #f5f6f9;
 	--background-color0: #0D1117;
-	--accent-color: #BF8A3D;
+	--accent-color: #1F26B7;
+	--accent-color0: #9ea7f7;
 }
 
 ul {list-style: none;}
@@ -38,7 +39,7 @@ a {text-decoration: none; color: inherit;}
 
 body {
   font-family: pre_R;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   color: var(--text-color1);
 }
@@ -78,6 +79,7 @@ header .topmenu nav {
   font-size: 16px;
 }
 header .topmenu nav ul {
+  font-family: pre_R;
   width: 100%;
   display: flex;
   justify-content: right;
@@ -114,10 +116,8 @@ object-fit: cover;}
   font-family: pre_Bk; 
   padding-top: 140px; 
   font-size: 90px; 
-  line-height: 91px;
-  
+  line-height: 91px;  
 }
-
   .s1_left .sub_t{
     margin-top: 86px;
    font-size: 21px;
@@ -130,7 +130,6 @@ object-fit: cover;}
   .s1_left .view_btn{
     display: inline-block;
     background: #fff;
-    border: 1px solid #fff;
     border-radius: 50px;
     margin-top: 118px;
     font-size: 18px;
@@ -246,19 +245,22 @@ section.sec2 {
   width: 100%; 
   max-width: 1200px; 
   margin: 0 auto; 
+  color: var(--text-color3);
 }
 .section_title{
   font-family: pre_Bk;
-  font-size: 60px;
+  font-size: 80px;
   padding-top: 120px;
   color:var(--background-color0);
 }
+.title_l{  color: var(--text-color1);}
 .sec2 .sec2wrap {
   margin-top: 110px;
   width: 100wh;
   display: flex;
 }
-.left_con{line-height: 1.8em;}
+.left_con{line-height: 1.7em;}
+
 .left_con p{width: 588px;}
 .sec2 .sec2wrap .left_con .imgbox {
   width: 588px;
@@ -267,8 +269,22 @@ section.sec2 {
   background: url(../image/myself.png) no-repeat ;
 }
 .sec2 .sec2wrap .right_con {
-  line-height: 1.8em;
+  line-height: 1.7em;
   margin-left: 130px;
+}
+.sec2 .sec2wrap .right_con .introduce{
+  font-family: pre_bk;
+  font-size: 34px; 
+  line-height: 42px;
+  color: var(--text-color1);
+}
+.sec2 .sec2wrap .right_con .introduce span{
+  color:var(	--accent-color);
+  font-size: 34px; 
+}
+.sec2 .sec2wrap .right_con span{
+  font-size: 28px; 
+  line-height: 36px;
 }
 /* 사용가능한 툴 */
 .sec2 .sec2wrap .right_con .tool_wrap{display: flex; justify-content: space-between; width: 340px;}
@@ -332,8 +348,18 @@ section.sec2 {
 
 
 /* 교육/경력 , 자격사항 */
-.sec2 span.date{font-size: 13px; color: var(--text-color2); letter-spacing: -1px; margin-left: 6px;} 
-.title_l{font-size: 28px; font-family: pre_B; margin-bottom: 28px; }
+.sec2 span.date{
+  font-size: 16px; 
+  font-family: pre_b;
+  color: var(--text-color2); 
+  letter-spacing: -1px;
+  margin-left: 6px;
+} 
+.title_l{
+  font-size: 30px; 
+  font-family: pre_B; 
+  margin-bottom: 28px; 
+}
 
 /* 이러한 노력을 하고 있어요 */
 .emoji{display: inline-block;}
@@ -344,23 +370,23 @@ section.sec2 {
 .myeffort .mye_wrap .effortbox .boxstyle{margin-right: 24px; border-radius: 20px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;} 
 /* 기본색 폰트_ */
 .effort_txt{position: relative; padding: 24px; margin-top: 190px;}
-.effort_txt .title_e{font-family: pre_B; font-size: 18px; }
-.effort_txt .date_e{font-family: pre_R; font-size: 14px; padding-bottom: 15px; color: var(--text-color2);}
-.effort_txt .sub_e{font-size: 16px; line-height: 1.4em; color: var(--text-color3);}
+.effort_txt .title_e{font-family: pre_B; font-size: 20px; }
+.effort_txt .date_e{font-family: pre_B; margin-top: 5px; font-size: 16px; padding-bottom: 17px; color: var(--text-color2);}
+.effort_txt .sub_e{color: var(--text-color3); line-height: 1.4em;}
 /* 흰색 폰트  */
 .effort_txt_w{position: relative; padding: 24px; margin-top: 190px; color: #fff;}
-.effort_txt_w .title_e_w{font-family: pre_B; font-size: 18px; color: #fff; }
-.effort_txt_w .date_e_w{font-family: pre_R; font-size: 14px; padding-bottom: 15px; color: #a7a7a7; font-family: pre_L;}
-.effort_txt_w .sub_e_w{font-size: 16px; line-height: 1.4em; color: #d1d1d1; font-family: pre_L;}
+.effort_txt_w .title_e_w{font-family: pre_B; font-size: 20px; color: #fff; }
+.effort_txt_w .date_e_w{font-family: pre_B; margin-top: 5px; font-size: 16px; padding-bottom: 15px; color: #a7a7a7; font-family: pre_B;}
+.effort_txt_w .sub_e_w{color: #d1d1d1; line-height: 1.4em; font-family: pre_M;}
 .mye_wrap .ebox1{width: 614px; height: 355px; background: url(../image/effort01.png);}
-.mye_wrap .ebox2{width: 340px; height: 355px; background: url(../image/effort2.png);}
+.mye_wrap .ebox2{width: 348px; height: 355px; background: url(../image/effort2.png);}
 .mye_wrap .ebox3{width: 515px; height: 355px;background: url(../image/effort3.png);}
 .mye_wrap .ebox4{width: 562px; height: 355px;background: url(../image/effort4.png);}
 
 /*subpage1_portfolio 앨범형 포트폴리오 영역 */
-.sec3 .sec3_title{font-family: pre_Bk;font-size: 60px; padding-top: 130px; margin-bottom: 130px; }
-.p_group1{font-family: pre_B; font-size: 28px; margin-bottom: 45px;}
-.p_group2{margin-top: 200px; font-family: pre_B; font-size: 28px; margin-bottom: 45px;}
+.sec3 .sec3_title{font-family: pre_Bk;font-size: 80px; padding-top: 130px; margin-bottom: 130px; color: var(	--background-color0); }
+.p_group1{font-family: pre_B; font-size: 30px; margin-bottom: 45px;}
+.p_group2{margin-top: 200px; font-family: pre_B; font-size: 30px; margin-bottom: 45px;}
 section.sec3 {
   position: relative;
   width: 100%;
@@ -457,12 +483,14 @@ section.sec3 .portfolio-list .p-wrap {
   transition: all 0.3s ease 0s;
 }
 .sec3 .portfolio-list .p-item a .bg-white .p-txtbox .p-title {
-  font-size: 16px;
+  font-size: 20px;
+  margin-top: 10px;
   font-family: pre_B;
   text-align: center;
 }
 .sec3 .portfolio-list .p-item a .bg-white .p-txtbox .p-sub {
-  font-size: 13px;
+  font-size: 16px;
+  margin-top: 8px;
   font-family: pre_R;
   color: rgb(99, 99, 99);
   text-align: center;
@@ -496,12 +524,13 @@ font-size: 20px;
   margin-top: 30px; 
   padding: 10px 100px; 
   border-radius: 50px; 
-  background-color: #e1e1e1; 
-  color: var(--text-color1);
+  background-color: #e1e1e1;
+  color: #0D1117;
 }
 .pthree:hover{
   background-color: var(	--accent-color); 
-  box-shadow: rgba(3, 3, 3, 0.9) 0px 8px 24px;}
+  box-shadow: rgba(3, 3, 3, 0.9) 0px 8px 24px;
+  color: #fff;}
 
 /*위로가기 버튼*/
 #up-too {
