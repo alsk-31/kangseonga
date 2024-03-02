@@ -134,7 +134,7 @@ gnbItems.forEach((gnbItem, index) => {
       }else{
         clearInterval(scroll);
       }
-     },20)
+     },15)
   }
 
   /* 스크롤시 메뉴 이벤트*/
