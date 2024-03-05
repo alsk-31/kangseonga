@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="sec3" id="sectionThree" >
+        <p class="sec3_title">Experience.</p>
+        <div class="group-container">
+            <div class="group">
+                <p class="p_group1">웹디자인 & 퍼블리싱</p>
+                <div class="portfolio-list" data-group="group1">
+                    <div class="p-wrap">
+                        <!-- 여기에 초기에 보이는 p-item 요소들 -->
+                        <div class="btn p-item">
+                            <!-- p-item 내용 -->
+                        </div>
+                        <!-- 나머지 p-item 요소들 -->
+                    </div>
+                </div>
+                <!-- "더 보기" 버튼 추가 -->
+                <button class="btnLoadMore" data-group="group1">더 보기</button>
+            </div>
+            <div class="group">
+                <p class="p_group2">편집디자인</p>
+                <div class="portfolio-list" data-group="group2">
+                    <div class="p-wrap"> 
+                        <!-- 여기에 초기에 보이는 p-item 요소들 -->
+                        <div class="btn p-item">
+                            <!-- p-item 내용 -->
+                        </div>
+                        <!-- 나머지 p-item 요소들 -->
+                    </div>
+                </div>
+                <!-- "더 보기" 버튼 추가 -->
+                <button class="btnLoadMore" data-group="group2">더 보기</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const btnLoadMore = document.querySelectorAll('.btnLoadMore');
+
+            btnLoadMore.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    const group = btn.getAttribute('data-group');
+                    const portfolioList = document.querySelector(`.portfolio-list[data-group="${group}"] .p-wrap`);
+                    const itemsPerPage = 6;
+
+                    const items = portfolioList.querySelectorAll('.p-item');
+                    let visibleItems = 0;
+                    items.forEach(function(item) {
+                        if (item.style.display !== 'none') {
+                            visibleItems++;
+                        }
+                    });
+
+                    for (let i = visibleItems; i < visibleItems + itemsPerPage; i++) {
+                        if (items[i]) {
+                            items[i].style.display = 'block';
+                        }
+                    }
+
+                    // 모든 항목이 표시되었는지 확인하고, 필요한 경우 "더 보기" 버튼을 숨깁니다.
+                    const allItems = portfolioList.querySelectorAll('.p-item');
+                    if (visibleItems + itemsPerPage >= allItems.length) {
+                        btn.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
