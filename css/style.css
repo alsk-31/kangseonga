@@ -59,7 +59,7 @@ header {
   z-index: 50;
 }
 header .topmenu {
-  max-width: 1820px;
+  max-width: 1720px;
   margin: 0 auto;
   display: flex;
   text-transform: uppercase;
@@ -95,21 +95,20 @@ header .topmenu .hcolor{color: var(	--accent-color) !important;}
 /*배경 사진*/
 section.sec1 {
   background-color: #0D1117; 
-  width: 100wh; 
+  width: 100vw; 
   height: 100vh; 
   overflow: hidden;
 }
 .symbolbg{  
   background-image: url(/image/web_bk.png);
   background-repeat: no-repeat;
-object-fit: cover;}
+  object-fit: cover;}
 .sec1wrap{
   width: 1580px; 
   margin: 0 auto; 
   padding-top: 120px;
   display: flex; 
   justify-content: space-between;
- 
   position: relative;
 }
 .s1_left .main_t{ 
@@ -591,3 +590,8 @@ section.sec3 .portfolio-list .p-wrap {
 footer {width: 100%; left: 0; bottom: 0; margin: 0 auto; padding: 20px 0;background-color: var(--background-color);}
 footer .footerwrap {bottom: 0; position: relative; vertical-align: middle;}
 footer .footerwrap p {text-align: center; font-size: 12px;}
+
+@media only screen
+and (max-width:1023px){
+
+}
