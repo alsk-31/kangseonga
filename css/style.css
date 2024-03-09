@@ -198,15 +198,12 @@ section.sec1 {
     }
   }
   .scroll{  
-    width: 88px;
-    height: 88px;
     margin-top: 20px;
     text-align: center; 
-    display: inline-block; 
+    display: block; 
     color: #fff;
   }
   .scroll span {
-    display: block;
     position: absolute;
     top: 88%;
     left: 50%;
@@ -218,6 +215,7 @@ section.sec1 {
     box-sizing: border-box;
   }
   .scroll span::before {
+    position: absolute;
     top: 10px;
     left: 50%;
     content: '';
@@ -291,7 +289,7 @@ section.sec2 {
 .title_l{  color: var(--text-color1);}
 .sec2 .sec2wrap {
   margin-top: 110px;
-  width: 100vw;
+  width: 100%;
   display: flex;
 }
 .left_con{line-height: 1.7em;}
@@ -405,7 +403,7 @@ section.sec2 {
 .myeffort .mye_wrap .effortbox .boxstyle{margin-right: 24px; border-radius: 20px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;} 
 /* 기본색 폰트_ */
 .effort_txt{position: relative; padding: 24px; margin-top: 200px;}
-.effort_txt .title_e{font-family: pre_B; font-size: 20px; }
+.effort_txt .title_e{font-family: pre_Bk; font-size: 20px; }
 .effort_txt .date_e{font-family: pre_B; margin-top: 8px; font-size: 15px; padding-bottom: 17px; color: var(--text-color2);}
 .effort_txt .sub_e{color: var(--text-color3); line-height: 1.4em;}
 /* 흰색 폰트  */
@@ -598,7 +596,7 @@ section.sec3 .portfolio-list .p-wrap {
 
 #up-too img{position:absolute;left: 50%;top: 50%; transform:translate(-50%,-50%); width:14px; height: 18px;}
 #up-too.on {opacity: 1;}
-footer {width: 100%; left: 0; bottom: 0; margin: 0 auto; padding: 20px 0;background-color: var(--background-color);}
+footer {left: 0; bottom: 0; margin: 0 auto; padding: 20px 0;background-color: var(--background-color);}
 footer .footerwrap {bottom: 0; position: relative; vertical-align: middle;}
-footer .footerwrap p {text-align: center; font-size: 12px;}
+footer .footerwrap p { text-align: center; font-size: 12px;}
 

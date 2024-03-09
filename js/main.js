@@ -137,16 +137,19 @@ gnbItems.forEach((gnbItem, index) => {
      },15)
   }
 
-  /*******  gnb 영역!! 스크롤 밑으로 내리면 gnb가 사라지는 이벤트 ************/
-  window.onscroll = function () {
-    let ht = document.documentElement.scrollTop;
-    if (ht > 600) {
-      document.getElementById("nav").classList.add("on");
-      document.getElementById("nav").style.opacity = "1";
-    } else {
-      document.getElementById("nav").classList.remove("on");
-      document.getElementById("nav").style.opacity = "0";
-    }
+  /*******  gnb 영역!! 스크롤 밑으로 내리면 gnb가 생기는 이벤트 ************/
+  window.onload = function() {
+    document.getElementById("nav").style.opacity = "0";
+    window.onscroll = function() {
+      let ht = document.documentElement.scrollTop;
+      if (ht > 600) {
+        document.getElementById("nav").classList.add("on");
+        document.getElementById("nav").style.opacity = "1";
+      } else {
+        document.getElementById("nav").classList.remove("on");
+        document.getElementById("nav").style.opacity = "0";
+      }
+    };
   };
   
   // gnb 메뉴를 누를시 각 섹션으로 부드럽게 이동하게 하는 이벤트
