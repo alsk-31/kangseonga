@@ -86,7 +86,7 @@ gnbItems.forEach((gnbItem, index) => {
    
 
  
-//스크롤이벤트
+/******************** 스크롤이벤트 *****************/
   let btn = document.getElementById('up-too');
   let docu = document.documentElement;
   let off; //도큐먼트가 바디를 넘어갔을떼 도큐먼트를 5등분 할 것임
@@ -137,7 +137,7 @@ gnbItems.forEach((gnbItem, index) => {
      },15)
   }
 
-  /* 스크롤시 메뉴 이벤트*/
+  /*******  gnb 영역!! 스크롤 밑으로 내리면 gnb가 사라지는 이벤트 ************/
   window.onscroll = function () {
     let ht = document.documentElement.scrollTop;
     if (ht > 600) {
@@ -148,8 +148,27 @@ gnbItems.forEach((gnbItem, index) => {
       document.getElementById("nav").style.opacity = "0";
     }
   };
+  
+  // gnb 메뉴를 누를시 각 섹션으로 부드럽게 이동하게 하는 이벤트
+  const gnbItem = document.querySelectorAll('.gnb_item a');
+      
+  function scrollToSection(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    const offsetTop = targetSection.offsetTop;
 
-  /* 메일보내기 서비스  */
+    window.scroll({
+      top: offsetTop,
+      behavior: 'smooth'
+    });
+  }
+
+  gnbItem.forEach(function(item) {
+    item.addEventListener('click', scrollToSection);
+  });
+
+  /*************  메일보내기 서비스  *************/
   document.getElementById("sendEmail").addEventListener("click", function() {
     // 이메일 주소 및 제목, 내용 설정
     var to = "alsk-31@naver.com";
@@ -165,7 +184,42 @@ gnbItems.forEach((gnbItem, index) => {
     window.open(outlookLink);
   });
 
+  /**************** 포트폴리오(편집디자인,웹디자인) 탭버튼 클릭시 이벤트 **************/
+  
+  // 탭 버튼과 탭 내용 부분들을 querySelectorAll을 사용해 변수에 담는다.
+  const tabItem = document.querySelectorAll(".tab__item");
+  const tabContent = document.querySelectorAll(".tab__content");
 
+  // 탭 버튼들을 forEach 문을 통해 한번씩 순회한다.
+  // 이때 index도 같이 가져온다.
+  tabItem.forEach((item, index) => {
+    // 탭 버튼에 클릭 이벤트를 준다.
+    item.addEventListener("click", (e) => {
+      // 탭 버튼들을 forEach 문을 통해 한번씩 순회한다.
+      tabItem.forEach((item) => {
+        // 탭 버튼들의 active 클래스를 제거한다.
+        item.classList.remove("active");
+      });
+      // 클릭한 index의 탭 버튼에 active 클래스를 추가한다.
+      tabItem[index].classList.add("active");
+
+      // 탭 버튼의 id값을 string으로 가져온다.
+      const tabItemId = String(item.id);
+      // 탭 내용 부분들을 forEach 문을 통해 한번씩 순회한다.
+      tabContent.forEach((item, index) => {
+        // 탭 내용 부분들 전부 active 클래스를 제거한다.
+        item.classList.remove("active");
+
+        // 탭 내용의 id값을 string으로 가져온다.
+        const tabContentId = String(item.id);
+        // 만약 탭 버튼의 id 값과 탭 내용의 id값이 같다면,
+        // 해당 탭 내용에 active 클래스를 추가한다.
+        if(tabContentId === tabItemId) {
+          tabContent[index].classList.add("active");
+        }
+      });
+    });
+  });
 
 });
 

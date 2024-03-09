@@ -26,7 +26,7 @@
 :root{
 	--text-color1:rgba(0,0,0,0.8);
 	--text-color2:rgba(0,0,0,0.4);
-	--text-color3:rgba(0,0,0,0.6);
+	--text-color3:rgba(0,0,0,0.7);
 	--background-color: #f5f6f9;
 	--background-color0: #0D1117;
 	--accent-color: #1F26B7;
@@ -54,6 +54,7 @@ header {
   margin: 0 auto;
   font-weight: 700;
   color: var(--background-color0);
+  background-color: rgb(255, 255, 255,0.3);
   backdrop-filter: blur(3px); 
   position: fixed;
   z-index: 50;
@@ -85,7 +86,6 @@ header .topmenu nav ul {
   justify-content: right;
 }
 header .topmenu nav ul li{padding-left: 3%;}
-
 header .topmenu nav ul a:hover {color: var(	--accent-color);}
 header .topmenu .hcolor{color: var(	--accent-color) !important;}
 
@@ -395,30 +395,37 @@ section.sec2 {
 
 /* 이러한 노력을 하고 있어요 */
 .emoji{display: inline-block;}
-.myeffort{margin-top: 130px; z-index: -10; width: 100%; height: 622px; background: var(--background-color); background-attachment: fixed;}
+.myeffort{margin-top: 130px; z-index: -10; width: 100%; height: 680px; background: var(--background-color); background-attachment: fixed;}
 .myeffort .mye_wrap{padding-left: 24px; overflow: hidden;}
 .myeffort .mye_wrap .pt_120{padding-top: 120px; margin: 0 auto; text-align: center; margin-bottom: 50px;}
 .myeffort .mye_wrap .effortbox{display: flex; height: 622px ;}
 .myeffort .mye_wrap .effortbox .boxstyle{margin-right: 24px; border-radius: 20px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;} 
 /* 기본색 폰트_ */
-.effort_txt{position: relative; padding: 24px; margin-top: 190px;}
-.effort_txt .title_e{font-family: pre_B; font-size: 20px; }
-.effort_txt .date_e{font-family: pre_B; margin-top: 5px; font-size: 16px; padding-bottom: 17px; color: var(--text-color2);}
+.effort_txt{position: relative; padding: 24px; margin-top: 200px;}
+.effort_txt .title_e{font-family: pre_Bk; font-size: 20px; }
+.effort_txt .date_e{font-family: pre_B; margin-top: 8px; font-size: 15px; padding-bottom: 17px; color: var(--text-color2);}
 .effort_txt .sub_e{color: var(--text-color3); line-height: 1.4em;}
 /* 흰색 폰트  */
-.effort_txt_w{position: relative; padding: 24px; margin-top: 190px; color: #fff;}
+.effort_txt_w{position: relative; padding: 24px; margin-top: 200px; color: #fff;}
 .effort_txt_w .title_e_w{font-family: pre_B; font-size: 20px; color: #fff; }
-.effort_txt_w .date_e_w{font-family: pre_B; margin-top: 5px; font-size: 16px; padding-bottom: 15px; color: #a7a7a7; font-family: pre_B;}
+.effort_txt_w .date_e_w{font-family: pre_B; margin-top: 8px; font-size: 15px; padding-bottom: 15px; color: #a7a7a7; font-family: pre_B;}
 .effort_txt_w .sub_e_w{color: #d1d1d1; line-height: 1.4em; font-family: pre_M;}
-.mye_wrap .ebox1{width: 614px; height: 355px; background: url(../image/effort01.png);}
-.mye_wrap .ebox2{width: 348px; height: 355px; background: url(../image/effort2.png);}
-.mye_wrap .ebox3{width: 515px; height: 355px;background: url(../image/effort3.png);}
-.mye_wrap .ebox4{width: 562px; height: 355px;background: url(../image/effort4.png);}
+.mye_wrap .ebox1{width: 614px; height: 365px; background: url(../image/effort01.png);}
+.mye_wrap .ebox2{width: 348px; height: 365px; background: url(../image/effort2.png);}
+.mye_wrap .ebox3{width: 515px; height: 365px;background: url(../image/effort3.png);}
+.mye_wrap .ebox4{width: 562px; height: 365px;background: url(../image/effort4.png);}
 
 /*subpage1_portfolio 앨범형 포트폴리오 영역 */
-.sec3 .sec3_title{font-family: pre_Bk;font-size: 80px; padding-top: 130px; margin-bottom: 130px; color: var(	--background-color0); }
+.sec3 .sec3_title{font-family: pre_Bk;font-size: 80px; padding-top: 130px; margin-bottom: 80px; color: var(	--background-color0); }
+.tab{display: flex; align-items: center; padding: 1rem; margin-bottom: 40px;}
+.tab__item{padding: 0.6rem 1.3rem; font-size: 24px; margin-right: 1rem; border: 2px solid #353535; border-radius: 2rem; cursor: pointer;}
+.tab__item.active{display: inline-block; border: 2px solid var(--accent-color); background-color: var(--accent-color); color: #fff;}
+.tab__content{display: none;}
+.tab__content.active{display: block;}
+
 .p_group1{font-family: pre_B; font-size: 30px; margin-bottom: 45px;}
 .p_group2{margin-top: 200px; font-family: pre_B; font-size: 30px; margin-bottom: 45px;}
+
 section.sec3 {
   position: relative;
   width: 100%;
@@ -471,7 +478,7 @@ section.sec3 .portfolio-list .p-wrap {
   display: grid;
   grid-template-columns: repeat(3, minmax(10px, auto));
   grid-template-rows: 280px;
-  gap: 30px 30px;
+  gap: 24px 24px;
   text-align: center;
 }
 .sec3 .portfolio-list .p-item {
@@ -532,11 +539,12 @@ section.sec3 .portfolio-list .p-wrap {
 
   /* contact */
 .sec4{
-  margin-top: 150px; 
+  margin-top: 150px;
+  width: 100%;
+  height: 480px;
   background: #121820; 
   color: #e1e1e1; 
   text-align: center; 
-  padding-bottom: 120px;
 }
 .pone{
   font-size: 28px; 
@@ -547,14 +555,14 @@ section.sec3 .portfolio-list .p-wrap {
   margin-top: 10px;
   font-size: 20px; 
 }
-/* 스타일작업 */
+/* 메일보내기 버튼 스타일 */
 .pthree{
   cursor: pointer; 
   display: inline-block; 
   font-family: pre_B; 
   font-size: 18px; 
   margin-top: 30px; 
-  padding: 10px 100px; 
+  padding: 12px 100px; 
   border-radius: 50px; 
   background-color: #e1e1e1;
   color: #0D1117;
@@ -591,7 +599,3 @@ footer {width: 100%; left: 0; bottom: 0; margin: 0 auto; padding: 20px 0;backgro
 footer .footerwrap {bottom: 0; position: relative; vertical-align: middle;}
 footer .footerwrap p {text-align: center; font-size: 12px;}
 
-@media only screen
-and (max-width:1023px){
-
-}
