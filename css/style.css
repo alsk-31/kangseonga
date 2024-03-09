@@ -26,7 +26,7 @@
 :root{
 	--text-color1:rgba(0,0,0,0.8);
 	--text-color2:rgba(0,0,0,0.4);
-	--text-color3:rgba(0,0,0,0.7);
+	--text-color3:rgba(0,0,0,0.6);
 	--background-color: #f5f6f9;
 	--background-color0: #0D1117;
 	--accent-color: #1F26B7;
@@ -167,21 +167,22 @@ section.sec1 {
     font-family: pre_B;
   }
   .s1_right {
-    position: absolute;
-    right: -150px;
-    width: 851px;
+    display: flex;
+    justify-content: flex-end; /* 수정된 부분 */
+    align-items: center; /* 세로 중앙 정렬을 위해 추가 */
+    position: relative; /* 추가된 부분 */
+    width: 100%;
     height: 741px;
-
-    background-size: cover;
   }
   
   .s1_right .effect_bg {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0; /* 오른쪽 끝으로 이동 */
     width: 100%;
     height: 100%;
     background: url(/image/web_bk.png); /* 배경 이미지 설정 */
+    background-repeat: no-repeat;
     animation: fadeEffect 3s infinite alternate; /* 애니메이션 효과 추가 */
   }
   
@@ -288,7 +289,7 @@ section.sec2 {
 .title_l{  color: var(--text-color1);}
 .sec2 .sec2wrap {
   margin-top: 110px;
-  width: 100wh;
+  width: 100vw;
   display: flex;
 }
 .left_con{line-height: 1.7em;}
@@ -402,7 +403,7 @@ section.sec2 {
 .myeffort .mye_wrap .effortbox .boxstyle{margin-right: 24px; border-radius: 20px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;} 
 /* 기본색 폰트_ */
 .effort_txt{position: relative; padding: 24px; margin-top: 200px;}
-.effort_txt .title_e{font-family: pre_Bk; font-size: 20px; }
+.effort_txt .title_e{font-family: pre_B; font-size: 20px; }
 .effort_txt .date_e{font-family: pre_B; margin-top: 8px; font-size: 15px; padding-bottom: 17px; color: var(--text-color2);}
 .effort_txt .sub_e{color: var(--text-color3); line-height: 1.4em;}
 /* 흰색 폰트  */
