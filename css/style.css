@@ -403,7 +403,7 @@ section.sec2 {
 .myeffort .mye_wrap .effortbox .boxstyle{margin-right: 24px; border-radius: 20px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;} 
 /* 기본색 폰트_ */
 .effort_txt{position: relative; padding: 24px; margin-top: 200px;}
-.effort_txt .title_e{font-family: pre_Bk; font-size: 20px; }
+.effort_txt .title_e{font-family: pre_B; font-size: 20px; }
 .effort_txt .date_e{font-family: pre_B; margin-top: 8px; font-size: 15px; padding-bottom: 17px; color: var(--text-color2);}
 .effort_txt .sub_e{color: var(--text-color3); line-height: 1.4em;}
 /* 흰색 폰트  */
