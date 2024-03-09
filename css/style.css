@@ -198,12 +198,15 @@ section.sec1 {
     }
   }
   .scroll{  
+    width: 88px;
+    height: 88px;
     margin-top: 20px;
     text-align: center; 
-    display: block; 
+    display: inline-block; 
     color: #fff;
   }
   .scroll span {
+    display: block;
     position: absolute;
     top: 88%;
     left: 50%;
@@ -215,7 +218,6 @@ section.sec1 {
     box-sizing: border-box;
   }
   .scroll span::before {
-    position: absolute;
     top: 10px;
     left: 50%;
     content: '';
