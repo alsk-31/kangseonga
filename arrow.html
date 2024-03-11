@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Accordion Menu</title>
+  <style>
+    * {
+      box-sizing: border-box; 
+    }
+    
+    .arrow-up::after {
+        position: absolute;
+        right: 0px; 
+        top: 50%;
+        transform: translateY(-50%) rotate(315deg); 
+        content: '';
+        width: 14px; /* 사이즈 */
+        height: 14px; /* 사이즈 */
+        border-top: 3px solid #000; /* 선 두께 */
+        border-right: 3px solid #000; /* 선 두께 */
+    }
+    
+    .arrow-down::after {
+        position: absolute;
+        right: 0px; 
+        top: 50%;
+        transform: translateY(-50%) rotate(135deg); 
+        content: '';
+        width: 14px; /* 사이즈 */
+        height: 14px; /* 사이즈 */
+        border-top: 3px solid #000; /* 선 두께 */
+        border-right: 3px solid #000; /* 선 두께 */
+    }
+    
+    .que {
+      position: relative;
+      width: 588px;
+      padding: 17px 0;
+      cursor: pointer;
+      font-size: 30px;
+      border-bottom: 1px solid #dddddd;
+    }
+  
+    .que::before {
+      display: inline-block;
+      font-size: 14px;
+      color: var(--accent-color);
+      margin: 0 5px;
+    }
+
+    .que.on > span {
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+  
+    .anw {
+      display: none;
+      width: 588px;
+      overflow: hidden;
+      font-size: 18px;
+      padding: 27px 0;
+    }
+  
+    .anw::before {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+      color: #666;
+      margin: 0 5px;
+    }
+
+    .arrow-wrap {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+    }
+
+    .que .arrow-top {
+      display: none;
+    }
+    .que .arrow-bottom {
+      display: block;
+    }
+    .que.on .arrow-bottom {
+      display: none;
+    }
+    .que.on .arrow-top {
+      display: block; 
+    }
+  </style>
+</head>
+<body>
+
+
+<div id="Accordion_wrap">
+  <div class="que on"> <!-- 첫 번째 .que는 항상 내용이 보이도록 on 클래스 추가 -->
+    <span>학력 및 교육 수료 현황</span>
+    <div class="arrow-wrap">
+      <span class="arrow-top arrow-up"></span>
+      <span class="arrow-bottom arrow-down"></span>
+    </div>
+  </div>
+  <div class="anw" style="display: block;"> <!-- 첫 번째 .anw는 항상 보이도록 display: block; 설정 -->
+    <span>라사라패션직업전문학교 졸업 - 패션디자인 전문학사 14.03 ~ 16.03<br>
+      하우디자인캐드학원 - 그래픽디자이너과정(Ps+Ai+Id) 16.11 ~ 16.12<br>
+      하우디자인캐드학원 - autocad 2d 입문과정 22.12 ~ 23.01<br>
+      그린아트컴퓨터학원 - ui/ux반응형 웹디자인&웹퍼블리셔 개발자과정 23.06 ~ 23.10</span>
+  </div>
+  <div class="que">
+    <span>자격사항</span>
+    <div class="arrow-wrap">
+        <span class="arrow-top arrow-up"></span>
+        <span class="arrow-bottom arrow-down"></span>
+    </div>
+  </div>
+  <div class="anw">
+    <span>웹디자인기능사 2023.12<br>
+      그래픽기술자격 포토샵(GTQ) 1급 2017.02<br>
+      그래픽기술자격 일러스트(GTQi) 1급 2019.09<br>
+      컴퓨터활용능력 2급 2018.10<br>
+      자동차운전면허 2급 2019.05</span>
+  </div>
+  <div class="que">
+    <span>디자인 경력</span>
+    <div class="arrow-wrap">
+        <span class="arrow-top arrow-up"></span>
+      <span class="arrow-bottom arrow-down"></span>
+    </div>
+  </div>
+  <div class="anw">
+    <span>투인스타올 근무 - 디자이너 19.07 ~ 20.11<br>
+      LH공공미술연구소 근무 - 디자이너 22.06 ~ 23.05</span>
+  </div>
+</div>
+<script>
+  $(".que").click(function() {
+    $(this).next(".anw").stop().slideToggle(300);
+    $(this).toggleClass('on').siblings().removeClass('on');
+    $(this).next(".anw").siblings(".anw").slideUp(300); // 1개씩 펼치기
+  });
+</script>
+</body>
+</html>

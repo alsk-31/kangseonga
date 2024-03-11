@@ -293,6 +293,7 @@ section.sec2 {
   display: flex;
 }
 .left_con{line-height: 1.6em;}
+
 .left_con p{width: 588px;}
 .sec2 .sec2wrap .left_con .imgbox {
   width: 588px;
@@ -318,100 +319,15 @@ section.sec2 {
   font-size: 28px; 
   line-height: 36px;
 }
-/* 학력 및 교육수료, 자격사항, 디자인경력 아코디언메뉴 스타일 */
-.arrow-up::after {
-  position: absolute;
-  right: 0px; 
-  top: 50%;
-  transform: translateY(-50%) rotate(315deg); 
-  content: '';
-  width: 10px; /* 사이즈 */
-  height: 10px; /* 사이즈 */
-  border-top: 3px solid #a3a3a3; /* 선 두께 */
-  border-right: 3px solid #a3a3a3; /* 선 두께 */
-  
-}
-
-.arrow-down::after {
-  position: absolute;
-  right: 0px; 
-  top: -50%;
-  transform: translateY(-50%) rotate(135deg); 
-  content: '';
-  width: 10px; /* 사이즈 */
-  height: 10px; /* 사이즈 */
-  border-top: 3px solid #a3a3a3; /* 선 두께 */
-  border-right: 3px solid #a3a3a3; /* 선 두께 */
-}
-.que {
-position: relative;
-width: 588px;
-padding: 18px 0;
-cursor: pointer;
-font-size: 30px;
-border-bottom: 1px solid #dddddd;
-}
-
-
-.que::before {
-display: inline-block;
-font-size: 14px;
-color:var(	--accent-color);
-margin: 0 5px;
-}
-
-.que.on > span {
-font-family: pre_B;
-color: var(--text-color1);
-}
-
-.anw {
-display: none;
-width: 588px;
-overflow: hidden;
-font-size: 18px;
-padding: 27px 0;
-}
-
-.anw::before {
-display: inline-block;
-font-size: 18px;
-font-weight: bold;
-color: #666;
-margin: 0 5px;
-}
-
-.arrow-wrap {
-position: absolute;
-top: 50%;
-right: 10px;
-transform: translate(0, -50%);
-}
-.que .arrow-top {
-display: none;
-}
-.que .arrow-bottom {
-display: block;
-}
-.que.on .arrow-bottom {
-display: none;
-}
-.que.on .arrow-top {
-display: block; 
-}
-
 /* 사용가능한 툴 */
-.sec2 .sec2wrap .right_con .tool_wrap{display: flex; justify-content: space-between; width: 360px;}
-.sec2 .sec2wrap .right_con .tool_wrap .tool{width: 110px;}
-.sec2 .sec2wrap .right_con .tool_wrap .tool .g_graph{position: relative; padding-bottom: 20px}
+.sec2 .sec2wrap .right_con .tool_wrap{display: flex; justify-content: space-between; width: 320px;}
+.sec2 .sec2wrap .right_con .tool_wrap .tool{width: 100px;}
+.sec2 .sec2wrap .right_con .tool_wrap .tool .g_graph{position: relative; padding-bottom: 10px}
 .sec2 .sec2wrap .right_con .tool_wrap .tool .g_graph img{display: block;}
 .sec2 .sec2wrap .right_con .tool_wrap .tool .g_graph .graph{position: absolute; top: 25%; left: 50%;}
-/* 사용가능한툴 타이틀명: 왼쪽컨텐츠와 높이 맞추기 위한 높이조정 */
-.p-down{padding: 18px 0 0 0;}
-
 
 /* 막대( % 표시)*/
-.graph{width: 140px; height: 15px; background-color: #f4f4f4; border-radius: 15px;box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;}
+.graph{width: 100px; height: 15px; background-color: #f4f4f4; border-radius: 15px;box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;}
 .graph span{display: block; height: 15px; line-height: 15px; text-align: right;  border-radius: 12px; box-sizing: border-box; color: #fff; font-size: 12px;}
 .graph.stack1 span{animation: stack1 3.5s 1s; background: #256BD5; opacity: 0.8;}
 .graph.stack2 span{animation: stack2 3.5s 1s; background: #D67B00; opacity: 0.8;}
