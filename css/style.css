@@ -327,8 +327,8 @@ section.sec2 {
   content: '';
   width: 10px; /* 사이즈 */
   height: 10px; /* 사이즈 */
-  border-top: 3px solid var(--accent-color0); /* 선 두께 */
-  border-right: 3px solid var(--accent-color0); /* 선 두께 */
+  border-top: 3px solid var(--text-color1); /* 선 두께 */
+  border-right: 3px solid var(--text-color1); /* 선 두께 */
   
 }
 
