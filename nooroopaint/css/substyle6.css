@@ -24,6 +24,11 @@ table {
   border-top: 3px solid #2d2d2d;
   border-bottom: 3px solid #2d2d2d;
 }
+.titlebk{
+  border-bottom: 1px solid rgb(44, 44, 44);
+  border-top: 1px solid rgb(223, 223, 223); /* .titlebk에 상단 테두리 추가 */
+  z-index: inherit;
+}
 th {
   width: 25%;
   padding: 10px;
@@ -50,14 +55,19 @@ th:first-child {
   border-left: none;
 }
 .titlebk{
-  background-color: #f9f9f9;
+  border-bottom:1px solid rgb(223, 223, 223);
   z-index: inherit;
 }
 .point {
   color: #e31a2c;
-  background-color: #fafafa;
 }
-.point::after{border-bottom:1px solid rgb(223, 223, 223);}
+.point::after{
+  content: ''; /* 가상 요소 추가 */
+  position: absolute; /* 포인트 클래스의 가상 요소의 절대 위치 설정 */
+  left: 0; /* 왼쪽 정렬 */
+  width: calc(100% + 2px); /* 가로 전체에 2px를 더하여 테두리가 밑에도 보이도록 조정 */
+
+}
 .tablewrap02 {
   margin-top: 100px;
   margin-bottom: 200px;

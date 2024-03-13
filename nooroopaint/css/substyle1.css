@@ -14,6 +14,7 @@
   padding-top: 30px;
   margin-bottom: 18px;
   font-family: spokaneo-r;
+  color: #2d2d2d;
 }
 .shortline {
   position: relative;
@@ -28,6 +29,11 @@
   margin-bottom: 140px;
   line-height: 2em;
   text-align: center;
+  font-size: 18px;
+
+}
+.page .right .maininfo p b{
+  color: #2d2d2d;
 }
 .mimg {
   margin-top: 90px;
@@ -50,12 +56,14 @@
 }
 .page .right .coninner h2{
   font-family: spokaneo-r;
+  color: #2d2d2d;
 
 }
 .page .right .coninner p {
   margin-top: 24px;
   line-height: 1.7em;
   margin-bottom: 50px;
+  font-size: 17px;
 }
 .factory {
   height: 570px;
