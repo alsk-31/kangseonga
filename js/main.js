@@ -30,63 +30,10 @@ gnbItems.forEach((gnbItem, index) => {
   });
 });
 
- // Modal을 가져옵니다.
- var modals = document.getElementsByClassName("modal");
- // Modal을 띄우는 클래스 이름을 가져옵니다.
- var btns = document.getElementsByClassName("btn");
- // Modal을 닫는 close 클래스를 가져옵니다.
- var spanes = document.getElementsByClassName("close");
- var funcs = [];
-  
- // Modal을 띄우고 닫는 클릭 이벤트를 정의한 함수
- function Modal(num) {
-   return function() {
-     // 해당 클래스의 내용을 클릭하면 Modal을 띄웁니다.
-     btns[num].onclick =  function() {
-         modals[num].style.display = "block";
-         console.log(num);
-     };
-  
-     // <span> 태그(X 버튼)를 클릭하면 Modal이 닫습니다.
-     spanes[num].onclick = function() {
-         modals[num].style.display = "none";
-     };
-   };
- }
-  
- // 원하는 Modal 수만큼 Modal 함수를 호출해서 funcs 함수에 정의합니다.
- for(var i = 0; i < btns.length; i++) {
-   funcs[i] = Modal(i);
- }
-  
- // 원하는 Modal 수만큼 funcs 함수를 호출합니다.
- for(var j = 0; j < btns.length; j++) {
-   funcs[j]();
- }
-  
- // Modal 영역 밖을 클릭하면 Modal을 닫습니다.
- window.onclick = function(event) {
-   if (event.target.className == "modal") {
-       event.target.style.display = "none";
-   }
- };
  
- 
-   //모달창 스와이퍼
-   var swiper = new Swiper(".mySwiper", {
-     pagination: {
-       el: ".swiper-pagination",
-       type: "fraction"
-     },
-     navigation: {
-       nextEl: ".swiper-button-next",
-       prevEl: ".swiper-button-prev"
-     }
-   });
-   
-
  
 /******************** 스크롤이벤트 *****************/
+
   let btn = document.getElementById('up-too');
   let docu = document.documentElement;
   let off; //도큐먼트가 바디를 넘어갔을떼 도큐먼트를 5등분 할 것임
@@ -229,6 +176,27 @@ gnbItems.forEach((gnbItem, index) => {
     $(this).toggleClass('on').siblings().removeClass('on');
     $(this).next(".anw").siblings(".anw").slideUp(300); // 1개씩 펼치기
   });
+
+  /* 스킬 애니메이션을 동작하게 해주는 자바스크립트. */
+  document.addEventListener("DOMContentLoaded", function() {
+    const toolElements = document.querySelectorAll('.g_graph');
+    const animationTriggerOffset = window.innerHeight * 0.7; // 스크롤 위치의 70%에서 애니메이션을 트리거
+
+    function playAnimation() {
+        toolElements.forEach(function(toolElement) {
+            if (toolElement.getBoundingClientRect().top < animationTriggerOffset) {
+                toolElement.classList.add('animate');
+            }
+        });
+    }
+
+    // 스크롤 이벤트에 따라 애니메이션 재생
+    window.addEventListener('scroll', playAnimation);
+
+    // 초기에 한 번 애니메이션을 재생
+    playAnimation();
+});
+
 
 });
 
