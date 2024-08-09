@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@font-face {
+    font-family: pre_M;
+    src: url(../webfont/Pretendard-Medium.woff) format("woff");
+  }
+  @font-face {
+    font-family: pre_R;
+    src: url(../webfont/Pretendard-Medium.woff) format("woff");
+  }
+  @font-face {
+    font-family: pre_B;
+    src: url(../webfont/Pretendard-Bold.woff) format("woff");
+  }
+  @font-face {
+    font-family: pre_Bk;
+    src: url(../webfont/Pretendard-Black.woff) format("woff");
+  }
