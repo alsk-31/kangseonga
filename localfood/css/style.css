@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
     font-family: pre_M;
-    src: url(../webfont/Pretendard-Medium.woff) format("woff");
+    src: url(./webfont/Pretendard-Medium.woff) format("woff");
   }
   @font-face {
     font-family: pre_R;
@@ -15,3 +15,20 @@
     font-family: pre_Bk;
     src: url(../webfont/Pretendard-Black.woff) format("woff");
   }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}  
+li, ul {list-style: none;}
+a {text-decoration: none; color: inherit;}
+
+body {
+  font-family: pre_R;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+
+  background-color: #06170E;
+}

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.wrap{
+    width: 1602px;
+    margin: 0 auto;
+}
+#header{
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 60px;
+    font-family: pre_B;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+#header .logo{
+    display: block;
+    width: 20%;
+}
+#header nav{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+/* nav */
+#header{
+    position:relative;
+}
+#header::after {
+    content: '';
+    position: fixed; /* 화면에 고정 */
+    left: 0;
+    right: 0;
+    height: 0px; /* 원하는 높이로 설정 */
+    background-color: #0000007a;
+    z-index: -1; /* 헤더의 뒤에 배경이 위치하도록 설정 */
+}
+#header.on::after{
+    height: 405px;
+}
+nav{
+    z-index: 1000;
+}
+nav > ul {
+    display: flex;
+    margin-right: 30px;
+}
+nav > ul > li{
+    position: relative;
+}
+.nav > ul > li > ul {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: all 200ms;
+}
+nav > ul > li > a{
+    display: inline-block;
+    padding: 10px 60px;
+}
+nav > ul > li > a:hover{
+    color: #48dd6d;
+}
+nav > ul > li > ul{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+nav > ul > li > ul > li{
+    padding: 5px 0;
+}
+nav > ul > li > ul > li > a:hover{
+    color: #48dd6d;
+}
+.two_btn{
+    width: 15%;
+    font-size: 15px;
+    font-family: pre_R;
+}
+.two_btn > a{    
+    display: inline-block;
+    padding: 0 18px;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin-left: 10px;
+}
