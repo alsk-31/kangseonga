@@ -7,19 +7,30 @@
     <style></style>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/head.css">
+    <!-- swiper bundle -->
+    <link rel="stylesheet" href="./css/swiper-bundle.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- slick 불러오기 -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- font awsome 불러오기-->
+    <script src="https://kit.fontawesome.com/4c40d1ad69.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
+    <div class="header_back"></div>
     <div class="wrap">
-        <header id="header">
-            <h1 class="logo"><img src="./images/logo.png" alt=""><a href="#"></a></h1>
-            <nav class="nav">
+        <header id="header" class="navbar">
+            <h1 class="logo"><img src="./images/logo_w.png" alt=""><a href="#"></a></h1>
+            <nav class="nav navbar_menu">
                 <ul>
                     <li>
                         <a href="#">로컬푸드 직매장</a>
                         <ul class="submenu">
                             <li><a href="#">로컬푸드란?</a></li>
-                            <li><a href="#">로컬푸드 직매장소개</a></li>
+                            <li><a href="#">소개</a></li>
                             <li><a href="#">비전</a></li>
                             <li><a href="#">연혁</a></li>
                         </ul>
@@ -40,41 +51,405 @@
                         <a href="#">커뮤니티</a>
                         <ul class="submenu">
                             <li><a href="#">공지사항</a></li>
-                            <li><a href="#">로컬푸드 FAQ</a></li>
+                            <li><a href="#">FAQ</a></li>
                             <li><a href="#">포토갤러리</a></li>
                             <li><a href="#">영상갤러리</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
-            <div class="two_btn">
+            <div class="two_btn navbar_link">
                 <a href="#">협의회 소개</a>
                 <a href="#">로그인</a>
             </div>
+            <a href="#" class="navbar_togleBtn">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </header>
-        <!-- //header -->
-        <div id="slider">
-        
-        </div>
-        <!-- //slider -->
-        <div class="section1">
-
-        </div>
-        <!-- //1.소개 -->
-        <div class="section2">
-
-        </div>
-        <!-- //2.직매장찾기 -->
-        <div class="section3">
-        </div>
-        <!-- //3.공지 커뮤니티 -->
-        <div class="section4">
-        </div>
-        <!-- //4.질문과 답변 -->
-        <footer>
-          
-        </footer>
-        <!-- //footer -->
     </div>
+        <!-- //header -->
+
+        <!-- section1_ slider -->
+        <div class="section1">
+         <!-- visual _ 글씨 슬라이드 -->
+         <article class="main-visual">
+            <div class="main-slider">
+                <div class="slider-visual">
+                    <img src="./images/viki-mohamad-AB3SRf-4T0M-unsplash.jpg" alt="슬라이드 이미지 1">
+                    <span class="visual-txt">
+                        <span class="small-txt">농업인과 농협이 함께 만드는 행복장터!</span>
+                        갓 수확한 농산물의<br>신선함이 그대로!
+                    </span>
+                </div>
+                <div class="slider-visual">
+                    <img src="./images/meric-tuna-CE1OvMrZumQ-unsplash.jpg" alt="슬라이드 이미지 2">
+                    <span class="visual-txt">
+                        <span class="small-txt">LOCAL FOOD</span>
+                        푸드마일리지·유통비용 감축! <br>신선함은 그대로!
+                    </span>
+                </div>
+                <div class="slider-visual">
+                    <img src="./images/adele-payman-2oYMwuFgnTg-unsplash.jpg" alt="슬라이드 이미지 3">
+                    <span class="visual-txt">
+                        <span class="small-txt">농협로컬푸드직매장은</span>
+                        지역공동체와 함께<br>따듯한 지역사회 발전에 기여합니다.
+                    </span>
+                </div>
+            </div>
+             
+             
+        </article>
+        <div class="slick-dots"></div>
+        </div>
+    
+    
+        <!-- 2.슬라이더  -->
+        <div class="section2">
+            <p class="all_title">농협로컬푸드는 환경과 농촌을 보전하고<br>
+                <span style="color: var(--accent-color1);">농업인과 지역사회를 사랑하는 아름다운 선택입니다.</span>
+            </p>
+            <div class="sec2">
+                <ul class="sec2_wrap">
+                    <li class="ebox boxstyle">
+                        <div class="sec2_txt">
+                            <p class="sec2_title">당일유통 신선 농산물</p>
+                            <p class="sec2_sub">
+                                지역에서 자란 신선농산물을<br> 
+                                1일 유통하여 <br>
+                                언제나 신선합니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="ebox boxstyle">
+                        <div class="sec2_txt">
+                            <p class="sec2_title">지구 환경 보전</p>
+                            <p class="sec2_sub">
+                                이동거리를 줄여 에너지 소비와<br>
+                                탄소배출량을 낮춤으로써<br>
+                                지구환경을 지킵니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="ebox boxstyle">
+                        <div class="sec2_txt">
+                            <p class="sec2_title">정직한 가격</p>
+                            <p class="sec2_sub">
+                                유통단계를 줄이고<br>
+                                농업인이 직접 정해 가격이<br>
+                                정직합니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="ebox boxstyle">
+                        <div class="sec2_txt">
+                            <p class="sec2_title">안전·안심</p>
+                            <p class="sec2_sub">
+                                농업인이 안전하게<br>
+                                생산하고, 농협이 관리하여<br>
+                                믿으실 수 있습니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="ebox boxstyle">
+                        <div class="sec2_txt">
+                            <p class="sec2_title">행복 나눔터</p>
+                            <p class="sec2_sub">
+                                농업인과 소비자가<br>
+                                마음과 가치를 함께 나누는<br>
+                                행복나눔터입니다.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div> 
+          </div>
+        <script>
+        $('.sec2_wrap').slick({
+              slide:'li',
+              arrows: true,
+              infinite: true,
+              speed: 300,
+              slidesToShow: 1,
+              centerMode: false,
+              variableWidth: true,
+              draggable: true,    
+              prevArrow:false,
+              nextArrow:false,
+              pauseOnFocus: true,
+              infinite: false,
+              prevArrow: $('.prev'), // 이전 버튼
+              nextArrow: $('.next'), // 다음 버튼   
+            });
+        </script>
+        <!-- //section2_ (slider) -->
+         <div class="sec2_banner">
+           
+         </div>
+        <!-- //3.직매장찾기 -->
+        <div class="section3">
+            <div class= "sec3_title">
+                <p class="left_title" style="color: var(--accent-color1);">
+                    전국 농협로컬푸드직매장 현황
+                </p>
+                <p class="right_sub">지역 농업인이 생산한 농산물을 수확, 포장, 가격결정, 직매장 내 진열, 재고관리 등을 직접 수행하여 농협 매장을 통해 판매하는 직거래 방식의 농식품 판매장입니다.</span>
+                </p>
+            </div>
+            <!-- 왼쪽_지역을 선택해주세요 (지역선택란)-->
+            <div class="local_shop">
+                <div class="left_nav">
+                    <p class="lo_title">지역을 선택해주세요</p>
+                    <hr class="lo_hr">
+                    <div id="buttonContainer" class="wrap_628">
+                        <!-- 여기에 지역버튼이 자동으로 추가됩니다(지역추가는 js로) -->
+                    </div>
+                </div>
+            <!-- 오른쪽_가게검색-->
+            <div class="right_shop">
+                <div class="local_btn">
+                    <ul>
+                        <li><a href="#" id="storeFilter" class="active">직매장</a></li>
+                        <li><a href="#" id="restaurantFilter">농가레스토랑</a></li>
+                        <li><a href="#" id="etcFilter">기타</a></li>
+                    </ul>
+                </div>
+                <hr class="lo_hr">
+                <!-- 검색어 입력 필드 -->
+                <div class="search_store">
+                    <div class="sback">
+                        <div class="searching">
+                            <input type="text" id="searchInput" placeholder="검색어를 입력하세요" onfocus="this.placeholder=' '" class="sbtn"/>
+                        </div>
+                    </div>
+                    <button onclick="filterStores()" class="next_btn">검색</button>
+                </div>
+                <!-- 가게 리스트(스크롤) 선택란 -->
+                <span id="total_store" class="st_628">(50건)</span>
+                <div class="table_box">
+                    <table class="tbl_st1">
+                        <colgroup>
+                            <col style="width:100%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th style="font-size: 20px; ">상호명</th>
+                            </tr>
+                        </thead>
+                        <tbody id="storeList">
+                            <tr><td>진주농협 로컬푸드 직매장</td></tr>
+                            <tr><td>서울농협 로컬푸드 직매장</td></tr>
+                            <tr><td>대전농협 로컬푸드 직매장</td></tr>
+                            <tr><td>부산농협 로컬푸드 직매장</td></tr>
+                            <tr><td>광주농협 로컬푸드 직매장</td></tr>
+                            <tr><td>인천농협 로컬푸드 직매장</td></tr>
+                            <tr><td>경기농협 로컬푸드 직매장</td></tr>
+                            <tr><td>광주농협 로컬푸드 직매장</td></tr>
+                            <tr><td>인천농협 로컬푸드 직매장</td></tr>
+                            <tr><td>경기농협 로컬푸드 직매장</td></tr>
+                            <!-- 다른 가게 추가 -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <!-- //section3_ (local_shop find) -->
+
+    <div class="section4">
+        <div class= "sec3_title">
+            <p class="left_title" style="color: var(--accent-color1);">
+                커뮤니티
+            </p>
+        </div>
+        <!-- 커뮤니티 1 뉴스 콘텐츠-->
+        <div class="news_wrap">
+            <div class="n_news">
+                <a href="#">
+                    <img src="./images/news1.jpg" alt="">
+                    <p>KBS2 "백종원 클라쓰"에 로컬푸드가 나왔어요^_^</p>
+                    <span>2021-08-05</span>
+                </a>
+            </div>
+            <div class="n_news">
+                <a href="#">
+                    <img src="./images/news2.jpg" alt="">
+                    <p>[매장사진] 광주유통센터 로컬푸드직매장</p>
+                    <span>2021-08-05</span>
+                </a>
+            </div>
+            <div class="n_news">
+                <a href="#">
+                    <img src="./images/news3.jpg" alt="">
+                    <p>[매장사진] 경기 포곡농협 로컬푸드직매장</p>
+                    <span>2021-08-05</span>
+                </a>
+            </div>
+            <div class="n_news">
+                <a href="#">
+                    <img src="./images/news4.jpg" alt="">
+                    <p>21년 전국농협 로컬푸드직매장 정기총회 개최</p>
+                    <span>2021-08-05</span>
+                </a>
+            </div>
+        </div>
+        <div class="notice_wrap">
+            <div class="notice">
+                <h3 class="nt_title">공지사항</h3>
+                <ul>
+                    <li>
+                        <a href="#">2021 전북농협 로컬푸드 브이로그 챌린지 공고(8.9 ~ 10.17)</a>
+                        <span>2021-09-10</span>
+                    </li>
+                    <li>
+                        <a href="#">2020 전북농협 로컬푸드 브이로그 챌린지 합격자 공고</a>
+                        <span>2021-08-05</span>
+                    </li>
+                    <li>
+                        <a href="#">농협 로컬푸드 온라인몰 안내</a>
+                        <span>2021-07-29</span>
+                    </li>
+                    <li>
+                        <a href="#">(우수사례) 평동농협 로컬푸드직매장</a>
+                        <span>2021-07-05</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="notice">
+                <h3 class="nt_title">홍보자료</h3>
+                <ul>
+                    <li>
+                        <a href="#">전북 완주 용진농협, 군과 로컬푸드로 학생들에게 아침 제공 ‘눈길’</a>
+                        <span>2021-09-10</span>
+                    </li>
+                    <li>
+                        <a href="#">[고서농협] 직매장 활성화를 위해 정부의 적극적인 지원 필요</a>
+                        <span>2021-08-05</span>
+                    </li>
+                    <li>
+                        <a href="#">[광주농협] 직매장의 성공요인은 소비자 유치</a>
+                        <span>2021-07-29</span>
+                    </li>
+                    <li>
+                        <a href="#">동김제농협, 로컬푸드는 소농 중심으로 운영해야</a>
+                        <span>2021-07-05</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //section4_ (community _ notice) -->
+     <div class="section5">
+        <div class= "sec3_title">
+            <p class="left_title" style="color: var(--text-color2);">
+                질문과 답변. <span  style="color: var(--accent-color2);">자주묻는 질문을 확인해보세요!</span>
+            </p>
+            <img src="./images/charactor2.png" alt="" class="sec5_cha2">
+            <img src="./images/charactor1.png" alt="" class="sec5_cha1">
+
+        </div>
+        <article>
+            <div class="accordion">
+                <div class="content">
+                    <div class="title">
+                        로컬푸드직매장엔 주로 어떤 농산물을 판매하나요?
+                    </div>
+                    <div class="desc">
+                        로컬푸드직매장은 주로 소량 다품목을 생산하는 중소농업인들이 참여하여 엽채류, 근채류, 과채류, 서류, 곡류, 약용 작물은 물론 <br>축산물, 지역 특산물, 전통 식품, 로컬푸드 농산물로 만든 가공식품 등 다양한 상품을 판매하고 있습니다. 
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        로컬푸드직매장에 판매되는 농산물은 왜 더 신선한가요?
+                    </div>
+                    <div class="desc">
+                        지역에서 생산되는 농산물을 지역에서 소비함으로써 다단계 유통 단계를 줄여 농산물을 신선하게 만날 수 있습니다.<br>일반적으로 대부분의 농산물은 지역에서 생산되면 대도시의 도매시장에 출하하고 경매를 통해 다시 지역으로 배송되어 유통 매장에 진열 판매됩니다.<br>그러니 농산물의 신선도가 다소 떨어질 수 있으며 물론 영양의 손실도 발생할 수 있을 것입니다.<br><br>로컬푸드 직매장의 신선농산물은 농업인이 당일 수확, 당일 판매 후 남은 물량은 회수하도록 하고 있어 <br>언제나 갓 수확한 신선함과 풍부한 영양소까지 함께 사실 수 있습니다.
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        소비자들께 사랑받는 로컬푸드 직매장엔 어떤 전략이 있나요?
+                    </div>
+                    <div class="desc">
+                        로컬푸드직매장이 참여 농업인의 합리적 소득증대와 지역 경제 발전, 그리고 환경보전이라는 사회 공헌적 가치에 기여하는 것이 중요하지만<br>소비자의 발길을 잡을 수 있는 매력도 매우 중요합니다. 따라서 지역 사회의 행복나눔터로 부각될 수 있는 다양한 전략들이 필요할 것입니다.<br><br>
+                        <b style="color: var(--text-color2);"><로컬푸드직매장 특화 전략의 예></b><br>
+                        지역 내 사회적 약자에 대한 배려(장애우 생산품 판매),
+                        다문화 가정주부들이 만든 식품판매,
+                        핵심 소비자의 직매장 농업인 농장 방문,
+                        어린이집 아이들의 견학장소로 활용,<br>
+                        레스토랑 및 농가카페 운영, 6차산업 및 사회적기업 제품 취급 확대, 지역 농산물을 이용한 즉석코너 설치(반찬코너, 즉석두부 등), 소비자 체험 등 교류행사 실시(단감따기, 떡메치기 등)
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        로컬푸드직매장에 판매하고 남은 신선농산물은 어떻게 하나요?
+                    </div>
+                    <div class="desc">
+                        로컬푸드직매장에서 판매하는 신선농산물은 원칙적으로 하루만 판매하고 남은 상품을 전량 농업인이 회수합니다. <br>직매장에 따라서는 남은 농산물을 지역 사회에 기부하는 경우도 있습니다.
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        로컬푸드직매장 농산물의 가격은 어떻게 결정되나요?
+                    </div>
+                    <div class="desc">
+                        가격의 결정은 농업인이 스스로 합니다. 같은 매장에 동일한 품목도 조금씩 가격이 다른 이유가 여기에 있습니다.<br>물론 농협은 도매시장 가격 및 인근 소매매장 등 농산물 가격정보를 농업인과 공유하면서 가격을 조정하는 역할을 합니다.<br>농산물 가격에 대한 평가는 소비자가 판단하게 되지만 농장에서 직접 수확해서 바로 매장에 판매하니 <br>많은 유통 단계를 거치는 일반 유통 매장에서 구매하는 농산물보다 훨씬 가격이 저렴하겠지요.
+                    </div>
+                </div>
+            </div>
+        </article>
+     </div>
+     <!-- //section5_ (Q&A) -->
+       <script>
+        $(".content .title").click(function() {
+    if ($(this).hasClass("active")) {
+        // 이미 열려있는 경우 접기
+        $(this).removeClass("active");
+        $(this).next(".desc").stop().slideUp();
+    } else {
+        // 다른 모든 아코디언 접기
+        $(".content .title").removeClass("active");
+        $(".content .desc").stop().slideUp();
+        
+        // 클릭한 아코디언 열기
+        $(this).addClass("active");
+        $(this).next(".desc").stop().slideDown();
+    }
+});
+    </script>
+    <footer>
+        <div class="footer_wrap">
+            <div class="f_top">
+                <div class="f_left">
+                    <h2 class="f_logo"><img src="./images/f_logo.png" alt=""></h2>
+                    <p>업체명 : 전국농협로컬푸드직매장협의회</p>
+                </div>
+                <div class="f_right">
+                    <div class="selectbox">
+                        <button class="pl" onclick="selectToggle()">계열사/관련사이트</button>
+                        <ul class="listbox" id="listbox">
+                            <li><button class="list">-------패밀리사이트-------</button></li>
+                            <li><button class="list">NH농협</button></li>
+                            <li><button class="list">농협경제지주</button></li>
+                            <li><button class="list">농민신문</button></li>
+                            <li><button class="list">농협몰</button></li>
+                            <li><button class="list">-------유관기관-------</button></li>
+                            <li><button class="list">at바로정보</button></li>
+                            <li><button class="list">로컬푸드 온라인판매장</button></li>
+                            <li><button class="list">at한국농수산식품유통공사</button></li>
+                            <li><button class="list">농림축산식품부</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="f_line">
+
+            <div class="f_bottom">
+                <p>Copyright ⓒNH Local Food. All Rights Reserved.</p>
+                <ul>
+                    <li><a href="#">홈페이지이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

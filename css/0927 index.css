@@ -16,6 +16,8 @@
   src: url(../webfont/Pretendard-Black.woff) format("woff");
 }
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -29,8 +31,7 @@
 	--text-color4:rgba(0,0,0,0.65);
   --text-color5:rgba(0,0,0,1);
 	--background-color: #f5f6f9;
-	--background-color0: #121820;
-	--background-color1: #131313;
+	--background-color0: #0D1117;
 	--line-color: #d9d9d9;
 	--accent-color: #1F26B7;
 	--accent-color0: #9ea7f7;
@@ -58,7 +59,7 @@ header {
   line-height: 60px;
   margin: 0 auto;
   font-weight: 700;
-  color: var(--background-color3);
+  color: var(--background-color0);
   background-color: rgb(255, 255, 255,0.3);
   backdrop-filter: blur(3px); 
   position: fixed;
@@ -99,7 +100,7 @@ header .topmenu .hcolor{color: var(	--accent-color) !important;}
 
 /* 포트폴리오 메인 이미지 */
 section.sec1 {
-  background-color: var(--background-color1); 
+  background-color: #0D1117; 
   width: 100vw; 
   height: 100vh; 
   overflow: hidden;
@@ -110,57 +111,19 @@ section.sec1 {
 .symbolbg{  
   background-image: url(/image/web_bk.png);
   background-repeat: no-repeat;
-  object-fit: cover;
-}
+  object-fit: cover;}
 .sec1wrap{
-  position: relative;
-  width: 1200px; 
-  margin: 0 auto;
-}
-/* 커버배경 애니메이션 */
-.icon path {
-  fill: transparent;
-  stroke: #fff;
-  stroke-width: 2;
-}
-
-.icon.svg_ink path {
-  stroke-dasharray: 1560;
-  stroke-dashoffset: 0;
-  animation: animate-ink 4s ease-in-out forwards;
-}
-
-@keyframes animate-ink {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  40% {
-    stroke-dashoffset: 1560;
-  }
-  80% {
-    stroke-dashoffset: 3120;
-    fill: transparent;
-  }
-  100% {
-    stroke-dashoffset: 3120;
-    fill: url(#grad); /* 그라데이션을 fill에 적용 */
-    /* 수채화 효과를 위한 블러 필터 적용 */
-  }
-}
-
-.svg_ink {
-  top: -160px;
-  position: absolute;
-}
-.s1_one {
+  width: 1480px; 
+  margin: 0 auto; 
   display: flex; 
   justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
-/* 타이틀 글자 효과 */
-.s1_one .main_t{ 
+.s1_left .main_t{ 
   font-family: pre_Bk; 
-  font-size: 64px; 
-  line-height: 76px;  
+  font-size: 90px; 
+  line-height: 91px;  
   color: #fff;
   background-clip: text;
   -webkit-background-clip: text;
@@ -168,9 +131,10 @@ section.sec1 {
   background-image: linear-gradient(
     180deg,
     #fff,
-    #9ea7f7 22%,
-    #1F26B7 80%,
-    #9ea7f7 60%
+    #9ea7f7 50%,
+    #1F26B7 50%,
+    #9ea7f7 60%,
+    #fff
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -178,29 +142,47 @@ section.sec1 {
   background-size: 100% 300%;
   background-position-y: 0%;
   animation: gradient 4s ease-in-out al;
-}
-.s1_two p{
-  color: #fff;
-  text-align: center;
-  margin-top: 160px;
-  line-height: 1.8;
+
 }
 @keyframes gradient {
   from {
     background-position-y: 0%;
   }
   to {
-    background-position-y:80%;
+    background-position-y: 100%;
   }
 }
-  .sub_t{
-   font-size: 18px;
-   line-height: 28px;
-   color: #ffffffb6;
-   margin-top: 87px;
+  .s1_left .sub_t{
+   margin-top: 86px;
+   font-size: 21px;
+   line-height: 34px;
+   color: #fff;
   }
-
-
+  .s1_left .sub_t span{
+    font-family: pre_B;
+    font-size: 24px;
+  }
+  .s1_left .view_btn{
+    display: inline-block;
+    background: #fff;
+    border-radius: 50px;
+    margin-top: 118px;
+    font-size: 18px;
+    padding: 15px 60px;
+    color: #000;
+    cursor: pointer;
+    border-radius: 50;
+    font-family: pre_B;
+  }
+  .s1_right {
+    display: flex;
+    justify-content: flex-end; /* 수정된 부분 */
+    align-items: center; /* 세로 중앙 정렬을 위해 추가 */
+    position: relative; /* 추가된 부분 */
+    width: 100%;
+    height: 700px;
+  }
+  
   .s1_right .effect_bg {
     position: absolute;
     top: 0;
@@ -211,11 +193,7 @@ section.sec1 {
     background-repeat: no-repeat;
     animation: fadeEffect 3s infinite alternate; /* 애니메이션 효과 추가 */
   }
- .s1_two{
-  font-family: pre_B;
-  font-size: 27px;
-  line-height: 1.2;
- }
+  
   @keyframes fadeEffect {
     0% {
       opacity: 1;
@@ -229,7 +207,7 @@ section.sec1 {
   }
   .scroll {
   position: absolute; /* 화면 하단에 고정하기 위해 사용 */
-  bottom: 40px; /* 하단에서의 위치 조정 */
+  bottom: 20px; /* 하단에서의 위치 조정 */
   left: 50%;
   transform: translateX(-50%); /* 중앙 정렬 */
   text-align: center;
@@ -240,9 +218,9 @@ section.sec1 {
 .scroll span {
   display: block; /* 아이콘을 블록으로 설정 */
   position: relative; /* 아이콘 내에서 절대 위치를 사용하기 위해 필요 */
-  width: 12px;
-  height: 32px;
-  background-color: rgb(255, 255, 255, 0.5);
+  width: 26px;
+  height: 45px;
+  border: 2px solid #fff;
   border-radius: 50px;
   box-sizing: border-box;
   margin: 0 auto; /* 중앙 정렬을 위해 */
@@ -250,7 +228,7 @@ section.sec1 {
 
 .scroll span::before {
   position: absolute;
-  top: 0px;
+  top: 10px;
   left: 50%;
   content: '';
   width: 6px;
@@ -264,8 +242,8 @@ section.sec1 {
 }
 
 .scroll_txt {
-  margin-top: 6px; /* 아이콘과 텍스트 사이의 간격 */
-  font-size: 15px;
+  margin-top: 10px; /* 아이콘과 텍스트 사이의 간격 */
+  font-size: 18px;
   color: #fff;
 }
 
@@ -516,13 +494,13 @@ display: block;
 /* 기본색 폰트_ */
 .effort_txt{position: relative; padding: 24px; margin-top: 200px;}
 .effort_txt .title_e{font-family: pre_B; font-size: 20px; }
-.effort_txt .date_e{font-family: pre_B; margin-top: 8px; font-size: 14px; padding-bottom: 17px; color: var(--text-color2);}
-.effort_txt .sub_e{color: var(--text-color3); line-height: 1.4em;  margin-top: 20px;}
+.effort_txt .date_e{font-family: pre_B; margin-top: 8px; font-size: 15px; padding-bottom: 17px; color: var(--text-color2);}
+.effort_txt .sub_e{color: var(--text-color3); line-height: 1.4em;}
 /* 흰색 폰트  */
 .effort_txt_w{position: relative; padding: 24px; margin-top: 200px; color: #fff;}
 .effort_txt_w .title_e_w{font-family: pre_B; font-size: 20px; color: #fff; }
-.effort_txt_w .date_e_w{font-family: pre_B; font-size: 14px; padding-bottom: 15px; color: #a7a7a7; font-family: pre_B;}
-.effort_txt_w .sub_e_w{color: #d1d1d1; line-height: 1.4em; font-family: pre_M; margin-top: 20px;}
+.effort_txt_w .date_e_w{font-family: pre_B; margin-top: 8px; font-size: 15px; padding-bottom: 15px; color: #a7a7a7; font-family: pre_B;}
+.effort_txt_w .sub_e_w{color: #d1d1d1; line-height: 1.4em; font-family: pre_M;}
 .mye_wrap .ebox1{width: 614px; height: 365px; background: url(../image/effort01.png);}
 .mye_wrap .ebox2{width: 348px; height: 365px; background: url(../image/effort2.png);}
 .mye_wrap .ebox3{width: 515px; height: 365px;background: url(../image/effort3.png);}
@@ -571,6 +549,36 @@ section.sec3 {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 100px;
+}
+
+
+section.sec3 .modal {
+  position: fixed;
+  display: none;
+  z-index: 999;
+  margin-top: 70px;
+  left: 0;
+  top: -70px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+section.sec3 .modal .modal-content {
+  position: static;
+  padding-top: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section.sec3 .modal .modal-content .p-img {
+  width: 100%;
+  max-width: 1200px;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  scrollbar-width: none;
+  overflow-y: auto;
 }
 
 /* 포트폴리오 그리드 */
@@ -930,7 +938,7 @@ margin-top: 20px;
   margin-top: 150px;
   width: 100%;
   height: 480px;
-  background: var(--background-color1); ; 
+  background: #121820; 
   color: #e1e1e1; 
   text-align: center; 
 }
@@ -953,7 +961,7 @@ margin-top: 20px;
   padding: 12px 100px; 
   border-radius: 50px; 
   background-color: #e1e1e1;
-  color: var(--background-color1); ;
+  color: #0D1117;
   margin-bottom: 50px;
 }
 .pthree:hover{

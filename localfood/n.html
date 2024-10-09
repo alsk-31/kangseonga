@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset */
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* design */
+        .selectbox {
+            margin: 150px auto;
+            position: relative;
+            width: 200px;
+        }
+
+        .pl {
+            width: 100%;
+            border: 1px solid #C4C4C4;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 12px 12px;
+            font-family: 'Roboto';
+            font-size: 14px;
+            line-height: 16px;
+            background: url('./images/Polygon_down.png') 93% no-repeat;
+            background-size: 10px;
+            appearance: none;
+            text-align: left;
+            cursor: pointer;
+        }
+
+
+        .listbox {
+            width: 100%;
+            list-style: none;
+            background: #FFFFFF;
+            border: 1px solid #C4C4C4;
+            box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            margin-top: 9px;
+            display: none;
+            position: absolute;
+            z-index: 10;
+        }
+
+        .list {
+            width: calc(100% - 20px);
+            background-color: #ffffff;
+            font-family: 'Roboto';
+            font-size: 14px;
+            padding: 6px 6px;
+            margin: 6px 10px;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .list:focus {
+            background: #F8E4FF;
+        }
+
+        .list:hover {
+            background: #dfdfdf;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="selectbox">
+        <button class="pl" onclick="selectToggle()">계열사/관련사이트</button>
+        <ul class="listbox" id="listbox">
+            <li><button class="list">-----패밀리사이트-----</button></li>
+            <li><button class="list">NH농협</button></li>
+            <li><button class="list">농협경제지주</button></li>
+            <li><button class="list">농민신문</button></li>
+            <li><button class="list">농협몰</button></li>
+            <li><button class="list">-----유관기관-----</button></li>
+            <li><button class="list">at바로정보</button></li>
+            <li><button class="list">로컬푸드 온라인판매장</button></li>
+            <li><button class="list">at한국농수산식품유통공사</button></li>
+            <li><button class="list">농림축산식품부</button></li>
+        </ul>
+    </div>
+    
+    <script>
+        function selectToggle() {
+            const listbox = document.getElementById('listbox');
+            const plButton = document.querySelector('.pl');
+            listbox.style.display = listbox.style.display === 'none' || listbox.style.display === '' ? 'block' : 'none';
+            plButton.classList.toggle('on');
+        }
+
+        document.querySelectorAll('.list').forEach(function(button) {
+            button.addEventListener('click', function() {
+                document.querySelector('.pl').textContent = this.textContent;
+                document.getElementById('listbox').style.display = 'none';
+                document.querySelector('.pl').classList.remove('on');
+            });
+        });
+    </script>
+</body>
+</html>

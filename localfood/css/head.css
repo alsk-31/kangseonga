@@ -1,7 +1,23 @@
 @charset "UTF-8";
+
 .wrap{
-    width: 1602px;
+    width: 1410px;
     margin: 0 auto;
+}
+.header_back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000d8;
+    width: 100%;
+    height: 60px;
+}
+#header nav {
+    width: 100%; /* 전체 너비 */
+    display: flex;
+    justify-content: center; /* 가로로 가운데 정렬 */
+    align-items: center; /* 세로로 가운데 정렬 */
 }
 #header{
     position: relative;
@@ -19,7 +35,7 @@
     width: 20%;
 }
 #header nav{
-    width: 75%;
+    width: 65%;
     display: flex;
     justify-content: center;
 }
@@ -32,8 +48,8 @@
     position: fixed; /* 화면에 고정 */
     left: 0;
     right: 0;
-    height: 0px; /* 원하는 높이로 설정 */
-    background-color: #0000007a;
+    height: 0; /* 원하는 높이로 설정 */
+    background-color: #ffffffee;
     z-index: -1; /* 헤더의 뒤에 배경이 위치하도록 설정 */
 }
 #header.on::after{
@@ -54,39 +70,194 @@ nav > ul > li{
     height: 0;
     overflow: hidden;
     transition: all 200ms;
+    font-family: pre_M;
 }
 nav > ul > li > a{
     display: inline-block;
-    padding: 10px 60px;
+    padding: 10px 40px;
 }
 nav > ul > li > a:hover{
-    color: #48dd6d;
+    color: var(--accent-color1);
+}
+nav > ul > li:nth-child(2) > a::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: var(--accent-color3); /* 원의 색상 설정 */
+    border-radius: 50%;
+    margin-left: 3px;
+    vertical-align: top; /* 텍스트와 원을 수직으로 정렬 */
 }
 nav > ul > li > ul{
     position: absolute;
     left: 0;
-    top: 60px;
+    top: 70px;
     width: 100%;
     text-align: center;
     display: none;
+    color: #2d2d2d;
+}
+.nav > ul > li:hover > ul {
+    display: block;
 }
 nav > ul > li > ul > li{
     padding: 5px 0;
 }
 nav > ul > li > ul > li > a:hover{
-    color: #48dd6d;
+    color: var(--accent-color2);
 }
 .two_btn{
     width: 15%;
     font-size: 15px;
-    font-family: pre_R;
+    font-family: pre_M;
 }
 .two_btn > a{    
     display: inline-block;
-    padding: 0 18px;
-    height: 33px;
-    line-height: 33px;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
     border-radius: 10px;
     border: 1px solid #fff;
     margin-left: 10px;
+}
+.navbar_togleBtn{
+    display: none;
+}
+@media all and (min-width:1023px) and (max-width:1409px) {
+    .wrap{
+        width: 1024px;
+    }
+    nav > ul{
+        margin-right: 0px;
+    }
+    nav > ul > li > a{
+        display: inline-block;
+        padding: 10px 10px;
+    }
+    .two_btn > a{    
+        display: inline-block;
+        padding: 0 6px;
+        height: 30px;
+        line-height:30px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        margin-left: 5px;
+    }
+    .navbar_togleBtn{
+        display: none;
+    }
+}
+
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px) */
+@media all and (min-width:768px) and (max-width:1023px)  {
+    .wrap {
+        width: 768px;;
+    }
+    #header::after {
+    display: none;  
+}
+
+    nav > ul {
+        width: 100vw;
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        padding: 30px 0;
+    }
+
+    nav.active > ul {
+        display: flex;
+        justify-content: center; /* 중앙 정렬 */
+    
+    }
+
+    nav > ul > li > a {
+        padding: 8px 15px;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        line-height: 2;
+        width: 100vw;
+    }
+
+    nav > ul > li > ul {
+        display: none; 
+
+    }
+   .nav > ul > li:hover > ul {
+        display: none;
+    }
+
+    .navbar_togleBtn {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 24px;
+        color: white;
+    }
+
+    .two_btn {
+        display: none;
+    }
+
+    .header_back {
+        height: 60px;
+    }
+}
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px) */
+@media all and (max-width: 767px) {
+    .wrap {
+        width: 480px;;
+    }
+    #header::after {
+       display: none;  
+    }
+    nav > ul {
+        width: 100vw;
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        padding: 30px 0;
+    }
+
+    nav.active > ul {
+        display: flex;
+    }
+
+    nav > ul > li > a {
+        width: 100%;
+        padding: 8px 15px;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        line-height: 2;
+    }
+
+    nav > ul > li > ul {
+        display: none;
+    }
+
+    .navbar_togleBtn {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 24px;
+        color: white;
+    }
+
+    .two_btn {
+        display: none;
+    }
+
+    .header_back {
+        height: 60px;
+    }
 }

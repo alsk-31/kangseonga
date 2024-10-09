@@ -46,36 +46,6 @@ document.addEventListener('DOMContentLoaded',function(){
         cssEase:'linear'
     });
     
-    //.main business : slick(플러그인) 적용
-    $('.business_area .slide_area').slick({
-        dots: true,
-        infinite: true,
-        arrows:false,
-        slidesToShow: 3,
-        centerMode: true,
-        variableWidth:true,
-        responsive:[
-            {
-                breakpoint:1023,
-                settings:{
-                    slidesToShow:2,
-                    slidesToScroll:1, //한번에 넘길 슬라이드 아이템 개수
-                    centerMode:false,
-                    variableWidth:false,//사진마다 width의 크기가 다른가?(true or false) ▶기본값 false
-                    adaptiveHeight:true
-                }
-            },
-            {
-                breakpoint:768,
-                settings:{
-                    slidesToShow:1,
-                    slidesToScroll:1,
-                    centerMode:false,
-                    variableWidth:true,
-                }
-            }
-        ]
-    });
 
     
 });
